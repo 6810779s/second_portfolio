@@ -31,7 +31,7 @@ body {
 
 .container {
   width: 100%;
-  height: 3800px;
+  height: 3200px;
   font-family: 'Karla', sans-serif;
 }
 
@@ -46,7 +46,7 @@ body {
 .container #header .category li:not(li:first-child) {
   float: left;
   font-size: 2rem;
-  margin: 2.85rem 1rem;
+  margin: 2.85rem 2rem;
 }
 
 .container #header .category .logo {
@@ -62,7 +62,7 @@ body {
 
 .container .main__article {
   width: 100%;
-  height: 3600px;
+  height: 3000px;
   padding-top: 8rem;
 }
 
@@ -97,6 +97,8 @@ body {
   top: 50%;
   left: 10%;
   margin: 3rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
 }
 
 .container .main__article #info .info__bottomContainer {
@@ -225,30 +227,12 @@ body {
   transition: 0.5s ease-in;
 }
 
-.container .main__article #certification {
-  height: 600px;
-  background-color: aquamarine;
-}
-
-.container .main__article #certification .swiper-container {
-  width: 70rem;
-  height: 50rem;
-}
-
-.container .main__article #certification .swiper-container .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 10px 0px #848484;
-}
-
 .container .main__article #skills {
   height: 800px;
-  background-color: beige;
+}
+
+.container .main__article #skills .main_name_skills {
+  padding: 5rem 0rem 10rem 5rem;
 }
 
 .container .main__article #achieve {
