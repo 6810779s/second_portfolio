@@ -7,8 +7,8 @@
 // font-family: 'Karla', sans-serif; 영어
 
 
-$maincolor: rgb(250,221,221);
-$maincolor2: rgb(241,151,150);
+$maincolor: rgb(250, 221, 221);
+$maincolor2: rgb(241, 151, 150);
 
 @mixin info_imgs {
   width: 10rem;
@@ -187,7 +187,8 @@ body{
         .info__me{
           width: 100%;
           height: 35rem;
-          background: url('../img/info/info_background/blossom.png') center no-repeat;
+          // background: url('../img/info/info_background/blossom.png') center no-repeat;
+          background: $maincolor;
           background-size: cover;
           position: relative;
 
@@ -233,7 +234,8 @@ body{
           .info__contact{
             width: 100%;
             height: 35rem;
-            background: url('../img/info/info_background/flower.png') center no-repeat;
+            // background: url('../img/info/info_background/flower.png') center no-repeat;
+            background: $maincolor2;
             background-size: cover;
             position: absolute;
             top: 35rem;
@@ -257,13 +259,13 @@ body{
             }
             .info__writing{
               clear: left;
-              color: black;
-              font-size: 1.8rem;
+              color: white;
+              font-size: 2rem;
               font-family: 'Noto Sans KR', sans-serif;
               li{
                 width: 20rem;
                 height: 4rem;
-                background: $maincolor;
+                // background: $maincolor;
                 border-radius: 30px;
                 text-align: center;
                 margin-right: 4rem;
@@ -589,21 +591,29 @@ body{
               margin: 2rem 7.5rem;
             }
           }
-        // }
+        
       }
 
     
     /*section6 project*/
     #project{
       height: 800px;
-      background-color: cornflowerblue;
+      // background-color: cornflowerblue;
+      .main_name_Project{
+        @include main_name_padding;
+      }
+      .project_container{
+        
+      }
+
+
     }
   }
   
   /*section7 footer*/
   #footer{
     height: 200px;
-    background-color: darkblue;
+    // background-color: darkblue;
   }
   
   

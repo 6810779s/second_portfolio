@@ -118,7 +118,7 @@ body {
 .container .main__article #info .info__bottomContainer .info__me {
   width: 100%;
   height: 35rem;
-  background: url("../img/info/info_background/blossom.png") center no-repeat;
+  background: #fadddd;
   background-size: cover;
   position: relative;
 }
@@ -170,7 +170,7 @@ body {
 .container .main__article #info .info__bottomContainer .info__me .info__contact {
   width: 100%;
   height: 35rem;
-  background: url("../img/info/info_background/flower.png") center no-repeat;
+  background: #f19796;
   background-size: cover;
   position: absolute;
   top: 35rem;
@@ -197,15 +197,14 @@ body {
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
   clear: left;
-  color: black;
-  font-size: 1.8rem;
+  color: white;
+  font-size: 2rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing li {
   width: 20rem;
   height: 4rem;
-  background: #fadddd;
   border-radius: 30px;
   text-align: center;
   margin-right: 4rem;
@@ -596,11 +595,13 @@ body {
 
 .container .main__article #project {
   height: 800px;
-  background-color: cornflowerblue;
+}
+
+.container .main__article #project .main_name_Project {
+  padding: 5rem;
 }
 
 .container #footer {
   height: 200px;
-  background-color: darkblue;
 }
 /*# sourceMappingURL=style.css.map */
