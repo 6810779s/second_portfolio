@@ -120,6 +120,7 @@ body {
   border-radius: 50%;
   float: left;
   height: 10rem;
+  border: 2px solid #f19796;
   margin: 12.5rem 5rem 3rem 0rem;
 }
 
@@ -173,6 +174,7 @@ body {
   border-radius: 50%;
   float: left;
   height: 10rem;
+  border: 2px solid #f19796;
   margin: 12.5rem 13rem 3rem 0rem;
 }
 
@@ -229,10 +231,162 @@ body {
 
 .container .main__article #skills {
   height: 800px;
+  position: relative;
 }
 
 .container .main__article #skills .main_name_skills {
-  padding: 5rem 0rem 10rem 5rem;
+  padding: 5rem;
+}
+
+.container .main__article #skills .button_skills {
+  position: absolute;
+  font-size: 2rem;
+  background: #fadddd;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  left: 70%;
+}
+
+.container .main__article #skills .button_skills:hover {
+  background: #f19796;
+  cursor: pointer;
+}
+
+.container .main__article #skills .skills_container {
+  width: 100rem;
+  height: 50rem;
+  font-size: 2rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.container .main__article #skills .skills_container .web {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs {
+  width: 20rem;
+  height: 100%;
+  float: left;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs li {
+  width: 20rem;
+  height: 5rem;
+  background: #fadddd;
+  margin-top: 3rem;
+  text-align: center;
+  border-radius: 3rem;
+  padding-left: 2rem;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs p {
+  padding-top: 1.35rem;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .languageImgs {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+  background-size: cover;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .html .htmlImg {
+  background: url("../img/skill/web/html.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .css .cssImg {
+  background: url("../img/skill/web/css.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .js .jsImg {
+  background: url("../img/skill/web/javascript.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .scss .scssImg {
+  background: url("../img/skill/web/scss.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .react .reactImg {
+  background: url("../img/skill/web/react.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .left_languageImgs .jQuery .jQueryImg {
+  background: url("../img/skill/web/jQuery.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility {
+  width: 80rem;
+  height: 100%;
+  float: left;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility li {
+  float: left;
+  width: 70rem;
+  height: 3rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  background: #e9e5e5;
+  position: relative;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility p {
+  padding: 0.35rem 1rem;
+  position: absolute;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .languageSkill {
+  position: absolute;
+  border-radius: 0 1rem 1rem 0;
+  background: lightgreen;
+  height: 100%;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .html {
+  margin-top: 4rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .html .html_skill {
+  width: 63rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .css .css_skill {
+  width: 63rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .js .js_skill {
+  width: 56rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .scss .scss_skill {
+  width: 59.5rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .react .react_skill {
+  width: 21rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .react .studying {
+  position: absolute;
+  padding-top: 0.35rem;
+  right: 5rem;
+}
+
+.container .main__article #skills .skills_container .web .right_languageAbility .jQuery .jQuery_skill {
+  width: 42rem;
+}
+
+.container .main__article #skills .skills_container .other {
+  float: left;
+  width: 100rem;
+  height: 50rem;
+  background: olive;
 }
 
 .container .main__article #achieve {
