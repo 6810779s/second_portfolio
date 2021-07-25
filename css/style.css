@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
@@ -31,8 +32,10 @@ body {
 
 .container {
   width: 100%;
-  height: 3200px;
+  height: 3300px;
   font-family: 'Karla', sans-serif;
+  /*section1 header*/
+  /*section7 footer*/
 }
 
 .container #header {
@@ -62,8 +65,13 @@ body {
 
 .container .main__article {
   width: 100%;
-  height: 3000px;
+  height: 3100px;
   padding-top: 8rem;
+  /*section2 메인 네이밍*/
+  /*section3 information*/
+  /*section4 skills*/
+  /*section5 achieve*/
+  /*section6 project*/
 }
 
 .container .main__article #main__tit {
@@ -246,6 +254,7 @@ body {
   padding: 0.3rem;
   border-radius: 2rem;
   left: 70%;
+  z-index: 100;
 }
 
 .container .main__article #skills .button_skills:hover {
@@ -259,21 +268,28 @@ body {
   font-size: 2rem;
   margin: 2rem auto;
   overflow: hidden;
+  position: relative;
 }
 
-.container .main__article #skills .skills_container .web {
+.container .main__article #skills .skills_container .skills_wrap {
+  width: 200rem;
+  height: 50rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web {
   float: left;
-  width: 100%;
+  width: 100rem;
   height: 100%;
+  background: white;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs {
   width: 20rem;
   height: 100%;
   float: left;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs li {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
   width: 20rem;
   height: 5rem;
   background: #fadddd;
@@ -283,11 +299,11 @@ body {
   padding-left: 2rem;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs p {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs p {
   padding-top: 1.35rem;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .languageImgs {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .languageImgs {
   float: left;
   width: 4rem;
   height: 4rem;
@@ -295,37 +311,37 @@ body {
   background-size: cover;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .html .htmlImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .html .htmlImg {
   background: url("../img/skill/web/html.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .css .cssImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .css .cssImg {
   background: url("../img/skill/web/css.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .js .jsImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .js .jsImg {
   background: url("../img/skill/web/javascript.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .scss .scssImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .scss .scssImg {
   background: url("../img/skill/web/scss.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .react .reactImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .react .reactImg {
   background: url("../img/skill/web/react.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .left_languageImgs .jQuery .jQueryImg {
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .jQuery .jQueryImg {
   background: url("../img/skill/web/jQuery.png") center no-repeat;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility {
   width: 80rem;
   height: 100%;
   float: left;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility li {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility li {
   float: left;
   width: 70rem;
   height: 3rem;
@@ -336,62 +352,246 @@ body {
   border-radius: 0 1rem 1rem 0;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility p {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility p {
   padding: 0.35rem 1rem;
   position: absolute;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .languageSkill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .languageSkill {
   position: absolute;
   border-radius: 0 1rem 1rem 0;
   background: lightgreen;
   height: 100%;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .html {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html {
   margin-top: 4rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .html .html_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html .html_skill {
   width: 63rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .css .css_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .css .css_skill {
   width: 63rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .js .js_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .js .js_skill {
   width: 56rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .scss .scss_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .scss .scss_skill {
   width: 59.5rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .react .react_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
   width: 21rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .react .studying {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .studying {
   position: absolute;
   padding-top: 0.35rem;
   right: 5rem;
 }
 
-.container .main__article #skills .skills_container .web .right_languageAbility .jQuery .jQuery_skill {
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .jQuery .jQuery_skill {
   width: 42rem;
 }
 
-.container .main__article #skills .skills_container .other {
-  float: left;
+.container .main__article #skills .skills_container .skills_wrap .other {
   width: 100rem;
   height: 50rem;
-  background: olive;
+  position: absolute;
+  transition: 0.5s ease-in;
+  left: 100rem;
+  background: white;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs {
+  width: 20rem;
+  height: 100%;
+  float: left;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li {
+  width: 20rem;
+  height: 5rem;
+  background: #fadddd;
+  margin-top: 3rem;
+  text-align: center;
+  border-radius: 3rem;
+  padding-left: 2rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs p {
+  padding-top: 1.35rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .languageImgs {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+  background-size: cover;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .c .c_Img {
+  background: url("../img/skill/others/c.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .python .python_Img {
+  background: url("../img/skill/others/python.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .java .java_Img {
+  background: url("../img/skill/others/java.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .mysql .mysql_Img {
+  background: url("../img/skill/others/mysql.png") center no-repeat;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility {
+  width: 80rem;
+  height: 100%;
+  float: left;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility li {
+  float: left;
+  width: 70rem;
+  height: 3rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  background: #e9e5e5;
+  position: relative;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility p {
+  padding: 0.35rem 1rem;
+  position: absolute;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .languageSkill {
+  position: absolute;
+  border-radius: 0 1rem 1rem 0;
+  background: lightgreen;
+  height: 100%;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c {
+  margin-top: 4rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c .c_skill {
+  width: 52.5rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .java .java_skill {
+  width: 63rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .python .python_skill {
+  width: 59.5rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .mysql .mysql_skill {
+  width: 35rem;
 }
 
 .container .main__article #achieve {
-  height: 400px;
-  background-color: blue;
+  height: 500px;
+}
+
+.container .main__article #achieve .main_name_Achieve {
+  padding: 5rem;
+}
+
+.container .main__article #achieve .swiper-container {
+  width: 50rem;
+  height: 30rem;
+}
+
+.container .main__article #achieve .swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fadddd;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main__article #achieve .swiper-slide:hover .achieve_link {
+  opacity: 1;
+}
+
+.container .main__article #achieve .swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container .main__article #achieve .swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #f19796;
+  background: pink;
+}
+
+.container .main__article #achieve .swiper-button-prev:hover {
+  color: #f19796;
+  transform: translateX(-0.5rem);
+}
+
+.container .main__article #achieve .swiper-button-next:hover {
+  color: #f19796;
+  transform: translateX(0.5rem);
+}
+
+.container .main__article #achieve .achieveSite {
+  width: 25rem;
+  height: 30rem;
+}
+
+.container .main__article #achieve .tistory {
+  position: relative;
+  line-height: 2.5rem;
+}
+
+.container .main__article #achieve .tistory .up {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: url("../img/achieve/tistory.png");
+  margin: 2rem 7.5rem;
+}
+
+.container .main__article #achieve .achieve_link {
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  padding-top: 12.8rem;
+  text-decoration: underline;
+  background: rgba(121, 115, 115, 0.5);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.container .main__article #achieve .achieve_link a:hover {
+  color: blue;
+}
+
+.container .main__article #achieve .github {
+  line-height: 2.5rem;
+}
+
+.container .main__article #achieve .github .up {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: url("../img/achieve/github.png");
+  margin: 2rem 7.5rem;
 }
 
 .container .main__article #project {
