@@ -812,7 +812,7 @@ body{
    .project_others{
       width: 100%;
       height: 1000px;
-      background: yellow;
+      
 
       .main_name_ProjectOthers{
         @include main_name_padding;
@@ -841,7 +841,12 @@ body{
         line-height: 2.8rem;
         font-size: 1.5rem;
         font-family: 'Noto Sans KR', sans-serif;
-        background-color: $maincolor;
+        
+        &:hover{
+          .caption_project_others{
+            opacity: 1;
+          }
+        }
       }
 
       .bluemarble{
@@ -851,33 +856,84 @@ body{
       .project_others_Container{
         width: 100rem;
         height: 35rem;
-        background: chartreuse;
-        margin: 2rem auto;
+        margin: 3rem auto;
+        padding: 1.5rem 5rem;
+        background: rgba(218, 214, 214, 0.103);;
 
-        .caption_java{
+        .caption_project_others{
           width: 40rem;
           height: 25rem;
           background: $caption;
           position: absolute;
           top: 0;
+          color: white;
+          opacity: 0;
+          transition: 0.3s ease-in;
         }
 
         .up{
           width: 40rem;
           height: 25rem;
+        }
+        
+        .explain_link{
+          width: 40rem;
+          height: 8rem;
+          margin: auto;
+          padding-top: 2.95rem;
+  
 
+          a{
+            margin: 0 1rem;
           }
 
+          .github_link{
+            width: 10rem;
+            height: 5rem;
+            padding: 1rem 3.9rem;
+            border: 1px solid $maincolor2;
+            border-radius: 3rem;
+            
+            &:hover{
+              background-color: $maincolor;
+            }
+          }
+
+          .pdf_link{
+            width: 16rem;
+            height: 5rem;
+            padding: 1rem;
+            border: 0.5px solid $maincolor2;
+            border-radius: 3rem;
+
+            &:hover{
+              background-color: $maincolor;
+            }
+          }
+        }
         .chatting{
             .chatting_project_img{
               width: 40rem;
               height: 25rem;
-              background-color: $maincolor2;
-              // background: url('../img/project/others/chatting.png');
+              background: url('../img/project/others/chatting.png') center no-repeat;
+              
             }
-          
 
-          
+        }
+        .bluemarble{
+          .bluemarble_project_img{
+            width: 40rem;
+            height: 25rem;
+            background: url('../img/project/others/bluemarble.png') center no-repeat;
+          }
+        }
+
+        .tel{
+          .tel_project_img{
+            width: 40rem;
+            height: 25rem;
+            background: url('../img/project/others/tel.png') center no-repeat;
+          }
         }
 
       }
