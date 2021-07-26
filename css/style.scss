@@ -8,17 +8,17 @@
 /*
 header: 80
 
-main_article: 4500
+main_article: 4700
 section2 main_naming : 400
 section3 info: 600
 section4 skills: 800
 section5 achieve:500
-section6 project_web:1200
+section6 project_web:1400
 section7 project_others:1000
 
 footer: 200
 
-entire: 4780
+entire: 4980
 
 */
 
@@ -144,7 +144,7 @@ body{
 }
 .container{
   width: 100%;
-  height: 4700px;
+  height: 4900px;
   font-family: 'Karla', sans-serif;
 
   /*section1 header*/
@@ -181,7 +181,7 @@ body{
   
   .main__article{
     width: 100%;
-    height: 4580px;
+    height: 4780px;
     padding-top: 8rem;
 
     /*section2 메인 네이밍*/
@@ -638,8 +638,9 @@ body{
     /*section6 project_web*/
     #project_WEB{
       width: 100%;
-      height: 1200px;
-      background-color: cornflowerblue;
+      height: 1400px;
+      background: rgb(196, 196, 118);
+      
 
       .main_name_ProjectWeb{
         @include main_name_padding;
@@ -647,20 +648,20 @@ body{
 
       .projectWeb_container{
         width: 100%;
-        height: 90rem;
-        background: aqua;
+        height: 125rem;
+        background: yellowgreen;
 
         li{
           width: 100%;
           height: 40rem;
-          background: blanchedalmond;
-          margin: 0rem auto 5rem auto;
+          margin: 5rem auto 8rem auto;
+          background: rgba(218, 214, 214, 0.103);
         }
 
         .container{
           width: 100rem;
           height: 40rem;
-          background: yellow;
+          overflow: hidden;
           margin: auto;
           &:hover{
             .caption_web{
@@ -669,7 +670,15 @@ body{
           }
         }
 
-        
+        .Project_WEB_mainTit{
+          clear: left;
+          width: 15rem;
+          font-size: 3rem;
+          margin: auto;
+          padding: 0.5rem;
+          border-bottom: 2px solid black;
+          
+        }
 
         .caption_web{
           width: 100rem;
@@ -695,35 +704,65 @@ body{
           
         }
 
-        
+        .link{
+          float: left;
+          font-size: 1.5rem;
+          width: 11rem;
+          height: 4rem;
+          border-radius: 3rem;
+          border: 0.5px solid black;
+          padding-top: 1.1rem;
+          text-align: center;
+          &:hover{
+            background: $maincolor;
+
+          }
+        }
+
+        .github{
+          float: left;
+          font-size: 1.5rem;
+          width: 11rem;
+          height: 4rem;
+          border-radius: 3rem;
+          border: 0.5px solid black;
+          padding-top: 1.1rem;
+          text-align: center;
+          &:hover{
+            background: $maincolor;
+
+          }
+        }
 
         .portfolio{
           position: relative;
           overflow: hidden;
           .up{
             @include up_arrow;
-  
+            &:hover{
+              transform: translateY(-1rem);
+            }
           }
           .down{
             @include down_arrow;
+            &:hover{
+              transform: translateY(1rem);
+            }
           }
           .portfolio_container{
+            width: 100rem;
+            height: 40rem;
+            overflow: hidden;
             .portfolio_project_img{
               width: 100rem;
-              height: 40rem;
+              height: 293.8rem;
               position: absolute;
               background: url('../img/project/web/EHPortfolio.png') no-repeat;
               top: 0; //이미지 높이 : 2938px
-              transition: 3s ease-in;
-            }
-
-            
+              transition: 5s ease-in;
+              
+            } 
           }
-
-          
-
-
-
         }
 
         .cafe{
@@ -731,10 +770,26 @@ body{
           overflow: hidden;
           .up{
             @include up_arrow;
-  
+            &:hover{
+              transform: translateY(-1rem);
+            }
           }
           .down{
             @include down_arrow;
+            &:hover{
+              transform: translateY(1rem);
+            }
+          }
+
+          .cafe_container{
+            .cafe_project_img{
+              width: 100rem;
+              height: 361.1rem;
+              position: absolute;
+              background: url('../img/project/web/cafeSroty.png');
+              top: 0;
+              transition: 5s ease-in;
+            }
           }
         }
 
