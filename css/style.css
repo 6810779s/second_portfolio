@@ -831,6 +831,54 @@ body {
   margin: auto;
 }
 
+.container .main__article .project_others .caption_title {
+  font-size: 2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 5rem 0;
+}
+
+.container .main__article .project_others li {
+  position: relative;
+  float: left;
+  width: 40rem;
+  height: 33rem;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fadddd;
+}
+
+.container .main__article .project_others .bluemarble {
+  float: right;
+}
+
+.container .main__article .project_others .project_others_Container {
+  width: 100rem;
+  height: 35rem;
+  background: chartreuse;
+  margin: 2rem auto;
+}
+
+.container .main__article .project_others .project_others_Container .caption_java {
+  width: 40rem;
+  height: 25rem;
+  background: rgba(121, 115, 115, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.container .main__article .project_others .project_others_Container .up {
+  width: 40rem;
+  height: 25rem;
+}
+
+.container .main__article .project_others .project_others_Container .chatting .chatting_project_img {
+  width: 40rem;
+  height: 25rem;
+  background-color: #f19796;
+}
+
 .container #footer {
   height: 200px;
 }
