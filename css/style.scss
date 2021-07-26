@@ -654,7 +654,7 @@ body{
         li{
           width: 100%;
           height: 40rem;
-          margin: 5rem auto 8rem auto;
+          margin: 5rem auto 5rem auto;
           background: rgba(218, 214, 214, 0.103);
         }
 
@@ -703,37 +703,44 @@ body{
           }
           
         }
-        .link{
-          width: 11rem;
+
+        .project_web_link{
+          width: 100%;
           height: 4rem;
-          float: left;
-          font-size: 1.5rem;
-          border-radius: 3rem;
-          border: 0.5px solid $maincolor2;
-          padding-top: 1.1rem;
-          text-align: center;
-          margin: auto;
-  
-          &:hover{
-            background: $maincolor;
+          position: relative;
+          margin-bottom: 5rem;
+          .link{
+            position: absolute;
+            width: 11rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            border-radius: 3rem;
+            border: 0.5px solid $maincolor2;
+            padding-top: 1.1rem;
+            text-align: center;
+            left: 50%;
+            margin-left: 1.5rem;
+    
+            &:hover{
+              background: $maincolor;
+              }
             }
-          }
-        
-
-        
-
-        .github{
-          float: left;
-          font-size: 1.5rem;
-          width: 11rem;
-          height: 4rem;
-          border-radius: 3rem;
-          border: 0.5px solid $maincolor2;
-          padding-top: 1.1rem;
-          text-align: center;
-          &:hover{
-            background: $maincolor;
-
+          
+          .github{
+            position: absolute;
+            width: 11rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            border-radius: 3rem;
+            border: 0.5px solid $maincolor2;
+            padding-top: 1.1rem;
+            text-align: center;
+            left: 50%;
+            margin-left: -12.5rem;
+            &:hover{
+              background: $maincolor;
+  
+            }
           }
         }
 
@@ -801,10 +808,24 @@ body{
 
     }
 
-    .project_others{
+    /*section7 project_others*/
+   .project_others{
       width: 100%;
       height: 1000px;
       background: yellow;
+
+      .main_name_ProjectOthers{
+        @include main_name_padding;
+      }
+      .project_mainTit{
+        width: 11rem;
+        height: 3rem;
+        border-bottom: 1px solid black;
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+      }
+      
     }
   }
   

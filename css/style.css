@@ -88,6 +88,7 @@ body {
   /*section4 skills*/
   /*section5 achieve*/
   /*section6 project_web*/
+  /*section7 project_others*/
 }
 
 .container .main__article #main__tit {
@@ -626,7 +627,7 @@ body {
 .container .main__article #project_WEB .projectWeb_container li {
   width: 100%;
   height: 40rem;
-  margin: 5rem auto 8rem auto;
+  margin: 5rem auto 5rem auto;
   background: rgba(218, 214, 214, 0.103);
 }
 
@@ -674,34 +675,44 @@ body {
   color: white;
 }
 
-.container .main__article #project_WEB .projectWeb_container .link {
+.container .main__article #project_WEB .projectWeb_container .project_web_link {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.container .main__article #project_WEB .projectWeb_container .project_web_link .link {
+  position: absolute;
   width: 11rem;
   height: 4rem;
-  float: left;
   font-size: 1.5rem;
   border-radius: 3rem;
   border: 0.5px solid #f19796;
   padding-top: 1.1rem;
   text-align: center;
-  margin: auto;
+  left: 50%;
+  margin-left: 1.5rem;
 }
 
-.container .main__article #project_WEB .projectWeb_container .link:hover {
+.container .main__article #project_WEB .projectWeb_container .project_web_link .link:hover {
   background: #fadddd;
 }
 
-.container .main__article #project_WEB .projectWeb_container .github {
-  float: left;
-  font-size: 1.5rem;
+.container .main__article #project_WEB .projectWeb_container .project_web_link .github {
+  position: absolute;
   width: 11rem;
   height: 4rem;
+  font-size: 1.5rem;
   border-radius: 3rem;
   border: 0.5px solid #f19796;
   padding-top: 1.1rem;
   text-align: center;
+  left: 50%;
+  margin-left: -12.5rem;
 }
 
-.container .main__article #project_WEB .projectWeb_container .github:hover {
+.container .main__article #project_WEB .projectWeb_container .project_web_link .github:hover {
   background: #fadddd;
 }
 
@@ -805,6 +816,19 @@ body {
   width: 100%;
   height: 1000px;
   background: yellow;
+}
+
+.container .main__article .project_others .main_name_ProjectOthers {
+  padding: 5rem;
+}
+
+.container .main__article .project_others .project_mainTit {
+  width: 11rem;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
 }
 
 .container #footer {
