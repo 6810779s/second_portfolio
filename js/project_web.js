@@ -27,7 +27,7 @@ cafe_down.addEventListener('click',function(){
 });
 
 portfolioSecond__up.addEventListener('click',function(){
-  portfolioSecond_project_img.style.top = (-341.8 + 40) + 'rem';
+  portfolioSecond_project_img.style.top = (-342.4 + 40) + 'rem';
 });
 
 portfolioSecond__down.addEventListener('click',function(){
