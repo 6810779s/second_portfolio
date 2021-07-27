@@ -8,17 +8,17 @@
 /*
 header: 80
 
-main_article: 4700
+main_article: 5320
 section2 main_naming : 400
 section3 info: 600
 section4 skills: 800
 section5 achieve:500
-section6 project_web:1400
+section6 project_web:2020
 section7 project_others:1000
 
-footer: 150
+footer: 150   
 
-entire: 4930
+entire: 5450
 
 */
 
@@ -151,7 +151,7 @@ body{
 }
 .container{
   width: 100%;
-  height: 4930px;
+  height: 5450px;
   font-family: 'Karla', sans-serif;
 
   /*section1 header*/
@@ -181,7 +181,7 @@ body{
   
   .main__article{
     width: 100%;
-    height: 4780px;
+    height: 5400px;
     padding-top: 8rem;
 
     /*section2 메인 네이밍*/
@@ -638,7 +638,7 @@ body{
     /*section6 project_web*/
     #project_WEB{
       width: 100%;
-      height: 1400px;
+      height: 2020px;
       
       
 
