@@ -39,11 +39,6 @@ a:visited {
   color: black;
 }
 
-html,
-body {
-  font-size: 10px;
-}
-
 @media (min-width: 335px) and (max-width: 757px) {
   html,
   body {
@@ -265,6 +260,12 @@ body {
   top: 7rem;
   left: 60%;
   overflow: hidden;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__img1 {
+    background: url("../mediaQueryPhone/info/info_profile/me_charactor.png");
+  }
 }
 
 .container .main__article #info .info__img1 .info__img2 {
@@ -574,7 +575,7 @@ body {
 .container .main__article #achieve .swiper-pagination-bullet-active {
   width: 1.5rem;
   height: 1.5rem;
-  border: 3px solid #f19796;
+  border: 0.3rem solid #f19796;
   background: pink;
 }
 
@@ -671,7 +672,7 @@ body {
   font-size: 3rem;
   margin: auto;
   padding: 0.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 0.2rem solid black;
 }
 
 .container .main__article #project_WEB .projectWeb_container .caption_web {
@@ -892,7 +893,7 @@ body {
 .container .main__article .project_others .project_mainTit {
   width: 11rem;
   height: 3rem;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid black;
   font-size: 2rem;
   text-align: center;
   margin: auto;
@@ -962,7 +963,7 @@ body {
   width: 10rem;
   height: 5rem;
   padding: 1rem 3.9rem;
-  border: 1px solid #f19796;
+  border: 0.1rem solid #f19796;
   border-radius: 3rem;
 }
 

@@ -42,11 +42,6 @@ a:visited{
   color: black;
 }
 
-html,
-body{
-  font-size: 10px;
-}
-
 @include mobile{
   html,
   body{
@@ -177,6 +172,9 @@ body{
             }
             .school{
               background: url('../img/info/info_icon/school.png');
+            }
+
+            @include mobile{
 
             }
         } 
@@ -259,6 +257,10 @@ body{
         top: 7rem;
         left: 60%;
         overflow: hidden;
+
+        @include mobile{
+          background: url('../mediaQueryPhone/info/info_profile/me_charactor.png');
+        }
 
         .info__img2{
           width: 25rem;
@@ -503,7 +505,7 @@ body{
           .swiper-pagination-bullet-active{
             width: 1.5rem;
             height: 1.5rem;
-            border: 3px solid $maincolor2;
+            border: 0.3rem solid $maincolor2;
             background: pink;
           }
 
@@ -606,7 +608,7 @@ body{
           font-size: 3rem;
           margin: auto;
           padding: 0.5rem;
-          border-bottom: 2px solid black;
+          border-bottom: 0.2rem solid black;
           
         }
 
@@ -764,7 +766,7 @@ body{
       .project_mainTit{
         width: 11rem;
         height: 3rem;
-        border-bottom: 1px solid black;
+        border-bottom: 0.1rem solid black;
         font-size: 2rem;
         text-align: center;
         margin: auto;
@@ -835,7 +837,7 @@ body{
             width: 10rem;
             height: 5rem;
             padding: 1rem 3.9rem;
-            border: 1px solid $maincolor2;
+            border: 0.1rem solid $maincolor2;
             border-radius: 3rem;
             
             &:hover{
