@@ -26,6 +26,7 @@ $maincolor: rgb(250, 221, 221);
 $maincolor2: rgb(241, 151, 150);
 $caption: rgba(121, 115, 115, 0.5);
 
+
 @mixin info_imgs {
   width: 10rem;
   border-radius: 50%;
@@ -101,6 +102,9 @@ $caption: rgba(121, 115, 115, 0.5);
   position: absolute;
   cursor: pointer;
   background:url('../img/arrow/up.png');
+  &:hover{
+    transform: translateY(-1rem);
+  }
 }
 
 @mixin down_arrow{
@@ -112,7 +116,11 @@ $caption: rgba(121, 115, 115, 0.5);
   position: absolute;
   cursor: pointer;
   background:url('../img/arrow/down.png');
+  &:hover{
+    transform: translateY(1rem);
+  }
 }
+
 
 
 *{
@@ -656,6 +664,7 @@ body{
           height: 40rem;
           margin: 5rem auto 5rem auto;
           background: rgba(218, 214, 214, 0.103);
+          
         }
 
         .container{
@@ -749,15 +758,10 @@ body{
           overflow: hidden;
           .up{
             @include up_arrow;
-            &:hover{
-              transform: translateY(-1rem);
-            }
+            
           }
           .down{
             @include down_arrow;
-            &:hover{
-              transform: translateY(1rem);
-            }
           }
           .portfolio_container{
             width: 100rem;
@@ -780,15 +784,11 @@ body{
           overflow: hidden;
           .up{
             @include up_arrow;
-            &:hover{
-              transform: translateY(-1rem);
-            }
+            
           }
           .down{
             @include down_arrow;
-            &:hover{
-              transform: translateY(1rem);
-            }
+           
           }
 
           .cafe_container{
@@ -800,6 +800,29 @@ body{
               top: 0;
               transition: 5s ease-in;
             }
+          }
+        }
+
+        .portfolio_second{
+          position: relative;
+          overflow: hidden;
+          .up{
+            @include up_arrow;
+          }
+          .down{
+            @include down_arrow;
+          }
+
+          .portfolioSecond_container{
+            .portfolioSecond_project_img{
+              width: 100rem;
+              height: 341.8rem;
+              position: absolute;
+              background: url('../img/project/web/portfolio_second.png');
+              top: 0;
+              transition: 5s ease-in;
+            }
+            
           }
         }
 
