@@ -129,6 +129,7 @@ a:visited{
       height: 60rem;
       position: relative;
       
+      
       .info__topFixContainer{
         width: 100%;
         height: 25rem;
@@ -162,27 +163,43 @@ a:visited{
               @include info_imgs;
               @include border;
               margin: 12.5rem 5rem 3rem 0rem;
+              
             }
             .name{
               margin-left: 15rem;
               background: url('../img/info/info_icon/user.png');
+              @include mobile{
+                background: url('../mediaQueryPhone/info/info_icon/user.png') center no-repeat;
+              }
             }
             .birth{
               background: url('../img/info/info_icon/calendar.png');
+              @include mobile{
+                background: url('../mediaQueryPhone/info/info_icon/calendar.png') center no-repeat;
+              }
             }
             .school{
               background: url('../img/info/info_icon/school.png');
+              @include mobile{
+                background: url('../mediaQueryPhone/info/info_icon/school.png') center no-repeat;
+              }
             }
 
-            @include mobile{
-
-            }
+           
         } 
+        @include mobile{
           .infoMe__writing{
+            font-size: 2px;
+          }
+        }
+          .infoMe__writing{
+
             clear: left;
             color: black;
             font-size: 1.8rem;
             font-family: 'Noto Sans KR', sans-serif;
+            
+            
             li{
               width: 11rem;
               height: 4rem;
@@ -192,6 +209,7 @@ a:visited{
               margin-right: 4rem;
               padding-top: 0.7rem;
               float: left;
+              
               
             }
             .name{
@@ -229,6 +247,10 @@ a:visited{
               color: white;
               font-size: 2rem;
               font-family: 'Noto Sans KR', sans-serif;
+
+              @include mobile{
+                font-size: 0.1rem;
+              }
               li{
                 width: 20rem;
                 height: 4rem;

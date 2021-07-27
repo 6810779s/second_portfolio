@@ -172,12 +172,36 @@ a:visited {
   background: url("../img/info/info_icon/user.png");
 }
 
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .name {
+    background: url("../mediaQueryPhone/info/info_icon/user.png") center no-repeat;
+  }
+}
+
 .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .birth {
   background: url("../img/info/info_icon/calendar.png");
 }
 
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .birth {
+    background: url("../mediaQueryPhone/info/info_icon/calendar.png") center no-repeat;
+  }
+}
+
 .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .school {
   background: url("../img/info/info_icon/school.png");
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .school {
+    background: url("../mediaQueryPhone/info/info_icon/school.png") center no-repeat;
+  }
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
+    font-size: 2px;
+  }
 }
 
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
@@ -235,6 +259,12 @@ a:visited {
   color: white;
   font-size: 2rem;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
+    font-size: 0.1rem;
+  }
 }
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing li {
