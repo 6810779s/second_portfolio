@@ -277,6 +277,12 @@ a:visited {
   transition: 0.5s ease-in;
 }
 
+@media (min-width: 335px) and (max-width: 757px) {
+  .container .main__article #info .info__img1 .info__img2 {
+    background: url("../mediaQueryPhone/info/info_profile/me_info.png");
+  }
+}
+
 .container .main__article #skills {
   height: 80rem;
   position: relative;
