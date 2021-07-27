@@ -47,6 +47,27 @@ body{
   font-size: 10px;
 }
 
+@include mobile{
+  html,
+  body{
+  font-size: 3px;
+  }
+}
+
+@include tablet{
+  html,
+  body{
+  font-size: 7px;
+  }
+}
+
+@include desktop{
+  html,
+  body{
+  font-size: 10px;
+  }
+}
+
 .main_name{
   font-size: 2.2rem;
 }
@@ -59,13 +80,13 @@ body{
 }
 .container{
   width: 100%;
-  height: 5450px;
+  height: 545.0rem;
   font-family: 'Karla', sans-serif;
 
   /*section1 header*/
   #header{
     width: 100%;
-    height: 80px;
+    height: 8rem;
     // background-color: $maincolor;
     position: fixed;
     z-index: 9999;
@@ -89,12 +110,12 @@ body{
   
   .main__article{
     width: 100%;
-    height: 5400px;
+    height: 540rem;
     padding-top: 8rem;
 
     /*section2 메인 네이밍*/
     #main__tit{
-      height: 400px;
+      height: 40rem;
       background: url('../img/study.png') no-repeat left;
       background-size: cover;
 
@@ -110,7 +131,7 @@ body{
     
     #info{
       width: 100%;
-      height: 600px;
+      height: 60rem;
       position: relative;
       
       .info__topFixContainer{
@@ -255,7 +276,7 @@ body{
     
     /*section4 skills*/
     #skills{
-      height: 800px;
+      height: 80rem;
       position: relative;
       .main_name_skills{
         @include main_name_padding;
@@ -442,7 +463,7 @@ body{
     
     /*section5 achieve*/
     #achieve{
-      height: 500px;
+      height: 50rem;
       .main_name_Achieve{
         @include main_name_padding;
       }
@@ -546,7 +567,7 @@ body{
     /*section6 project_web*/
     #project_WEB{
       width: 100%;
-      height: 2020px;
+      height: 202rem;
       
       
 
@@ -734,7 +755,7 @@ body{
     /*section7 project_others*/
    .project_others{
       width: 100%;
-      height: 1000px;
+      height: 100rem;
       
 
       .main_name_ProjectOthers{
@@ -866,7 +887,7 @@ body{
   
   /*section8 footer*/
   #footer{
-    height: 150px;
+    height: 15rem;
     background: $maincolor;
     .footer_logo{
       padding: 3rem;
