@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import "../css/mixin";
+@import "../css/variables";
 
 // font-family: 'Dancing Script', cursive; 영어 필기체
 // font-family: 'Noto Sans KR', sans-serif; 한국어
@@ -21,108 +23,6 @@ footer: 150
 entire: 5450
 
 */
-
-$maincolor: rgb(250, 221, 221);
-$maincolor2: rgb(241, 151, 150);
-$caption: rgba(121, 115, 115, 0.5);
-
-
-@mixin info_imgs {
-  width: 10rem;
-  border-radius: 50%;
-  float: left;
-  height: 10rem;
-}
-@mixin border{
-  border: 2px solid $maincolor2;
-}
-
-@mixin main_name_padding{
-  padding: 5rem;
-}
-@mixin left_languageImgs{
-  width: 20rem;
-  height: 100%;    
-  float: left;
-  li{
-    width: 20rem;
-    height: 5rem;
-    background: $maincolor;
-    margin-top: 3rem;
-    text-align: center;
-    border-radius: 3rem;
-    padding-left: 2rem;
-    }
-  p{
-    padding-top: 1.35rem;
-    }
-  .languageImgs{
-    float: left;
-    width: 4rem;
-    height: 4rem;
-    margin-top: 0.5rem;
-    background-size: cover;
-    }
-}
-
-@mixin right_languageAbility{
-  width: 80rem;
-  height: 100%;
-  float: left;         
-  li{
-    float: left;
-    width: 70rem;
-    height: 3rem;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    background: rgb(233, 229, 229);
-    position: relative;
-    border-radius: 0 1rem 1rem 0;
-    }
-  p{ 
-    padding: 0.35rem 1rem;
-    position: absolute;
-  }
-  
-  .languageSkill{
-    position: absolute;
-    border-radius: 0 1rem 1rem 0;;
-    background: lightgreen;
-    height: 100%;
-    }
-}
-
-@mixin up_arrow{
-  width: 5rem;
-  height: 5rem;
-  background: brown;
-  right: 10rem;
-  top: 50%;
-  margin-top: -7.75rem;
-  position: absolute;
-  cursor: pointer;
-  background:url('../img/arrow/up.png');
-  &:hover{
-    transform: translateY(-1rem);
-  }
-}
-
-@mixin down_arrow{
-  width: 5rem;
-  height: 5rem;
-  background: burlywood;
-  right: 10rem;
-  top: 50%;
-  position: absolute;
-  cursor: pointer;
-  background:url('../img/arrow/down.png');
-  &:hover{
-    transform: translateY(1rem);
-  }
-}
-
-
-
 *{
   margin: 0;
   padding: 0;

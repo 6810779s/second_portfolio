@@ -1,0 +1,116 @@
+@import "./variables";
+
+/* 반응형 */
+@mixin mobile {
+  @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet-1px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media(min-width: $breakpoint-tablet) and(max-width: $breakpoint-desktop-1px){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: $breakpoint-desktop){
+    @content;
+  }
+}
+
+/*중복 방지 mixin*/
+
+@mixin info_imgs {
+  width: 10rem;
+  border-radius: 50%;
+  float: left;
+  height: 10rem;
+}
+@mixin border{
+  border: 2px solid $maincolor2;
+}
+
+@mixin main_name_padding{
+  padding: 5rem;
+}
+@mixin left_languageImgs{
+  width: 20rem;
+  height: 100%;    
+  float: left;
+  li{
+    width: 20rem;
+    height: 5rem;
+    background: $maincolor;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    }
+  p{
+    padding-top: 1.35rem;
+    }
+  .languageImgs{
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    background-size: cover;
+    }
+}
+
+@mixin right_languageAbility{
+  width: 80rem;
+  height: 100%;
+  float: left;         
+  li{
+    float: left;
+    width: 70rem;
+    height: 3rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    background: rgb(233, 229, 229);
+    position: relative;
+    border-radius: 0 1rem 1rem 0;
+    }
+  p{ 
+    padding: 0.35rem 1rem;
+    position: absolute;
+  }
+  
+  .languageSkill{
+    position: absolute;
+    border-radius: 0 1rem 1rem 0;;
+    background: lightgreen;
+    height: 100%;
+    }
+}
+
+@mixin up_arrow{
+  width: 5rem;
+  height: 5rem;
+  background: brown;
+  right: 10rem;
+  top: 50%;
+  margin-top: -7.75rem;
+  position: absolute;
+  cursor: pointer;
+  background:url('../img/arrow/up.png');
+  &:hover{
+    transform: translateY(-1rem);
+  }
+}
+
+@mixin down_arrow{
+  width: 5rem;
+  height: 5rem;
+  background: burlywood;
+  right: 10rem;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  background:url('../img/arrow/down.png');
+  &:hover{
+    transform: translateY(1rem);
+  }
+}
