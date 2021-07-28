@@ -35,29 +35,13 @@ a {
   color: black;
 }
 
+html,
+body {
+  font-size: 10px;
+}
+
 a:visited {
   color: black;
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  html,
-  body {
-    font-size: 3px;
-  }
-}
-
-@media (min-width: 758px) and (max-width: 1023px) {
-  html,
-  body {
-    font-size: 7px;
-  }
-}
-
-@media (min-width: 1024px) {
-  html,
-  body {
-    font-size: 10px;
-  }
 }
 
 .main_name {
@@ -73,7 +57,7 @@ a:visited {
 
 .container {
   width: 100%;
-  height: 545.0rem;
+  height: 100%;
   font-family: 'Karla', sans-serif;
   /*section1 header*/
   /*section8 footer*/
@@ -99,7 +83,7 @@ a:visited {
 
 .container .main__article {
   width: 100%;
-  height: 540rem;
+  height: 100%;
   padding-top: 8rem;
   /*section2 메인 네이밍*/
   /*section3 information*/
@@ -110,7 +94,7 @@ a:visited {
 }
 
 .container .main__article #main__tit {
-  height: 40rem;
+  height: 50rem;
   background: url("../img/study.png") no-repeat left;
   background-size: cover;
 }
@@ -123,9 +107,17 @@ a:visited {
 }
 
 .container .main__article #info {
+  padding-top: 5rem;
   width: 100%;
   height: 60rem;
+}
+
+.container .main__article #info .wrap {
+  width: 1100px;
+  height: 60rem;
+  margin: auto;
   position: relative;
+  border: 2px solid #fadddd;
 }
 
 .container .main__article #info .info__topFixContainer {
@@ -138,7 +130,7 @@ a:visited {
 .container .main__article #info .info__topFixContainer h1 {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 60%;
   margin: 3rem;
   font-family: 'Dancing Script', cursive;
   font-size: 5rem;
@@ -158,72 +150,37 @@ a:visited {
   position: relative;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .infoMe__imgs li {
-  width: 10rem;
-  border-radius: 50%;
-  float: left;
-  height: 10rem;
-  border: 2px solid #f19796;
-  margin: 12.5rem 5rem 3rem 0rem;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .name {
-  margin-left: 15rem;
-  background: url("../img/info/info_icon/user.png");
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .name {
-    background: url("../mediaQueryPhone/info/info_icon/user.png") center no-repeat;
-  }
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .birth {
-  background: url("../img/info/info_icon/calendar.png");
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .birth {
-    background: url("../mediaQueryPhone/info/info_icon/calendar.png") center no-repeat;
-  }
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .school {
-  background: url("../img/info/info_icon/school.png");
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  .container .main__article #info .info__bottomContainer .info__me .infoMe__imgs .school {
-    background: url("../mediaQueryPhone/info/info_icon/school.png") center no-repeat;
-  }
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
-    font-size: 2px;
-  }
-}
-
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
-  clear: left;
+  width: 10rem;
+  color: black;
+  font-size: 1.8rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  float: left;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing li {
+  width: 20rem;
+  height: 4rem;
+  background: #fadddd;
+  border-radius: 30px;
+  text-align: left;
+  margin: 2rem 10rem 0 50rem;
+  padding-top: 0.7rem;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing2 {
   color: black;
   font-size: 1.8rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing li {
-  width: 11rem;
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing2 li {
   height: 4rem;
   background: #fadddd;
   border-radius: 30px;
-  text-align: center;
-  margin-right: 4rem;
+  text-align: left;
+  margin: 2rem 10rem 0 70rem;
   padding-top: 0.7rem;
-  float: left;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing .name {
-  margin-left: 14.5rem;
 }
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact {
@@ -236,26 +193,7 @@ a:visited {
   transition: 0.5s ease-in;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__imgs li {
-  width: 10rem;
-  border-radius: 50%;
-  float: left;
-  height: 10rem;
-  border: 2px solid #f19796;
-  margin: 12.5rem 13rem 3rem 0rem;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__imgs .phone {
-  margin-left: 20rem;
-  background: url("../img/info/info_icon/phone.png");
-}
-
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__imgs .email {
-  background: url("../img/info/info_icon/email.png");
-}
-
 .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
-  clear: left;
   color: white;
   font-size: 2rem;
   font-family: 'Noto Sans KR', sans-serif;
@@ -288,7 +226,7 @@ a:visited {
   background: url("../img/info/info_profile/me_charactor.png");
   position: absolute;
   top: 7rem;
-  left: 60%;
+  left: 10%;
   overflow: hidden;
 }
 

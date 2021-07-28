@@ -38,29 +38,13 @@ a{
   color: black;
 }
 
+html,
+body{
+  font-size: 10px;
+}
+
 a:visited{
   color: black;
-}
-
-@include mobile{
-  html,
-  body{
-  font-size: 3px;
-  }
-}
-
-@include tablet{
-  html,
-  body{
-  font-size: 7px;
-  }
-}
-
-@include desktop{
-  html,
-  body{
-  font-size: 10px;
-  }
 }
 
 .main_name{
@@ -73,9 +57,10 @@ a:visited{
   font-family: 'Dancing Script', cursive;
   margin: 1.2rem 2rem;
 }
+
 .container{
   width: 100%;
-  height: 545.0rem;
+  height: 100%;
   font-family: 'Karla', sans-serif;
 
   /*section1 header*/
@@ -100,17 +85,16 @@ a:visited{
         text-decoration: underline;
       }
     }
-
   }
   
   .main__article{
     width: 100%;
-    height: 540rem;
+    height: 100%;//540rem;
     padding-top: 8rem;
 
     /*section2 메인 네이밍*/
     #main__tit{
-      height: 40rem;
+      height: 50rem;
       background: url('../img/study.png') no-repeat left;
       background-size: cover;
 
@@ -125,20 +109,29 @@ a:visited{
     /*section3 information*/
     
     #info{
+      padding-top: 5rem;
       width: 100%;
       height: 60rem;
-      position: relative;
       
       
+      .wrap{
+
+        width: 1100px;
+        height: 60rem;
+        margin: auto;
+        position: relative;
+        border: 2px solid $maincolor;
+      }
       .info__topFixContainer{
         width: 100%;
         height: 25rem;
         background: white;
         position: relative;
+        
         h1{
           position: absolute;
           top: 50%;
-          left: 10%;
+          left: 60%;
           margin: 3rem;
           font-family: 'Dancing Script', cursive;
           font-size: 5rem;
@@ -157,65 +150,72 @@ a:visited{
           background-size: cover;
           position: relative;
 
-          .infoMe__imgs{
+        //   .infoMe__imgs{
             
-            li{
-              @include info_imgs;
-              @include border;
-              margin: 12.5rem 5rem 3rem 0rem;
+        //     li{
+        //       @include info_imgs;
+        //       @include border;
+        //       margin: 12.5rem 5rem 3rem 0rem;
+        //       text-align: left;
+        //     }
+        //     .name{
               
-            }
-            .name{
-              margin-left: 15rem;
-              background: url('../img/info/info_icon/user.png');
-              @include mobile{
-                background: url('../mediaQueryPhone/info/info_icon/user.png') center no-repeat;
-              }
-            }
-            .birth{
-              background: url('../img/info/info_icon/calendar.png');
-              @include mobile{
-                background: url('../mediaQueryPhone/info/info_icon/calendar.png') center no-repeat;
-              }
-            }
-            .school{
-              background: url('../img/info/info_icon/school.png');
-              @include mobile{
-                background: url('../mediaQueryPhone/info/info_icon/school.png') center no-repeat;
-              }
-            }
+        //       background: url('../img/info/info_icon/user.png');
+        //       @include mobile{
+        //         background: url('../mediaQueryPhone/info/info_icon/user.png') center no-repeat;
+        //       }
+        //     }
+        //     .birth{
+        //       background: url('../img/info/info_icon/calendar.png');
+        //       @include mobile{
+        //         background: url('../mediaQueryPhone/info/info_icon/calendar.png') center no-repeat;
+        //       }
+        //     }
+        //     .school{
+        //       background: url('../img/info/info_icon/school.png');
+        //       @include mobile{
+        //         background: url('../mediaQueryPhone/info/info_icon/school.png') center no-repeat;
+        //       }
+        //     }
 
            
-        } 
-        @include mobile{
+        // } 
           .infoMe__writing{
-            font-size: 2px;
-          }
-        }
-          .infoMe__writing{
-
-            clear: left;
+            width: 10rem;
             color: black;
             font-size: 1.8rem;
             font-family: 'Noto Sans KR', sans-serif;
-            
+            float: left;
             
             li{
-              width: 11rem;
+              width: 20rem;
               height: 4rem;
               background: $maincolor;
               border-radius: 30px;
-              text-align: center;
-              margin-right: 4rem;
+              text-align: left;
+              margin: 2rem 10rem 0 50rem;
               padding-top: 0.7rem;
-              float: left;
-              
-              
             }
-            .name{
-              margin-left: 14.5rem;
+
+          }
+
+          .infoMe__writing2{
+            color: black;
+            font-size: 1.8rem;
+            font-family: 'Noto Sans KR', sans-serif;
+
+            li{
+              height: 4rem;
+              background: $maincolor;
+              border-radius: 30px;
+              text-align: left;
+              margin: 2rem 10rem 0 70rem;
+              padding-top: 0.7rem;
             }
           }
+
+
+
           .info__contact{
             width: 100%;
             height: 35rem;
@@ -226,24 +226,24 @@ a:visited{
             top: 35rem;
             transition: 0.5s ease-in;
 
-            .info__imgs{
-              li{
-                @include info_imgs;
-                @include border;
-                margin: 12.5rem 13rem 3rem 0rem;
-              }
+            // .info__imgs{
 
-              .phone{
-                margin-left: 20rem;
-                background: url('../img/info/info_icon/phone.png');
-              }
+            //   li{
+            //     @include info_imgs;
+            //     @include border;
+            //     margin: 12.5rem 13rem 3rem 0rem;
+            //   }
 
-              .email{
-                background: url('../img/info/info_icon/email.png');
-              }
-            }
+            //   .phone{
+            //     margin-left: 20rem;
+            //     background: url('../img/info/info_icon/phone.png');
+            //   }
+
+            //   .email{
+            //     background: url('../img/info/info_icon/email.png');
+            //   }
+            // }
             .info__writing{
-              clear: left;
               color: white;
               font-size: 2rem;
               font-family: 'Noto Sans KR', sans-serif;
@@ -277,7 +277,7 @@ a:visited{
         background: url('../img/info/info_profile/me_charactor.png');
         position: absolute;
         top: 7rem;
-        left: 60%;
+        left: 10%;
         overflow: hidden;
 
         @include mobile{

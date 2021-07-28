@@ -1,7 +1,7 @@
 let info__contact = document.querySelector('#info .info__bottomContainer .info__contact');
 let info__smallImg = document.querySelector('#info .info__img1 .info__img2');
 let info_text = document.querySelector('.main_name_info h1');
-let TopNum_info_big = 400;
+let TopNum_info_big = 500;
 let direction_info = '';
 
 window.onresize = function(){
@@ -17,7 +17,7 @@ if (matchMedia("screen and (min-width: 335px) and (max-width: 757px)").matches){
   direction_info = ''
 }else{
   
-  TopNum_info_big = 400;
+  TopNum_info_big = 500;
   direction_info = ''
 }
 
