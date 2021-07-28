@@ -13,10 +13,12 @@ button_skills.addEventListener('click', function(){
     button_skills.value = 'others';
     skill_others.style.left = 0;
     main_name_skills.innerHTML = 'Skills_Other'
+    button_skills.innerHTML = '&#60; web'
   }else{
     button_skills.value = 'web';
     skill_others.style.left = 110 + 'rem';
     main_name_skills.innerHTML = 'Skills_WEB'
+    button_skills.innerHTML = 'others &#62;'
   }
 });
 
