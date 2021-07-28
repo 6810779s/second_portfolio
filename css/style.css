@@ -964,6 +964,12 @@ a:visited {
   margin: 5rem auto 5rem auto;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container li {
+    height: 20rem;
+  }
+}
+
 .container .main__article #project_WEB .projectWeb_container .container {
   width: 100rem;
   height: 40rem;
@@ -1133,6 +1139,13 @@ a:visited {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
 .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
   width: 100rem;
   height: 293.8rem;
@@ -1140,6 +1153,14 @@ a:visited {
   background: url("../img/project/web/EHPortfolio.png") no-repeat;
   top: 0;
   transition: 5s ease-in;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
+    width: 30rem;
+    height: 102.1rem;
+    background: url("../mediaQueryPhone/project/web/cafe_mobile.png") no-repeat;
+  }
 }
 
 .container .main__article #project_WEB .projectWeb_container .cafe {
