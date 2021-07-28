@@ -255,8 +255,9 @@ a:visited {
 }
 
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .info_mobile_btn {
-  display: block;
-  z-index: 90;
+  position: absolute;
+  display: none;
+  z-index: 5;
 }
 
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .aboutMe_tit {
@@ -276,8 +277,8 @@ a:visited {
   }
   .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .info_mobile_btn {
     display: block;
-    float: right;
-    margin-right: 0.5rem;
+    top: 10rem;
+    right: 2rem;
     background: #f19796;
     border: none;
     padding: 0.2rem 1rem;

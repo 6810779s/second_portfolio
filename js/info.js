@@ -5,26 +5,11 @@ let info_next_btn = document.querySelector('.infoMe__writing .info_mobile_btn');
 let TopNum_info_big = 500;
 let direction_info = '';
 
-window.onresize = function(){
-  document.location.reload();
-}; //브라우저 창 크기 조절시 자동 새로고침
+// window.onresize = function(){
+//   document.location.reload();
+// }; //브라우저 창 크기 조절시 자동 새로고침
 
 if (matchMedia("screen and(max-width: 767px)").matches){
-  info_next_btn.addEventListener('click', function(){
-    if (info_next_btn.value==='next'){
-      info__contact.style.top = 0;
-      info__smallImg.style.top = 0;
-      info_next_btn.value='prev';
-      info_next_btn.innerHTML='prev';
-      info_text.innerHTML = 'Information';
-    }else{
-      info__contact.style.top = 100 +'%' ;
-      info__smallImg.style.top = 100+ '%';
-      info_next_btn.value='next';
-      info_next_btn.innerHTML='next';
-      info_text.innerHTML = 'About Me';
-    }
-  });
   
 }else if(matchMedia("screen and (max-width: 1023px)").matches){
 }else if(matchMedia("screen and (min-width: 1024px)").matches){
@@ -49,11 +34,26 @@ if (matchMedia("screen and(max-width: 767px)").matches){
       }
     }
   });
-
-  
-
-
 }
+
+info_next_btn.addEventListener('click', function(){
+  if (info_next_btn.value==='next'){
+    info__contact.style.top = 0;
+    info__smallImg.style.top = 0;
+    info_next_btn.value='prev';
+    info_next_btn.innerHTML='prev';
+    info_text.innerHTML = 'Information';
+    info_next_btn.style.background = "rgb(250, 221, 221)";
+  }else{
+    info__contact.style.top = 100 +'%' ;
+    info__smallImg.style.top = 100+ '%';
+    info_next_btn.value='next';
+    info_next_btn.innerHTML='next';
+    info_text.innerHTML = 'About Me';
+    info_next_btn.style.background = "rgb(241, 151, 150)";
+  }
+});
+
 
 
 

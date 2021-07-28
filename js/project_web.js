@@ -16,9 +16,9 @@ if (matchMedia("screen and(max-width: 767px)").matches){
 }else if(matchMedia("screen and (max-width: 1023px)").matches){
  
 }else{
-  portfolio_up.addEventListener('click',function(){
-  portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
-  portfolio_down.addEventListener('click',function(){
+    portfolio_up.addEventListener('click',function(){
+    portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
+    portfolio_down.addEventListener('click',function(){
     portfolio_project_img.style.top = 0;
   });
   

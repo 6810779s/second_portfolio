@@ -239,8 +239,9 @@ a:visited{
           margin-left: 40%;
 
           .info_mobile_btn{
-            display: block;
-            z-index: 90;
+            position: absolute;
+            display: none;
+            z-index: 5;
           }
           .aboutMe_tit{
             font-size: 2.3rem;
@@ -258,8 +259,8 @@ a:visited{
 
             .info_mobile_btn{
               display: block;
-              float: right;
-              margin-right: 0.5rem;
+              top: 10rem;
+              right: 2rem;
               background: $maincolor2;
               border: none;
               padding: 0.2rem 1rem;
