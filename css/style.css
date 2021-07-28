@@ -88,6 +88,7 @@ a:visited {
 
 @media (max-width: 767px) {
   .container #header .category {
+    display: none;
     float: right;
     width: 10rem;
     height: 20rem;
@@ -114,7 +115,7 @@ a:visited {
     height: 3rem;
     text-align: center;
     margin: 1rem auto 0rem auto;
-    border-bottom: 1px solid #c2bbbb;
+    font-family: 'Karla', sans-serif;
   }
 }
 
@@ -125,6 +126,15 @@ a:visited {
 @media (min-width: 1024px) {
   .container #header .hamburgerBt {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container #header .hamburgerBt {
+    display: block;
+    position: absolute;
+    right: 3.5rem;
+    top: 2.2rem;
   }
 }
 
