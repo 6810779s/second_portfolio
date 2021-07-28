@@ -570,7 +570,17 @@ a:visited{
         .wrap{
           width: 110rem;
           background: rgba(218, 214, 214, 0.103);
-          margin: auto
+          margin: auto;
+          position: relative;
+
+          .up{
+            @include up_arrow;
+            
+          }
+          .down{
+            @include down_arrow;
+           
+          }
         }
 
         .caption_web{
@@ -641,14 +651,7 @@ a:visited{
           width: 100%;
           position: relative;
           overflow: hidden;
-          
-          .up{
-            @include up_arrow;
-            
-          }
-          .down{
-            @include down_arrow;
-          }
+
           .portfolio_container{
             width: 100rem;
             height: 40rem;
@@ -668,14 +671,6 @@ a:visited{
         .cafe{
           position: relative;
           overflow: hidden;
-          .up{
-            @include up_arrow;
-            
-          }
-          .down{
-            @include down_arrow;
-           
-          }
 
           .cafe_container{
             .cafe_project_img{
@@ -692,12 +687,6 @@ a:visited{
         .portfolio_second{
           position: relative;
           overflow: hidden;
-          .up{
-            @include up_arrow;
-          }
-          .down{
-            @include down_arrow;
-          }
 
           .portfolioSecond_container{
             .portfolioSecond_project_img{

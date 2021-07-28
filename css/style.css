@@ -644,6 +644,40 @@ a:visited {
   width: 110rem;
   background: rgba(218, 214, 214, 0.103);
   margin: auto;
+  position: relative;
+}
+
+.container .main__article #project_WEB .projectWeb_container .wrap .up {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+  margin-top: -6rem;
+  position: absolute;
+  cursor: pointer;
+  background: url("../img/arrow/up.png") center no-repeat;
+}
+
+.container .main__article #project_WEB .projectWeb_container .wrap .up:hover {
+  transform: translateY(-1rem);
+  background-color: #fadddd;
+}
+
+.container .main__article #project_WEB .projectWeb_container .wrap .down {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  background: url("../img/arrow/down.png") center no-repeat;
+}
+
+.container .main__article #project_WEB .projectWeb_container .wrap .down:hover {
+  transform: translateY(1rem);
+  background-color: #fadddd;
 }
 
 .container .main__article #project_WEB .projectWeb_container .caption_web {
@@ -717,37 +751,6 @@ a:visited {
   overflow: hidden;
 }
 
-.container .main__article #project_WEB .projectWeb_container .portfolio .up {
-  width: 5rem;
-  height: 5rem;
-  background: brown;
-  right: 10rem;
-  top: 50%;
-  margin-top: -7.75rem;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/up.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio .up:hover {
-  transform: translateY(-1rem);
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio .down {
-  width: 5rem;
-  height: 5rem;
-  background: burlywood;
-  right: 10rem;
-  top: 50%;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/down.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio .down:hover {
-  transform: translateY(1rem);
-}
-
 .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container {
   width: 100rem;
   height: 40rem;
@@ -768,37 +771,6 @@ a:visited {
   overflow: hidden;
 }
 
-.container .main__article #project_WEB .projectWeb_container .cafe .up {
-  width: 5rem;
-  height: 5rem;
-  background: brown;
-  right: 10rem;
-  top: 50%;
-  margin-top: -7.75rem;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/up.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .cafe .up:hover {
-  transform: translateY(-1rem);
-}
-
-.container .main__article #project_WEB .projectWeb_container .cafe .down {
-  width: 5rem;
-  height: 5rem;
-  background: burlywood;
-  right: 10rem;
-  top: 50%;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/down.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .cafe .down:hover {
-  transform: translateY(1rem);
-}
-
 .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container .cafe_project_img {
   width: 100rem;
   height: 361.1rem;
@@ -811,37 +783,6 @@ a:visited {
 .container .main__article #project_WEB .projectWeb_container .portfolio_second {
   position: relative;
   overflow: hidden;
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio_second .up {
-  width: 5rem;
-  height: 5rem;
-  background: brown;
-  right: 10rem;
-  top: 50%;
-  margin-top: -7.75rem;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/up.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio_second .up:hover {
-  transform: translateY(-1rem);
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio_second .down {
-  width: 5rem;
-  height: 5rem;
-  background: burlywood;
-  right: 10rem;
-  top: 50%;
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/arrow/down.png");
-}
-
-.container .main__article #project_WEB .projectWeb_container .portfolio_second .down:hover {
-  transform: translateY(1rem);
 }
 
 .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container .portfolioSecond_project_img {

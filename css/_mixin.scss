@@ -100,28 +100,30 @@
 @mixin up_arrow{
   width: 5rem;
   height: 5rem;
-  background: brown;
-  right: 10rem;
+  border-radius: 50%;
+  right: 0;
   top: 50%;
-  margin-top: -7.75rem;
+  margin-top: -6rem;
   position: absolute;
   cursor: pointer;
-  background:url('../img/arrow/up.png');
+  background:url('../img/arrow/up.png') center no-repeat;
   &:hover{
     transform: translateY(-1rem);
+    background-color: $maincolor;
   }
 }
 
 @mixin down_arrow{
   width: 5rem;
   height: 5rem;
-  background: burlywood;
-  right: 10rem;
+  border-radius: 50%;
+  right: 0;
   top: 50%;
   position: absolute;
   cursor: pointer;
-  background:url('../img/arrow/down.png');
+  background:url('../img/arrow/down.png') center no-repeat;
   &:hover{
     transform: translateY(1rem);
+    background-color: $maincolor;
   }
 }
