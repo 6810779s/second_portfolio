@@ -64,6 +64,21 @@ a:visited {
   transition: 0.2s ease-in;
 }
 
+.container #header .logo {
+  float: left;
+  font-size: 4.7rem;
+  font-family: 'Dancing Script', cursive;
+  margin: 1.2rem 2rem;
+}
+
+@media (max-width: 767px) {
+  .container #header .logo {
+    width: 8rem;
+    font-size: 3rem;
+    margin: 1rem 2rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container #header {
     width: 100%;
@@ -72,45 +87,43 @@ a:visited {
 }
 
 @media (max-width: 767px) {
-  .container #header .category .mobile_hidden {
-    display: none;
+  .container #header .category {
+    float: right;
+    width: 10rem;
+    height: 20rem;
+    background: #fadddd;
+    margin-top: 6rem;
   }
 }
 
-.container #header .category li:not(li:first-child) {
+@media (max-width: 767px) {
+  .container #header .category .mobile_hidden {
+    clear: left;
+  }
+}
+
+.container #header .category li {
   float: left;
   font-size: 2rem;
   margin: 2.85rem 2rem;
 }
 
 @media (max-width: 767px) {
-  .container #header .category li:not(li:first-child) {
-    float: right;
-    margin: 0;
+  .container #header .category li {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    margin: 1rem auto 0rem auto;
+    border-bottom: 1px solid #c2bbbb;
   }
 }
 
-.container #header .category li:not(li:first-child):hover {
+.container #header .category li:hover {
   text-decoration: underline;
 }
 
-.container #header .category .logo {
-  float: left;
-  font-size: 4.7rem;
-  font-family: 'Dancing Script', cursive;
-  margin: 1.2rem 2rem;
-}
-
-@media (max-width: 767px) {
-  .container #header .category .logo {
-    width: 8rem;
-    font-size: 3rem;
-    margin: 1rem 2rem;
-  }
-}
-
 @media (min-width: 1024px) {
-  .container #header .category .hamburgerBt {
+  .container #header .hamburgerBt {
     display: none;
   }
 }

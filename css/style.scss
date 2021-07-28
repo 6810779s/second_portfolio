@@ -77,50 +77,63 @@ a:visited{
     z-index: 9999;
     transition: 0.2s ease-in;
 
+    .logo{
+      float: left;
+      font-size: 4.7rem;
+      font-family: 'Dancing Script', cursive;
+      margin: 1.2rem 2rem;
+    
+      @include mobile{
+        width: 8rem;
+        font-size: 3rem;
+        margin: 1rem 2rem;
+        
+      }
+    }
+
     @include mobile{
       width: 100%;
       height: 6rem;
     }
 
     .category{
+      @include mobile{
+        float: right;
+        width: 10rem;
+        height: 20rem;
+        background: $maincolor;
+        margin-top: 6rem;
+      }
       .mobile_hidden{
         @include mobile{
-          display: none;
+
+          clear: left;
         }
       }
 
-      li:not(li:first-child){
+      li{
         float: left;
         font-size: 2rem;
         margin: 2.85rem 2rem;
 
         @include mobile{
-          float: right;
-          margin: 0;
+          width: 10rem;
+          height: 3rem;
+          text-align: center;
+          margin: 1rem auto 0rem auto;
+          border-bottom: 1px solid rgb(194, 187, 187);
         }
   
       }
-      li:not(li:first-child):hover{
+      li:hover{
         text-decoration: underline;
       }
 
-      .logo{
-        float: left;
-        font-size: 4.7rem;
-        font-family: 'Dancing Script', cursive;
-        margin: 1.2rem 2rem;
-      
-        @include mobile{
-          width: 8rem;
-          font-size: 3rem;
-          margin: 1rem 2rem;
-          
-        }
-      }
-      .hamburgerBt{
-        @include desktop{
-          display: none;
-        }
+    }
+
+    .hamburgerBt{
+      @include desktop{
+        display: none;
       }
     }
   }
