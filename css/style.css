@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 /* 반응형 */
 /*중복 방지 mixin*/
+/*information 부분*/
 /*
 header: 80
 
@@ -109,7 +110,7 @@ a:visited {
 .container .main__article #info {
   padding-top: 5rem;
   width: 100%;
-  height: 60rem;
+  height: 75rem;
 }
 
 .container .main__article #info .wrap {
@@ -150,37 +151,27 @@ a:visited {
   position: relative;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
-  width: 10rem;
-  color: black;
+.container .main__article #info .info__bottomContainer .info__me .aboutMe_tit {
+  font-size: 2.3rem;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .introduce {
   font-size: 1.8rem;
-  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .information {
+  margin-top: 3rem;
+  width: 25rem;
+  height: 10rem;
   float: left;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing li {
-  width: 20rem;
-  height: 4rem;
-  background: #fadddd;
-  border-radius: 30px;
-  text-align: left;
-  margin: 2rem 10rem 0 50rem;
-  padding-top: 0.7rem;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing2 {
-  color: black;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  line-height: 5rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .infoMe__writing2 li {
-  height: 4rem;
-  background: #fadddd;
-  border-radius: 30px;
-  text-align: left;
-  margin: 2rem 10rem 0 70rem;
-  padding-top: 0.7rem;
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
+  width: 60rem;
+  margin-left: 40%;
 }
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact {
@@ -193,30 +184,17 @@ a:visited {
   transition: 0.5s ease-in;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
-  color: white;
-  font-size: 2rem;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-@media (min-width: 335px) and (max-width: 757px) {
-  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
-    font-size: 0.1rem;
-  }
-}
-
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing li {
-  width: 20rem;
-  height: 4rem;
-  border-radius: 30px;
-  text-align: center;
-  margin-right: 4rem;
-  padding-top: 0.7rem;
+.container .main__article #info .info__bottomContainer .info__me .info__contact .information {
+  margin-top: 3rem;
+  width: 25rem;
+  height: 10rem;
   float: left;
+  font-size: 2rem;
+  line-height: 5rem;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing .phone {
-  margin-left: 14.5rem;
+.container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
+  margin-left: 40%;
 }
 
 .container .main__article #info .info__img1 {

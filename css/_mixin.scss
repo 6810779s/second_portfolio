@@ -21,11 +21,22 @@
 
 /*중복 방지 mixin*/
 
+/*information 부분*/
 @mixin info_imgs {
   width: 10rem;
   border-radius: 50%;
   float: left;
   height: 10rem;
+}
+
+@mixin information_align{
+  margin-top: 3rem;
+  width: 25rem;
+  height: 10rem;
+  float: left;
+  font-size: 2rem;
+  line-height: 5rem;
+  
 }
 @mixin border{
   border: 2px solid $maincolor2;

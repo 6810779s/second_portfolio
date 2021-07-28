@@ -35,7 +35,7 @@ document.addEventListener('scroll', function(){
       direction_info = 'up';
       info__contact.style.top = 100 +'%' ;
       info__smallImg.style.top = 100 + '%';
-      info_text.innerHTML = 'Information';
+      info_text.innerHTML = 'About Me';
     }
   }
 });
