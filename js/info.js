@@ -4,9 +4,9 @@ let info_text = document.querySelector('.main_name_info h1');
 let TopNum_info_big = 500;
 let direction_info = '';
 
-window.onresize = function(){
-  document.location.reload();
-}; //브라우저 창 크기 조절시 자동 새로고침
+// window.onresize = function(){
+//   document.location.reload();
+// }; //브라우저 창 크기 조절시 자동 새로고침
 
 if (matchMedia("screen and (min-width: 480px) and (max-width: 767px)").matches){
   TopNum_info_big = 250;
