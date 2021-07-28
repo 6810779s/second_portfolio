@@ -46,17 +46,19 @@
   padding: 0 0 5rem 0;
 }
 @mixin left_languageImgs{
-  width: 20rem;
+  width: 25rem;
   height: 100%;    
   float: left;
   li{
     width: 20rem;
     height: 5rem;
     background: $maincolor;
-    margin-top: 3rem;
+    margin: 3rem 0 0 1rem;
     text-align: center;
     border-radius: 3rem;
     padding-left: 2rem;
+    box-shadow: 0.3rem 0.2rem 5px 1px $boxshadow;
+    
     }
   p{
     padding-top: 1.35rem;
