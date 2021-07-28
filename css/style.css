@@ -53,7 +53,7 @@ a:visited {
   height: 100%;
   font-family: 'Karla', sans-serif;
   /*section1 header*/
-  /*section8 footer*/
+  /*section9 footer*/
 }
 
 .container #header {
@@ -125,6 +125,7 @@ a:visited {
   /*section5 achieve*/
   /*section6 project_web*/
   /*section7 project_others*/
+  /*section8 contact*/
 }
 
 @media (max-width: 767px) {
@@ -1497,6 +1498,48 @@ a:visited {
     width: 30rem;
     height: 35rem;
   }
+}
+
+.container .main__article #contactMe {
+  width: 100%;
+  height: 35rem;
+  border-top: 1px solid rgba(219, 218, 218, 0.322);
+}
+
+.container .main__article #contactMe .wrap {
+  width: 110rem;
+  height: 35rem;
+  margin: auto;
+}
+
+.container .main__article #contactMe .wrap .contact_container {
+  width: 50rem;
+  height: 30rem;
+  margin: auto;
+  border: 5px solid #f19796;
+  border-radius: 1.5rem;
+}
+
+.container .main__article #contactMe .wrap .contact_container .myName {
+  width: 25rem;
+  font-size: 3rem;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.container .main__article #contactMe li {
+  margin: 3rem auto 0 3rem;
+  font-size: 2rem;
+  width: 15rem;
+}
+
+.container .main__article #contactMe .contact_name {
+  float: left;
+}
+
+.container .main__article #contactMe .contact_content {
+  float: left;
 }
 
 .container #footer {
