@@ -130,12 +130,12 @@
 }
 
 @mixin up_arrow{
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   right: 0;
   top: 50%;
-  margin-top: -6rem;
+  margin-top: -4.5rem;
   position: absolute;
   cursor: pointer;
   background:url('../img/arrow/up.png') center no-repeat;
@@ -146,8 +146,8 @@
 }
 
 @mixin down_arrow{
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   right: 0;
   top: 50%;
