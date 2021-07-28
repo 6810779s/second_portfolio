@@ -10,20 +10,21 @@ let portfolioSecond_project_img = document.querySelector('.portfolio_second .por
 let portfolioSecond__up = document.querySelector('.portfolio_second .up');
 let portfolioSecond__down = document.querySelector('.portfolio_second .down');
 
+let portfolio_height = (portfolio_project_img.clientHeight)/10;
+let cafe_height = (cafe_project_img.clientHeight)/10;
+let portfolioSecond_height = (portfolioSecond_project_img.clientHeight)/10;
 
-if (matchMedia("screen and(max-width: 767px)").matches){
-  
-}else if(matchMedia("screen and (max-width: 1023px)").matches){
- 
-}else{
+
     portfolio_up.addEventListener('click',function(){
-    portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
+    // portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
+    portfolio_project_img.style.top = -(portfolio_height) + 40 + 'rem';
+    });
     portfolio_down.addEventListener('click',function(){
     portfolio_project_img.style.top = 0;
   });
   
   cafe_up.addEventListener('click',function(){
-    cafe_project_img.style.top = (-361.1 + 40) + 'rem';
+    cafe_project_img.style.top = -(cafe_height) + 40 + 'rem';
   });
   
   cafe_down.addEventListener('click',function(){
@@ -31,15 +32,13 @@ if (matchMedia("screen and(max-width: 767px)").matches){
   });
   
   portfolioSecond__up.addEventListener('click',function(){
-    portfolioSecond_project_img.style.top = (-342.4 + 40) + 'rem';
+    portfolioSecond_project_img.style.top = -(portfolioSecond_height) + 40 + 'rem';
   });
   
   portfolioSecond__down.addEventListener('click',function(){
     portfolioSecond_project_img.style.top = 0;
   });
-  
-});
-}
+
 
 
 
