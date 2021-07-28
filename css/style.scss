@@ -325,14 +325,17 @@ a:visited{
         }
 
         .info__img2{
-          width: 17rem;
-          height: 25rem;
+          width: 25rem;
+          height: 35rem;
           position: absolute;
           background: url('../img/info/info_profile/me_info.png');
           top: 35rem;
           transition: 0.5s ease-in;
 
           @include mobile{
+            width: 17rem;
+            height: 25rem;
+            top: 25rem;
             background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
             background-size: cover;
           }
@@ -623,7 +626,11 @@ a:visited{
       .wrap{
         width: 110rem;
         height: 60rem;
-        margin: auto
+        margin: auto;
+
+        @include mobile{
+          width: 30rem;
+        }
       }
       .main_name_Achieve{
         @include main_name_padding;
@@ -632,6 +639,9 @@ a:visited{
         .swiper-container{
           width: 50rem;
           height: 30rem;
+          @include mobile{
+            width: 25rem;
+          }
         }
         .swiper-slide {
           text-align: center;
@@ -706,8 +716,17 @@ a:visited{
             background: $caption;
             opacity: 0;
             transition: 0.5s ease-in;
+
             a:hover{
               color: blue;
+            }
+
+            @include mobile{
+              width: 25rem;
+              font-size: 1.5rem;
+              a{
+                color: white;
+              }
             }
           }
 
@@ -732,7 +751,11 @@ a:visited{
       
       .projectWeb_tit_wrap{
         width: 110rem;
-        margin: auto
+        margin: auto;
+
+        @include mobile{
+          width: 30rem
+        }
       }
 
       .main_name_ProjectWeb{
@@ -749,7 +772,6 @@ a:visited{
           width: 100%;
           height: 40rem;
           margin: 5rem auto 5rem auto;
-          
         }
 
         .container{
@@ -761,6 +783,11 @@ a:visited{
             .caption_web{
               opacity: 1;
             }
+          }
+
+          @include mobile{
+            width: 30rem;
+            
           }
         }
 

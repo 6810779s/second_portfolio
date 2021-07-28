@@ -345,8 +345,8 @@ a:visited {
 }
 
 .container .main__article #info .info__img1 .info__img2 {
-  width: 17rem;
-  height: 25rem;
+  width: 25rem;
+  height: 35rem;
   position: absolute;
   background: url("../img/info/info_profile/me_info.png");
   top: 35rem;
@@ -355,6 +355,9 @@ a:visited {
 
 @media (max-width: 767px) {
   .container .main__article #info .info__img1 .info__img2 {
+    width: 17rem;
+    height: 25rem;
+    top: 25rem;
     background: url("../mediaQueryPhone/info/info_profile/me_info.png") center no-repeat;
     background-size: cover;
   }
@@ -816,6 +819,12 @@ a:visited {
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #achieve .wrap {
+    width: 30rem;
+  }
+}
+
 .container .main__article #achieve .main_name_Achieve {
   padding: 0 0 5rem 0;
 }
@@ -823,6 +832,12 @@ a:visited {
 .container .main__article #achieve .swiper-container {
   width: 50rem;
   height: 30rem;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #achieve .swiper-container {
+    width: 25rem;
+  }
 }
 
 .container .main__article #achieve .swiper-slide {
@@ -895,6 +910,16 @@ a:visited {
   color: blue;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #achieve .achieve_link {
+    width: 25rem;
+    font-size: 1.5rem;
+  }
+  .container .main__article #achieve .achieve_link a {
+    color: white;
+  }
+}
+
 .container .main__article #achieve .github {
   line-height: 2.5rem;
 }
@@ -915,6 +940,12 @@ a:visited {
 .container .main__article #project_WEB .projectWeb_tit_wrap {
   width: 110rem;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_tit_wrap {
+    width: 30rem;
+  }
 }
 
 .container .main__article #project_WEB .main_name_ProjectWeb {
@@ -942,6 +973,12 @@ a:visited {
 
 .container .main__article #project_WEB .projectWeb_container .container:hover .caption_web {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container .container {
+    width: 30rem;
+  }
 }
 
 .container .main__article #project_WEB .projectWeb_container .Project_WEB_mainTit {
