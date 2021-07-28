@@ -110,7 +110,7 @@ a:visited {
 .container .main__article #info {
   padding-top: 5rem;
   width: 100%;
-  height: 75rem;
+  height: 80rem;
 }
 
 .container .main__article #info .wrap {
@@ -151,14 +151,6 @@ a:visited {
   position: relative;
 }
 
-.container .main__article #info .info__bottomContainer .info__me .aboutMe_tit {
-  font-size: 2.3rem;
-}
-
-.container .main__article #info .info__bottomContainer .info__me .introduce {
-  font-size: 1.8rem;
-}
-
 .container .main__article #info .info__bottomContainer .info__me .information {
   margin-top: 3rem;
   width: 25rem;
@@ -172,6 +164,14 @@ a:visited {
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
   width: 60rem;
   margin-left: 40%;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing .aboutMe_tit {
+  font-size: 2.3rem;
+}
+
+.container .main__article #info .info__bottomContainer .info__me .infoMe__writing .introduce {
+  font-size: 1.8rem;
 }
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact {
@@ -235,7 +235,7 @@ a:visited {
 }
 
 .container .main__article #skills .main_name_skills {
-  padding: 5rem;
+  padding: 0 0 5rem 0;
 }
 
 .container .main__article #skills .button_skills {
@@ -245,7 +245,8 @@ a:visited {
   border: none;
   padding: 0.3rem;
   border-radius: 2rem;
-  left: 70%;
+  right: 0;
+  top: 5rem;
   z-index: 100;
 }
 
@@ -255,22 +256,23 @@ a:visited {
 }
 
 .container .main__article #skills .skills_container {
-  width: 100rem;
-  height: 50rem;
+  width: 110rem;
+  height: 70rem;
   font-size: 2rem;
-  margin: 2rem auto;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 
 .container .main__article #skills .skills_container .skills_wrap {
-  width: 200rem;
+  width: 110rem;
   height: 50rem;
+  margin: auto;
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web {
   float: left;
-  width: 100rem;
+  width: 110rem;
   height: 100%;
   background: white;
 }
@@ -391,11 +393,11 @@ a:visited {
 }
 
 .container .main__article #skills .skills_container .skills_wrap .other {
-  width: 100rem;
+  width: 110rem;
   height: 50rem;
   position: absolute;
   transition: 0.5s ease-in;
-  left: 100rem;
+  left: 110rem;
   background: white;
 }
 
@@ -493,11 +495,17 @@ a:visited {
 }
 
 .container .main__article #achieve {
-  height: 50rem;
+  height: 60rem;
+}
+
+.container .main__article #achieve .wrap {
+  width: 110rem;
+  height: 60rem;
+  margin: auto;
 }
 
 .container .main__article #achieve .main_name_Achieve {
-  padding: 5rem;
+  padding: 0 0 5rem 0;
 }
 
 .container .main__article #achieve .swiper-container {
@@ -592,12 +600,13 @@ a:visited {
 }
 
 .container .main__article #project_WEB .main_name_ProjectWeb {
-  padding: 5rem;
+  padding: 0 0 5rem 0;
 }
 
 .container .main__article #project_WEB .projectWeb_container {
-  width: 100%;
+  width: 110rem;
   height: 125rem;
+  margin: auto;
 }
 
 .container .main__article #project_WEB .projectWeb_container li {
@@ -839,7 +848,7 @@ a:visited {
 }
 
 .container .main__article .project_others .main_name_ProjectOthers {
-  padding: 5rem;
+  padding: 0 0 5rem 0;
 }
 
 .container .main__article .project_others .project_mainTit {

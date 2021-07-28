@@ -28,7 +28,7 @@ document.addEventListener('scroll', function(){
       direction_info='down';
       info__contact.style.top = 0 ;
       info__smallImg.style.top = 0;
-      info_text.innerHTML = 'Contact';
+      info_text.innerHTML = 'Information';
     }
   }else{
     if(direction_info!='up'){

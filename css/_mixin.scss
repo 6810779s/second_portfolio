@@ -36,14 +36,14 @@
   float: left;
   font-size: 2rem;
   line-height: 5rem;
-  
+
 }
 @mixin border{
   border: 2px solid $maincolor2;
 }
 
 @mixin main_name_padding{
-  padding: 5rem;
+  padding: 0 0 5rem 0;
 }
 @mixin left_languageImgs{
   width: 20rem;

@@ -111,7 +111,7 @@ a:visited{
     #info{
       padding-top: 5rem;
       width: 100%;
-      height: 75rem;
+      height: 80rem;
       
       
       .wrap{
@@ -150,15 +150,6 @@ a:visited{
           background-size: cover;
           position: relative;
 
-        .aboutMe_tit{
-          font-size: 2.3rem;
-        }
-
-        .introduce{
-          font-size: 1.8rem;
-        }
-
-        
         .information{
           @include information_align;
           font-family: 'Noto Sans KR', sans-serif;
@@ -167,6 +158,13 @@ a:visited{
         .infoMe__writing{
           width: 60rem;
           margin-left: 40%;
+          .aboutMe_tit{
+            font-size: 2.3rem;
+          }
+  
+          .introduce{
+            font-size: 1.8rem;
+          }
         }
 
           .info__contact{
@@ -186,29 +184,6 @@ a:visited{
             .info__writing{
               margin-left: 40%;
             }
-
-            // .info__writing{
-            //   color: white;
-            //   font-size: 2rem;
-            //   font-family: 'Noto Sans KR', sans-serif;
-
-            //   @include mobile{
-            //     font-size: 0.1rem;
-            //   }
-            //   li{
-            //     width: 20rem;
-            //     height: 4rem;
-            //     // background: $maincolor;
-            //     border-radius: 30px;
-            //     text-align: center;
-            //     margin-right: 4rem;
-            //     padding-top: 0.7rem;
-            //     float: left;
-            //   }
-            //   .phone{
-            //     margin-left: 14.5rem;
-            //   }
-            // }
           }
 
       }
@@ -260,7 +235,8 @@ a:visited{
         border: none;
         padding: 0.3rem;
         border-radius: 2rem;
-        left: 70%;
+        right: 0;
+        top: 5rem;
         z-index: 100;
       }
       .button_skills:hover{
@@ -269,22 +245,23 @@ a:visited{
 
       }
       .skills_container{
-        width: 100rem;
-        height: 50rem; 
+        width: 110rem;
+        height: 70rem; 
         font-size: 2rem;
-        margin: 2rem auto;
         overflow: hidden;
         position: relative;
+        margin: auto;
 
         .skills_wrap{
-          width: 200rem;
+          width: 110rem;
           height: 50rem;
-
+          margin: auto;
           .web{
             float: left;
-            width: 100rem;
+            width: 110rem;
             height: 100%;
             background: white;
+            
   
             .left_languageImgs{
               @include left_languageImgs;
@@ -371,11 +348,11 @@ a:visited{
             
           }
           .other{
-            width: 100rem;
+            width: 110rem;
             height: 50rem; 
             position: absolute;
             transition: 0.5s ease-in;
-            left: 100rem;
+            left: 110rem;
             background: white;
 
             .left_languageImgs{
@@ -435,7 +412,12 @@ a:visited{
     
     /*section5 achieve*/
     #achieve{
-      height: 50rem;
+      height: 60rem;
+      .wrap{
+        width: 110rem;
+        height: 60rem;
+        margin: auto
+      }
       .main_name_Achieve{
         @include main_name_padding;
       }
@@ -548,8 +530,9 @@ a:visited{
       }
 
       .projectWeb_container{
-        width: 100%;
+        width: 110rem;
         height: 125rem;
+        margin: auto;
         
 
         li{

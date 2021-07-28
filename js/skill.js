@@ -15,7 +15,7 @@ button_skills.addEventListener('click', function(){
     main_name_skills.innerHTML = 'Skills_Other'
   }else{
     button_skills.value = 'web';
-    skill_others.style.left = 100 + 'rem';
+    skill_others.style.left = 110 + 'rem';
     main_name_skills.innerHTML = 'Skills_WEB'
   }
 });
