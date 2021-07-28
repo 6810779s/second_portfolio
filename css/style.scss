@@ -798,6 +798,14 @@ a:visited{
           margin: auto;
           padding: 0.5rem;
           border-bottom: 0.2rem solid black;
+          text-align: center;
+
+          @include mobile{
+            width: 13rem;
+            
+            font-size: 2rem;
+
+          }
           
         }
 
@@ -814,6 +822,11 @@ a:visited{
           .down{
             @include down_arrow;
            
+          }
+
+          @include mobile{
+            width: 36rem;
+
           }
         }
 
@@ -838,6 +851,11 @@ a:visited{
             line-height: 5rem;
             color: white;
           }
+
+          @include mobile{
+            width: 30rem;
+
+          }
           
         }
 
@@ -861,7 +879,13 @@ a:visited{
             &:hover{
               background: $maincolor;
               }
+
+              @include mobile{
+                margin-left: 1.5rem;
+              }
             }
+
+            
           
           .github{
             position: absolute;
