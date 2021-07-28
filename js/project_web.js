@@ -11,12 +11,10 @@ let portfolioSecond__up = document.querySelector('.portfolio_second .up');
 let portfolioSecond__down = document.querySelector('.portfolio_second .down');
 
 let portfolio_height = (portfolio_project_img.clientHeight)/10;
-console.log(portfolio_height);
 let cafe_height = (cafe_project_img.clientHeight)/10;
 let portfolioSecond_height = (portfolioSecond_project_img.clientHeight)/10;
 let container_height = (document.querySelector('.portfolio .portfolio_container').clientHeight)/10;
 
-console.log(container_height);
 
     portfolio_up.addEventListener('click',function(){
     // portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
@@ -24,6 +22,7 @@ console.log(container_height);
     });
     portfolio_down.addEventListener('click',function(){
       portfolio_project_img.style.top = -(portfolio_height) + container_height + 'rem';
+
   });
   
   cafe_up.addEventListener('click',function(){
