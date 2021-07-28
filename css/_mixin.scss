@@ -2,19 +2,19 @@
 
 /* 반응형 */
 @mixin mobile {
-  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}){
+  @media (max-width: #{$breakpoint-tablet - 1px}){
     @content;
   }
 }
 
 @mixin tablet {
-  @media(min-width: #{$breakpoint-tablet}) and(max-width: #{$breakpoint-desktop - 1px}){
+  @media (max-width: #{$breakpoint-desktop - 1px}){
     @content;
   }
 }
 
 @mixin desktop {
-  @media(min-width: $breakpoint-desktop){
+  @media (min-width: $breakpoint-desktop){
     @content;
   }
 }
@@ -57,7 +57,7 @@
     text-align: center;
     border-radius: 3rem;
     padding-left: 2rem;
-    box-shadow: 0.3rem 0.2rem 5px 1px $boxshadow;
+    box-shadow: 0.3rem 0.2rem 0.5rem 0.1rem $boxshadow;
     
     }
   p{
@@ -85,6 +85,8 @@
     background: rgb(233, 229, 229);
     position: relative;
     border-radius: 0 1rem 1rem 0;
+    box-shadow: 0.3rem 0.2rem 1rem 0.1rem $boxshadow;
+
     }
   p{ 
     padding: 0.35rem 1rem;
