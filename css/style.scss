@@ -252,11 +252,12 @@ a:visited{
             height: 100%;
             .aboutMe_tit{
               font-size: 1.8rem;
+              text-align: center;
             }
     
             .introduce{
               font-size: 1.3rem;
-              line-height: 3rem;
+              line-height: 4rem;
             }
           }
         }
@@ -277,6 +278,10 @@ a:visited{
 
             .info__writing{
               margin-left: 40%;
+            }
+
+            @include mobile{
+              top: 55rem;
             }
           }
 

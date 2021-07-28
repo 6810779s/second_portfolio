@@ -271,10 +271,11 @@ a:visited {
   }
   .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .aboutMe_tit {
     font-size: 1.8rem;
+    text-align: center;
   }
   .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .introduce {
     font-size: 1.3rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
 }
 
@@ -299,6 +300,12 @@ a:visited {
 
 .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
   margin-left: 40%;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #info .info__bottomContainer .info__me .info__contact {
+    top: 55rem;
+  }
 }
 
 .container .main__article #info .info__img1 {

@@ -8,12 +8,11 @@ window.onresize = function(){
   document.location.reload();
 }; //브라우저 창 크기 조절시 자동 새로고침
 
-if (matchMedia("screen and (min-width: 335px) and (max-width: 757px)").matches){
+if (matchMedia("screen and (min-width: 480px) and (max-width: 767px)").matches){
   TopNum_info_big = 120;
   direction_info = ''
-}else if(matchMedia("screen and (min-width: 758px) and (max-width: 1023px)").matches){
-  
-  TopNum_info_big = 280;
+}else if(matchMedia("screen and (min-width: 768px) and (max-width: 1023px)").matches){
+  TopNum_info_big = 200;
   direction_info = ''
 }else{
   
