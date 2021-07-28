@@ -814,6 +814,9 @@ a:visited{
         height: 60rem;
         margin: auto;
 
+        @include tablet{
+          width: 70rem;
+        }
         @include mobile{
           width: 30rem;
         }
@@ -935,6 +938,10 @@ a:visited{
       width: 100%;
       height: 210rem;
 
+      @include tablet{
+        height: 200rem;
+      }
+
       @include mobile{
         height: 145rem;
       }
@@ -942,6 +949,10 @@ a:visited{
       .projectWeb_tit_wrap{
         width: 110rem;
         margin: auto;
+
+        @include tablet{
+          width: 70rem;
+        }
 
         @include mobile{
           width: 30rem
@@ -963,6 +974,10 @@ a:visited{
           height: 40rem;
           margin: 5rem auto 5rem auto;
 
+          @include tablet{
+            height: 30rem;
+          }
+
           @include mobile{
             height: 20rem;
           }
@@ -980,6 +995,11 @@ a:visited{
             }
           }
 
+          @include tablet{
+            width: 70rem;
+            height: 30rem;
+          }
+
           @include mobile{
             width: 30rem;
             height: 20rem;
@@ -994,6 +1014,8 @@ a:visited{
           padding: 0.5rem;
           border-bottom: 0.2rem solid black;
           text-align: center;
+
+          
 
           @include mobile{
             width: 13rem;
@@ -1016,6 +1038,11 @@ a:visited{
           .down{
             @include down_arrow;
            
+          }
+
+          @include tablet{
+            width: 100%;
+            height: 30rem;
           }
 
           @include mobile{
@@ -1047,6 +1074,8 @@ a:visited{
             line-height: 5rem;
             color: white;
           }
+
+          // ----------------------여기부터------------------------
 
           @include mobile{
             width: 30rem;
