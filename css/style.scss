@@ -521,7 +521,7 @@ a:visited{
     /*section6 project_web*/
     #project_WEB{
       width: 100%;
-      height: 202rem;
+      height: 210rem;
       
       
 
@@ -710,14 +710,19 @@ a:visited{
     /*section7 project_others*/
    .project_others{
       width: 100%;
-      height: 100rem;
+      height: 110rem;
       
+      .wrap{
+        width: 110rem;
+        height: 110rem;
+        margin: auto;
+      }
 
       .main_name_ProjectOthers{
         @include main_name_padding;
       }
       .project_mainTit{
-        width: 11rem;
+        width: 13rem;
         height: 3rem;
         border-bottom: 0.1rem solid black;
         font-size: 2rem;
@@ -753,9 +758,9 @@ a:visited{
       }
 
       .project_others_Container{
-        width: 100rem;
+        width: 110rem;
         height: 35rem;
-        margin: 3rem auto;
+        margin: 5rem auto;
         padding: 1.5rem 5rem;
         background: rgba(218, 214, 214, 0.103);;
 
