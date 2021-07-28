@@ -71,6 +71,26 @@
     }
 }
 
+@mixin left_languageImgs_tablet{
+  width: 15rem;
+  li{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0;
+    box-shadow:none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin: 5rem 0 0 1rem;
+  }
+  .languageImgs{
+    display: none;
+  }
+  p{
+    padding-top: 0;
+    }
+}
+
 @mixin left_languageImgs_mobile{
   width: 10rem;
   li{
@@ -90,6 +110,8 @@
     padding-top: 0;
     }
 }
+
+
 
 @mixin right_languageAbility{
   width: 80rem;
@@ -120,12 +142,21 @@
     }
 }
 
+@mixin right_languageAbility_tablet{
+  width:50rem;
+  li{
+    width: 48rem;
+    height: 2.5rem;
+    margin: 5rem 0 0 0;
+  }
+}
+
 @mixin right_languageAbility_mobile{
   width: 20rem;
   li{
     width: 18rem;
     height: 2rem;
-    margin:3rem 0 0 0;
+    margin: 3rem 0 0 0;
  }
 }
 

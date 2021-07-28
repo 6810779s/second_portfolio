@@ -129,6 +129,12 @@ a:visited {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container #header .hamburgerBt {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .container #header .hamburgerBt {
     display: block;
@@ -164,6 +170,12 @@ a:visited {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #main__tit {
+    height: 35rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #main__tit {
     height: 25rem;
@@ -189,6 +201,12 @@ a:visited {
   height: 80rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info {
+    height: 90rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #info {
     height: 100rem;
@@ -202,6 +220,13 @@ a:visited {
   position: relative;
   border: 2px solid #fadddd;
   box-shadow: 0.3rem 1rem 1.5rem 0.3rem gray;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .wrap {
+    width: 70rem;
+    height: 70rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -227,6 +252,12 @@ a:visited {
   font-size: 5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__topFixContainer h1 {
+    left: 50%;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #info .info__topFixContainer h1 {
     top: 2rem;
@@ -243,6 +274,12 @@ a:visited {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__bottomContainer {
+    height: 45rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #info .info__bottomContainer {
     height: 55rem;
@@ -255,6 +292,12 @@ a:visited {
   background: #fadddd;
   background-size: cover;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__bottomContainer .info__me {
+    height: 45rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -290,6 +333,30 @@ a:visited {
 
 .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .introduce {
   font-size: 1.8rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing {
+    width: 40rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .info_mobile_btn {
+    display: block;
+    top: 1rem;
+    right: 1.3rem;
+    background: #f19796;
+    border: none;
+    padding: 0.2rem 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem 0.1rem gray;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .aboutMe_tit {
+    clear: right;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .infoMe__writing .introduce {
+    font-size: 1.7rem;
+    line-height: 4rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -343,6 +410,24 @@ a:visited {
   margin-left: 40%;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__bottomContainer .info__me .info__contact {
+    height: 45rem;
+    top: 45rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .information {
+    margin-top: 5rem;
+    height: 40rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
+    width: 13rem;
+    margin-left: 45%;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing2 {
+    width: 20rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #info .info__bottomContainer .info__me .info__contact {
     height: 55rem;
@@ -374,6 +459,15 @@ a:visited {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__img1 {
+    width: 17rem;
+    height: 25rem;
+    background: url("../mediaQueryPhone/info/info_profile/me_charactor.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #info .info__img1 {
     width: 17rem;
@@ -392,6 +486,16 @@ a:visited {
   background: url("../img/info/info_profile/me_info.png");
   top: 35rem;
   transition: 0.5s ease-in;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #info .info__img1 .info__img2 {
+    width: 17rem;
+    height: 25rem;
+    top: 25rem;
+    background: url("../mediaQueryPhone/info/info_profile/me_info.png") center no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -432,6 +536,12 @@ a:visited {
   box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem gray;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .button_skills {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .button_skills {
     font-size: 1.3rem;
@@ -453,6 +563,12 @@ a:visited {
   margin: auto;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container {
+    width: 70rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container {
     width: 30rem;
@@ -467,6 +583,12 @@ a:visited {
   margin: auto;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap {
+    width: 70rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap {
     width: 30rem;
@@ -478,6 +600,12 @@ a:visited {
   width: 110rem;
   height: 100%;
   background: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web {
+    width: 70rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -513,6 +641,28 @@ a:visited {
   height: 4rem;
   margin-top: 0.5rem;
   background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs {
+    width: 15rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin: 5rem 0 0 1rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .languageImgs {
+    display: none;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs p {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -590,6 +740,17 @@ a:visited {
   height: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility {
+    width: 50rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility li {
+    width: 48rem;
+    height: 2.5rem;
+    margin: 5rem 0 0 0;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility {
     width: 20rem;
@@ -605,6 +766,12 @@ a:visited {
   margin-top: 4rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html {
+    margin-top: 5rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html {
     margin-top: 3rem;
@@ -613,6 +780,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html .html_skill {
   width: 63rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html .html_skill {
+    width: 43.2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -625,6 +798,12 @@ a:visited {
   width: 63rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .css .css_skill {
+    width: 43.2rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .css .css_skill {
     width: 16.2rem;
@@ -633,6 +812,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .js .js_skill {
   width: 56rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .js .js_skill {
+    width: 38.4rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -645,6 +830,12 @@ a:visited {
   width: 59.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .scss .scss_skill {
+    width: 40.8rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .scss .scss_skill {
     width: 15.3rem;
@@ -653,6 +844,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
   width: 21rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
+    width: 14.4rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -667,6 +864,12 @@ a:visited {
   right: 5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .studying {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .studying {
     font-size: 1rem;
@@ -676,6 +879,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .jQuery .jQuery_skill {
   width: 42rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .jQuery .jQuery_skill {
+    width: 28.8rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -720,6 +929,28 @@ a:visited {
   height: 4rem;
   margin-top: 0.5rem;
   background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs {
+    width: 15rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin: 5rem 0 0 1rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .languageImgs {
+    display: none;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs p {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -789,6 +1020,17 @@ a:visited {
   height: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility {
+    width: 50rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility li {
+    width: 48rem;
+    height: 2.5rem;
+    margin: 5rem 0 0 0;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility {
     width: 20rem;
@@ -804,6 +1046,12 @@ a:visited {
   margin-top: 4rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c {
+    margin-top: 5rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c {
     margin-top: 3rem;
@@ -812,6 +1060,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c .c_skill {
   width: 52.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .c .c_skill {
+    width: 36rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -824,6 +1078,12 @@ a:visited {
   width: 63rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .java .java_skill {
+    width: 43.2rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .java .java_skill {
     width: 16.2rem;
@@ -834,6 +1094,12 @@ a:visited {
   width: 59.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .python .python_skill {
+    width: 40.8rem;
+  }
+}
+
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .python .python_skill {
     width: 15.3rem;
@@ -842,6 +1108,12 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .mysql .mysql_skill {
   width: 35rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility .mysql .mysql_skill {
+    width: 24rem;
+  }
 }
 
 @media (max-width: 767px) {

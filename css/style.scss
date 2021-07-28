@@ -37,9 +37,9 @@ a{
   text-decoration: none;
   color: black;
 }
-  html{
+html{
     font-size: 10px;
-  }
+}
 
 
 // @include tablet{
@@ -135,6 +135,9 @@ a:visited{
       @include desktop{
         display: none;
       }
+      @include tablet{
+        display: none;
+      }
       @include mobile{
         display: block;
         position: absolute;
@@ -160,6 +163,9 @@ a:visited{
       background: url('../img/study.png') no-repeat left;
       background-size: cover;
 
+      @include tablet{
+        height: 35rem;
+      }
       @include mobile{
         height: 25rem;
       }
@@ -185,6 +191,10 @@ a:visited{
       width: 100%;
       height: 80rem;
 
+      @include tablet{
+        height: 90rem;
+      }
+
       @include mobile{
         height: 100rem;
       }
@@ -197,6 +207,11 @@ a:visited{
         position: relative;
         border: 2px solid $maincolor;
         box-shadow: 0.3rem 1rem 1.5rem 0.3rem $boxshadow;
+
+        @include tablet{
+          width: 70rem;
+          height: 70rem;
+        }
 
         @include mobile{
           width: 30rem;
@@ -217,6 +232,10 @@ a:visited{
           font-family: 'Dancing Script', cursive;
           font-size: 5rem;
 
+          @include tablet{
+            left: 50%;
+          }
+
           @include mobile{
             top: 2rem;
             left: 50%;
@@ -231,6 +250,10 @@ a:visited{
         height: 35rem;
         overflow: hidden;
 
+        @include tablet{
+          height: 45rem;
+        }
+
         @include mobile{
           height: 55rem;
         }
@@ -242,6 +265,10 @@ a:visited{
           background: $maincolor;
           background-size: cover;
           position: relative;
+
+          @include tablet {
+            height: 45rem;
+          }
 
           @include mobile{
             height: 55rem;
@@ -268,6 +295,29 @@ a:visited{
   
           .introduce{
             font-size: 1.8rem;
+          }
+
+          @include tablet{
+            width: 40rem;
+            .info_mobile_btn{
+              display: block;
+              top: 1rem;
+              right: 1.3rem;
+              background: $maincolor2;
+              border: none;
+              padding: 0.2rem 1rem;
+              box-shadow: 0.2rem 0.2rem 1rem 0.1rem $boxshadow;
+            }
+            .aboutMe_tit{
+              clear: right;
+              font-size: 2rem;
+              text-align: center;
+            }
+    
+            .introduce{
+              font-size: 1.7rem;
+              line-height: 4rem;
+            }
           }
 
           @include mobile{
@@ -317,6 +367,25 @@ a:visited{
               margin-left: 40%;
             }
 
+            @include tablet{
+              height: 45rem;
+              top: 45rem;
+
+              .information{
+                margin-top: 5rem;
+                height: 40rem;
+              }
+
+              .info__writing{
+                width: 13rem;
+                margin-left: 45%;
+              }
+
+              .info__writing2{
+                width: 20rem;
+              }
+            }
+
             @include mobile{
               height: 55rem;
               top: 55rem;
@@ -352,6 +421,13 @@ a:visited{
         left: 10%;
         overflow: hidden;
 
+        @include tablet{
+          width: 17rem;
+          height: 25rem;
+          background: url('../mediaQueryPhone/info/info_profile/me_charactor.png') center no-repeat;
+          background-size: cover;
+        }
+
         @include mobile{
           width: 17rem;
           height: 25rem;
@@ -368,6 +444,14 @@ a:visited{
           background: url('../img/info/info_profile/me_info.png');
           top: 35rem;
           transition: 0.5s ease-in;
+
+          @include tablet{
+            width: 17rem;
+            height: 25rem;
+            top: 25rem;
+            background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
+            background-size: cover;
+          }
 
           @include mobile{
             width: 17rem;
@@ -402,6 +486,9 @@ a:visited{
         z-index: 100;
         box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem $boxshadow;
 
+        @include tablet{
+          font-size: 1.8rem;
+        }
         @include mobile{
           font-size: 1.3rem;
           top:6rem;
@@ -420,6 +507,11 @@ a:visited{
         position: relative;
         margin: auto;
 
+        @include tablet{
+          width: 70rem;
+          
+        }
+
         @include mobile{
           width: 30rem;
           height: 60rem;
@@ -431,6 +523,9 @@ a:visited{
           height: 50rem;
           margin: auto;
 
+          @include tablet{
+            width: 70rem;
+          }
           @include mobile{
             width: 30rem;
 
@@ -440,6 +535,10 @@ a:visited{
             width: 110rem;
             height: 100%;
             background: white;
+
+            @include tablet{
+              width: 70rem;
+            }
             
             @include mobile{
               width: 30rem;
@@ -447,6 +546,10 @@ a:visited{
   
             .left_languageImgs{
               @include left_languageImgs;
+
+              @include tablet{
+                @include left_languageImgs_tablet;
+              }
 
               @include mobile{
                 @include left_languageImgs_mobile;
@@ -495,17 +598,27 @@ a:visited{
             .right_languageAbility{
               @include right_languageAbility;
 
+              @include tablet{
+                @include right_languageAbility_tablet;
+              }
+
               @include mobile{
                 @include right_languageAbility_mobile;
               }
 
               .html{
                 margin-top: 4rem;
+                @include tablet{
+                  margin-top: 5rem;
+                }
                 @include mobile{
                   margin-top: 3rem;
                 }
                 .html_skill{
                   width: 63rem;
+                  @include tablet{
+                    width: 43.2rem;
+                  }
                   @include mobile{
                     width: 16.2rem;
                   }
@@ -515,6 +628,9 @@ a:visited{
               .css{
                 .css_skill{
                   width: 63rem;
+                  @include tablet{
+                    width: 43.2rem;
+                  }
                   @include mobile{
                     width: 16.2rem;
                   }
@@ -524,6 +640,9 @@ a:visited{
               .js{
                 .js_skill{
                   width: 56rem;
+                  @include tablet{
+                    width: 38.4rem;
+                  }
                   @include mobile{
                     width: 14.4rem;
                   }
@@ -532,6 +651,9 @@ a:visited{
               .scss{
                 .scss_skill{
                   width: 59.5rem;
+                  @include tablet{
+                    width: 40.8rem;
+                  }
                   @include mobile{
                     width: 15.3rem;
                   }
@@ -540,6 +662,9 @@ a:visited{
               .react{
                 .react_skill{
                   width: 21rem;
+                  @include tablet{
+                    width: 14.4rem;
+                  }
                   @include mobile{
                     width: 5.4rem;
                   }
@@ -549,6 +674,10 @@ a:visited{
                   position: absolute;
                   padding-top: 0.35rem;
                   right: 5rem;
+
+                  @include tablet{
+                    font-size: 1.3rem;
+                  }
 
                   @include mobile{
                     font-size: 1rem;
@@ -560,6 +689,9 @@ a:visited{
               .jQuery{
                 .jQuery_skill{
                   width: 42rem;
+                  @include tablet{
+                    width: 28.8rem;
+                  }
                   @include mobile{
                     width: 10.8rem;
                   }
@@ -578,6 +710,10 @@ a:visited{
 
             .left_languageImgs{
               @include left_languageImgs;
+
+              @include tablet{
+                @include left_languageImgs_tablet;
+              }
               @include mobile{
                 @include left_languageImgs_mobile;
               }
@@ -605,16 +741,25 @@ a:visited{
 
             .right_languageAbility{
               @include right_languageAbility;
+              @include tablet{
+                @include right_languageAbility_tablet;
+              }
               @include mobile{
                 @include right_languageAbility_mobile;
               }
               .c{
                 margin-top: 4rem;
+                @include tablet{
+                  margin-top: 5rem;
+                }
                 @include mobile{
                   margin-top:3rem;
                 }
                 .c_skill{
                   width: 52.5rem;
+                  @include tablet{
+                    width: 36rem;
+                  }
                   @include mobile{
                     width: 13.5rem;
                   }
@@ -623,6 +768,9 @@ a:visited{
               .java{
                 .java_skill{
                   width:63rem;
+                  @include tablet{
+                    width: 43.2rem;
+                  }
                   @include mobile{
                     width: 16.2rem;
                   }
@@ -631,6 +779,9 @@ a:visited{
               .python{
                 .python_skill{
                   width: 59.5rem;
+                  @include tablet{
+                    width: 40.8rem;
+                  }
                   @include mobile{
                     width: 15.3rem;
                   }
@@ -639,6 +790,9 @@ a:visited{
               .mysql{
                 .mysql_skill{
                   width: 35rem;
+                  @include tablet{
+                    width: 24rem;
+                  }
                   @include mobile{
                     width: 9rem;
                   }
