@@ -349,6 +349,9 @@ a:visited{
     #skills{
       height: 80rem;
       position: relative;
+      @include mobile{
+        height: 60rem;
+      }
       .main_name_skills{
         @include main_name_padding;
        }
@@ -384,6 +387,7 @@ a:visited{
 
         @include mobile{
           width: 30rem;
+          height: 60rem;
           font-size: 1.5rem;
         }
 
@@ -410,23 +414,7 @@ a:visited{
               @include left_languageImgs;
 
               @include mobile{
-                width: 10rem;
-                li{
-                  width: 10rem;
-                  height: 2rem;
-                  border-radius: 0;
-                  box-shadow:none;
-                  background: none;
-                  text-align: left;
-                  padding: 0;
-                }
-                .languageImgs{
-                  display: none;
-                }
-
-                p{
-                  padding-top: 0;
-                }
+                @include left_languageImgs_mobile;
               }
 
 
@@ -473,13 +461,7 @@ a:visited{
               @include right_languageAbility;
 
               @include mobile{
-                width: 20rem;
-                li{
-                  width: 18rem;
-                  height: 2rem;
-                  margin:3rem 0 0 0;
-                  
-                }
+                @include right_languageAbility_mobile;
               }
 
               .html{
@@ -516,25 +498,36 @@ a:visited{
                 .scss_skill{
                   width: 59.5rem;
                   @include mobile{
-                    width: 16.2rem;
+                    width: 15.3rem;
                   }
                 }
               }
               .react{
                 .react_skill{
                   width: 21rem;
+                  @include mobile{
+                    width: 5.4rem;
+                  }
                   
                 }
                 .studying{
                   position: absolute;
                   padding-top: 0.35rem;
                   right: 5rem;
+
+                  @include mobile{
+                    font-size: 1rem;
+                    right: 0;
+                  }
                 }
   
               }
               .jQuery{
                 .jQuery_skill{
                   width: 42rem;
+                  @include mobile{
+                    width: 10.8rem;
+                  }
                 }
               }
             }
@@ -550,6 +543,9 @@ a:visited{
 
             .left_languageImgs{
               @include left_languageImgs;
+              @include mobile{
+                @include left_languageImgs_mobile;
+              }
               .c{
                 .c_Img{
                   background: url('../img/skill/others/c.png') center no-repeat;
@@ -574,25 +570,43 @@ a:visited{
 
             .right_languageAbility{
               @include right_languageAbility;
+              @include mobile{
+                @include right_languageAbility_mobile;
+              }
               .c{
                 margin-top: 4rem;
+                @include mobile{
+                  margin-top:3rem;
+                }
                 .c_skill{
                   width: 52.5rem;
+                  @include mobile{
+                    width: 13.5rem;
+                  }
                 }
               }
               .java{
                 .java_skill{
                   width:63rem;
+                  @include mobile{
+                    width: 16.2rem;
+                  }
                 }
               }
               .python{
                 .python_skill{
                   width: 59.5rem;
+                  @include mobile{
+                    width: 15.3rem;
+                  }
                 }
               }
               .mysql{
                 .mysql_skill{
                   width: 35rem;
+                  @include mobile{
+                    width: 9rem;
+                  }
                 }
               }
             }
