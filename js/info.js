@@ -9,7 +9,7 @@ window.onresize = function(){
 }; //브라우저 창 크기 조절시 자동 새로고침
 
 if (matchMedia("screen and (min-width: 480px) and (max-width: 767px)").matches){
-  TopNum_info_big = 120;
+  TopNum_info_big = 250;
   direction_info = ''
 }else if(matchMedia("screen and (min-width: 768px) and (max-width: 1023px)").matches){
   TopNum_info_big = 200;

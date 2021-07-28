@@ -281,7 +281,24 @@ a:visited{
             }
 
             @include mobile{
-              top: 55rem;
+              height: 55rem;
+              // top: 55rem;
+              top:0;
+              padding-top: 8rem;
+
+              .information{
+                width: 10rem;
+                height: 40rem;
+                font-size: 1.8rem;
+              }
+              .info__writing{
+                width: 10rem;
+                margin-left: 2rem;
+              }
+
+              .info__writing2{
+                width: 17rem;
+              }
             }
           }
 
@@ -346,6 +363,11 @@ a:visited{
         top: 5rem;
         z-index: 100;
         box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem $boxshadow;
+
+        @include mobile{
+          font-size: 1.3rem;
+          top:6rem;
+        }
       }
       .button_skills:hover{
         background: $maincolor2;
@@ -360,22 +382,59 @@ a:visited{
         position: relative;
         margin: auto;
 
+        @include mobile{
+          width: 30rem;
+          font-size: 1.5rem;
+        }
+
         .skills_wrap{
           width: 110rem;
           height: 50rem;
           margin: auto;
+
+          @include mobile{
+            width: 30rem;
+
+          }
           .web{
             float: left;
             width: 110rem;
             height: 100%;
             background: white;
             
+            @include mobile{
+              width: 30rem;
+            }
   
             .left_languageImgs{
               @include left_languageImgs;
+
+              @include mobile{
+                width: 10rem;
+                li{
+                  width: 10rem;
+                  height: 2rem;
+                  border-radius: 0;
+                  box-shadow:none;
+                  background: none;
+                  text-align: left;
+                  padding: 0;
+                }
+                .languageImgs{
+                  display: none;
+                }
+
+                p{
+                  padding-top: 0;
+                }
+              }
+
+
+
               .html{
                 .htmlImg{
                   background: url('../img/skill/web/html.png') center no-repeat;
+
                   
                 }
               }
@@ -412,27 +471,53 @@ a:visited{
   
             .right_languageAbility{
               @include right_languageAbility;
+
+              @include mobile{
+                width: 20rem;
+                li{
+                  width: 18rem;
+                  height: 2rem;
+                  margin:3rem 0 0 0;
+                  
+                }
+              }
+
               .html{
                 margin-top: 4rem;
+                @include mobile{
+                  margin-top: 3rem;
+                }
                 .html_skill{
                   width: 63rem;
+                  @include mobile{
+                    width: 16.2rem;
+                  }
                 }
               }
   
               .css{
                 .css_skill{
                   width: 63rem;
+                  @include mobile{
+                    width: 16.2rem;
+                  }
                 }
               }
   
               .js{
                 .js_skill{
                   width: 56rem;
+                  @include mobile{
+                    width: 14.4rem;
+                  }
                 }
               }
               .scss{
                 .scss_skill{
                   width: 59.5rem;
+                  @include mobile{
+                    width: 16.2rem;
+                  }
                 }
               }
               .react{

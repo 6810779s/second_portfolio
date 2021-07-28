@@ -304,7 +304,21 @@ a:visited {
 
 @media (max-width: 767px) {
   .container .main__article #info .info__bottomContainer .info__me .info__contact {
-    top: 55rem;
+    height: 55rem;
+    top: 0;
+    padding-top: 8rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .information {
+    width: 10rem;
+    height: 40rem;
+    font-size: 1.8rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing {
+    width: 10rem;
+    margin-left: 2rem;
+  }
+  .container .main__article #info .info__bottomContainer .info__me .info__contact .info__writing2 {
+    width: 17rem;
   }
 }
 
@@ -368,6 +382,13 @@ a:visited {
   box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem gray;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #skills .button_skills {
+    font-size: 1.3rem;
+    top: 6rem;
+  }
+}
+
 .container .main__article #skills .button_skills:hover {
   background: #f19796;
   cursor: pointer;
@@ -382,10 +403,23 @@ a:visited {
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container {
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+}
+
 .container .main__article #skills .skills_container .skills_wrap {
   width: 110rem;
   height: 50rem;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap {
+    width: 30rem;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web {
@@ -393,6 +427,12 @@ a:visited {
   width: 110rem;
   height: 100%;
   background: white;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web {
+    width: 30rem;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs {
@@ -422,6 +462,27 @@ a:visited {
   height: 4rem;
   margin-top: 0.5rem;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs {
+    width: 10rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    text-align: left;
+    padding: 0;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .languageImgs {
+    display: none;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs p {
+    padding-top: 0;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .html .htmlImg {
@@ -478,24 +539,65 @@ a:visited {
   height: 100%;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility {
+    width: 20rem;
+  }
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility li {
+    width: 18rem;
+    height: 2rem;
+    margin: 3rem 0 0 0;
+  }
+}
+
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html {
   margin-top: 4rem;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html {
+    margin-top: 3rem;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html .html_skill {
   width: 63rem;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .html .html_skill {
+    width: 16.2rem;
+  }
+}
+
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .css .css_skill {
   width: 63rem;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .css .css_skill {
+    width: 16.2rem;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .js .js_skill {
   width: 56rem;
 }
 
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .js .js_skill {
+    width: 14.4rem;
+  }
+}
+
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .scss .scss_skill {
   width: 59.5rem;
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .scss .scss_skill {
+    width: 16.2rem;
+  }
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
