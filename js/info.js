@@ -5,6 +5,10 @@ let info_next_btn = document.querySelector('.infoMe__writing .info_mobile_btn');
 let TopNum_info_big = 500;
 let direction_info = '';
 
+window.onload = function(){ 
+  if (location.href.indexOf('reloaded')==-1) location.replace(location.href+'?reloaded'); 
+  //if (parent.location.href.indexOf('reloaded')==-1) parent.location.replace(parent.location.href+'?reloaded'); 
+} 
 // window.onresize = function(){
 //   document.location.reload();
 // }; //브라우저 창 크기 조절시 자동 새로고침
