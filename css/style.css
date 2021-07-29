@@ -1541,6 +1541,8 @@ a:visited {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
     width: 70rem;
+    height: 206.1rem;
+    background: url("../mediaQueryTablet/project/web/first_portfolio_tablet.png");
   }
 }
 
@@ -1584,6 +1586,8 @@ a:visited {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container .cafe_project_img {
     width: 70rem;
+    height: 251.8rem;
+    background: url("../mediaQueryTablet/project/web/cafe_tablet.png");
   }
 }
 
@@ -1626,6 +1630,8 @@ a:visited {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container .portfolioSecond_project_img {
     width: 70rem;
+    height: 316.2rem;
+    background: url("../mediaQueryTablet/project/web/second_portfolio_tablet.png");
   }
 }
 

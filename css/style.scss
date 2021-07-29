@@ -1178,7 +1178,8 @@ a:visited{
 
               @include tablet{
                 width: 70rem;
-                // top: ;
+                height: 206.1rem;
+                background: url('../mediaQueryTablet/project/web/first_portfolio_tablet.png');
               }
 
               @include mobile{
@@ -1215,7 +1216,8 @@ a:visited{
 
               @include tablet{
                 width: 70rem;
-                // height: ;
+                height: 251.8rem;
+                background: url('../mediaQueryTablet/project/web/cafe_tablet.png');
               }
 
               @include mobile{
@@ -1251,6 +1253,8 @@ a:visited{
 
               @include tablet{
                 width:70rem;
+                height: 316.2rem;
+                background: url('../mediaQueryTablet/project/web/second_portfolio_tablet.png');
               }
 
               @include mobile{
