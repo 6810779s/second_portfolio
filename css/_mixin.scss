@@ -190,3 +190,19 @@
     background-color: $maincolor;
   }
 }
+
+@mixin skill_bar($length){
+  $calculate: $length * 70rem;
+  width: $calculate;
+  @include tablet{
+    $calculate: $length * 48rem;
+    width: $calculate;
+  }
+  @include mobile{
+    $calculate: $length * 18rem;
+    width: $calculate;
+  }
+  // @include mobile{
+  //   width: calc($length*18rem);
+  // }
+}

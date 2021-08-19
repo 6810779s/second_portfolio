@@ -618,60 +618,29 @@ a:visited{
                   margin-top: 3rem;
                 }
                 .html_skill{
-                  width: 63rem;
-                  @include tablet{
-                    width: 43.2rem;
-                  }
-                  @include mobile{
-                    width: 16.2rem;
-                  }
+                  @include skill_bar(0.9);
                 }
               }
   
               .css{
                 .css_skill{
-                  width: 63rem;
-                  @include tablet{
-                    width: 43.2rem;
-                  }
-                  @include mobile{
-                    width: 16.2rem;
-                  }
+                  @include skill_bar(0.9);
                 }
               }
   
               .js{
                 .js_skill{
-                  width: 56rem;
-                  @include tablet{
-                    width: 38.4rem;
-                  }
-                  @include mobile{
-                    width: 14.4rem;
-                  }
+                  @include skill_bar(0.8);
                 }
               }
               .scss{
                 .scss_skill{
-                  width: 59.5rem;
-                  @include tablet{
-                    width: 40.8rem;
-                  }
-                  @include mobile{
-                    width: 15.3rem;
-                  }
+                  @include skill_bar(0.85);
                 }
               }
               .react{
                 .react_skill{
-                  width: 21rem;
-                  @include tablet{
-                    width: 14.4rem;
-                  }
-                  @include mobile{
-                    width: 5.4rem;
-                  }
-                  
+                  @include skill_bar(0.5);
                 }
                 .studying{
                   position: absolute;
@@ -691,13 +660,7 @@ a:visited{
               }
               .jQuery{
                 .jQuery_skill{
-                  width: 42rem;
-                  @include tablet{
-                    width: 28.8rem;
-                  }
-                  @include mobile{
-                    width: 10.8rem;
-                  }
+                  @include skill_bar(0.6);
                 }
               }
             }
@@ -759,46 +722,22 @@ a:visited{
                   margin-top:3rem;
                 }
                 .c_skill{
-                  width: 52.5rem;
-                  @include tablet{
-                    width: 36rem;
-                  }
-                  @include mobile{
-                    width: 13.5rem;
-                  }
+                  @include skill_bar(0.75);
                 }
               }
               .java{
                 .java_skill{
-                  width:63rem;
-                  @include tablet{
-                    width: 43.2rem;
-                  }
-                  @include mobile{
-                    width: 16.2rem;
-                  }
+                  @include skill_bar(0.9);
                 }
               }
               .python{
                 .python_skill{
-                  width: 59.5rem;
-                  @include tablet{
-                    width: 40.8rem;
-                  }
-                  @include mobile{
-                    width: 15.3rem;
-                  }
+                  @include skill_bar(0.85);
                 }
               }
               .mysql{
                 .mysql_skill{
-                  width: 35rem;
-                  @include tablet{
-                    width: 24rem;
-                  }
-                  @include mobile{
-                    width: 9rem;
-                  }
+                  @include skill_bar(0.5);
                 }
               }
             }

@@ -849,18 +849,18 @@ a:visited {
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
-  width: 21rem;
+  width: 35rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
-    width: 14.4rem;
+    width: 24rem;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .react .react_skill {
-    width: 5.4rem;
+    width: 9rem;
   }
 }
 
