@@ -262,286 +262,286 @@ a:visited{
       }
     }
     
-    #info{
-      padding-top: 5rem;
-      width: 100%;
-      height: 80rem;
+  //   #info{
+  //     padding-top: 5rem;
+  //     width: 100%;
+  //     height: 80rem;
 
-      @include tablet{
-        height: 90rem;
-      }
+  //     @include tablet{
+  //       height: 90rem;
+  //     }
 
-      @include mobile{
-        height: 100rem;
-      }
+  //     @include mobile{
+  //       height: 100rem;
+  //     }
       
       
-      .wrap{
-        width: 110rem;
-        height: 60rem;
-        margin: auto;
-        position: relative;
-        border: 2px solid $maincolor;
-        box-shadow: 0.3rem 1rem 1.5rem 0.3rem $boxshadow;
+  //     .wrap{
+  //       width: 110rem;
+  //       height: 60rem;
+  //       margin: auto;
+  //       position: relative;
+  //       border: 2px solid $maincolor;
+  //       box-shadow: 0.3rem 1rem 1.5rem 0.3rem $boxshadow;
 
-        @include tablet{
-          width: 70rem;
-          height: 70rem;
-        }
+  //       @include tablet{
+  //         width: 70rem;
+  //         height: 70rem;
+  //       }
 
-        @include mobile{
-          width: 30rem;
-          height: 80rem;
-        }
-      }
-      .info__topFixContainer{
-        width: 100%;
-        height: 25rem;
-        background: white;
-        position: relative;
+  //       @include mobile{
+  //         width: 30rem;
+  //         height: 80rem;
+  //       }
+  //     }
+  //     .info__topFixContainer{
+  //       width: 100%;
+  //       height: 25rem;
+  //       background: white;
+  //       position: relative;
         
-        h1{
-          position: absolute;
-          top: 50%;
-          left: 60%;
-          margin: 3rem;
-          font-family: 'Dancing Script', cursive;
-          font-size: 5rem;
+  //       h1{
+  //         position: absolute;
+  //         top: 50%;
+  //         left: 60%;
+  //         margin: 3rem;
+  //         font-family: 'Dancing Script', cursive;
+  //         font-size: 5rem;
 
-          @include tablet{
-            left: 50%;
-          }
+  //         @include tablet{
+  //           left: 50%;
+  //         }
 
-          @include mobile{
-            top: 2rem;
-            left: 50%;
-            margin: 0;
-            transform: translateX(-50%);
-            font-size: 4rem;
-          }
-        }
-      }
-      .info__bottomContainer{
-        width: 100%;
-        height: 35rem;
-        overflow: hidden;
+  //         @include mobile{
+  //           top: 2rem;
+  //           left: 50%;
+  //           margin: 0;
+  //           transform: translateX(-50%);
+  //           font-size: 4rem;
+  //         }
+  //       }
+  //     }
+  //     .info__bottomContainer{
+  //       width: 100%;
+  //       height: 35rem;
+  //       overflow: hidden;
 
-        @include tablet{
-          height: 45rem;
-        }
+  //       @include tablet{
+  //         height: 45rem;
+  //       }
 
-        @include mobile{
-          height: 55rem;
-        }
+  //       @include mobile{
+  //         height: 55rem;
+  //       }
         
-        .info__me{
-          width: 100%;
-          height: 35rem;
-          // background: url('../img/info/info_background/blossom.png') center no-repeat;
-          background: $maincolor;
-          background-size: cover;
-          position: relative;
+  //       .info__me{
+  //         width: 100%;
+  //         height: 35rem;
+  //         // background: url('../img/info/info_background/blossom.png') center no-repeat;
+  //         background: $maincolor;
+  //         background-size: cover;
+  //         position: relative;
 
-          .info_mobile_btn{
-            position: absolute;
-            display: none;
-            z-index: 5;
+  //         .info_mobile_btn{
+  //           position: absolute;
+  //           display: none;
+  //           z-index: 5;
 
-            @include tablet{
-              display: block;
-              top: 1rem;
-              right: 1.3rem;
-              background: $maincolor2;
-              border: none;
-              padding: 0.2rem 1rem;
-              box-shadow: 0.2rem 0.2rem 1rem 0.1rem $boxshadow;
-            }
-            @include mobile{
-              display: block;
-              top: 11rem;
-              right: 1.3rem;
-              background: $maincolor2;
-              border: none;
-              padding: 0.2rem 1rem;
-              cursor: pointer;
-              box-shadow: 0.2rem 0.2rem 1rem 0.1rem $boxshadow;
-            }
-          }
+  //           @include tablet{
+  //             display: block;
+  //             top: 1rem;
+  //             right: 1.3rem;
+  //             background: $maincolor2;
+  //             border: none;
+  //             padding: 0.2rem 1rem;
+  //             box-shadow: 0.2rem 0.2rem 1rem 0.1rem $boxshadow;
+  //           }
+  //           @include mobile{
+  //             display: block;
+  //             top: 11rem;
+  //             right: 1.3rem;
+  //             background: $maincolor2;
+  //             border: none;
+  //             padding: 0.2rem 1rem;
+  //             cursor: pointer;
+  //             box-shadow: 0.2rem 0.2rem 1rem 0.1rem $boxshadow;
+  //           }
+  //         }
 
-          @include tablet {
-            height: 45rem;
-          }
+  //         @include tablet {
+  //           height: 45rem;
+  //         }
 
-          @include mobile{
-            height: 55rem;
+  //         @include mobile{
+  //           height: 55rem;
 
-          }
+  //         }
 
-        .information{
-          @include information_align;
-          font-family: 'Noto Sans KR', sans-serif;
+  //       .information{
+  //         @include information_align;
+  //         font-family: 'Noto Sans KR', sans-serif;
           
-        }
-        .infoMe__writing{
-          width: 60rem;
-          margin-left: 40%;
+  //       }
+  //       .infoMe__writing{
+  //         width: 60rem;
+  //         margin-left: 40%;
 
           
-          .aboutMe_tit{
-            font-size: 2.3rem;
-          }
+  //         .aboutMe_tit{
+  //           font-size: 2.3rem;
+  //         }
   
-          .introduce{
-            font-size: 1.8rem;
-          }
+  //         .introduce{
+  //           font-size: 1.8rem;
+  //         }
 
-          @include tablet{
-            width: 40rem;
-            .aboutMe_tit{
-              clear: right;
-              font-size: 2rem;
-              text-align: center;
-            }
+  //         @include tablet{
+  //           width: 40rem;
+  //           .aboutMe_tit{
+  //             clear: right;
+  //             font-size: 2rem;
+  //             text-align: center;
+  //           }
     
-            .introduce{
-              font-size: 1.7rem;
-              line-height: 4rem;
-            }
-          }
+  //           .introduce{
+  //             font-size: 1.7rem;
+  //             line-height: 4rem;
+  //           }
+  //         }
 
-          @include mobile{
-            padding-top: 13rem;
-            margin: auto;
-            width: 100%;
-            height: 100%;
+  //         @include mobile{
+  //           padding-top: 13rem;
+  //           margin: auto;
+  //           width: 100%;
+  //           height: 100%;
 
-            .aboutMe_tit{
-              clear: right;
-              font-size: 1.8rem;
-              text-align: center;
-            }
+  //           .aboutMe_tit{
+  //             clear: right;
+  //             font-size: 1.8rem;
+  //             text-align: center;
+  //           }
     
-            .introduce{
-              font-size: 1.3rem;
-              line-height: 4rem;
-            }
-          }
-        }
+  //           .introduce{
+  //             font-size: 1.3rem;
+  //             line-height: 4rem;
+  //           }
+  //         }
+  //       }
 
-          .info__contact{
-            width: 100%;
-            height: 35rem;
-            // background: url('../img/info/info_background/flower.png') center no-repeat;
-            background: $maincolor2;
-            background-size: cover;
-            position: absolute;
-            top: 35rem;
-            transition: 0.5s ease-in;
+  //         .info__contact{
+  //           width: 100%;
+  //           height: 35rem;
+  //           // background: url('../img/info/info_background/flower.png') center no-repeat;
+  //           background: $maincolor2;
+  //           background-size: cover;
+  //           position: absolute;
+  //           top: 35rem;
+  //           transition: 0.5s ease-in;
 
-            .information{
-              @include information_align;
-            }
+  //           .information{
+  //             @include information_align;
+  //           }
 
-            .info__writing{
-              margin-left: 40%;
-            }
+  //           .info__writing{
+  //             margin-left: 40%;
+  //           }
 
-            @include tablet{
-              height: 45rem;
-              top: 45rem;
+  //           @include tablet{
+  //             height: 45rem;
+  //             top: 45rem;
 
-              .information{
-                margin-top: 5rem;
-                height: 40rem;
-              }
+  //             .information{
+  //               margin-top: 5rem;
+  //               height: 40rem;
+  //             }
 
-              .info__writing{
-                width: 13rem;
-                margin-left: 45%;
-              }
+  //             .info__writing{
+  //               width: 13rem;
+  //               margin-left: 45%;
+  //             }
 
-              .info__writing2{
-                width: 20rem;
-              }
-            }
+  //             .info__writing2{
+  //               width: 20rem;
+  //             }
+  //           }
 
-            @include mobile{
-              height: 55rem;
-              top: 55rem;
-              padding-top: 8rem;
+  //           @include mobile{
+  //             height: 55rem;
+  //             top: 55rem;
+  //             padding-top: 8rem;
 
-              .information{
-                width: 10rem;
-                height: 40rem;
-                font-size: 1.8rem;
-              }
+  //             .information{
+  //               width: 10rem;
+  //               height: 40rem;
+  //               font-size: 1.8rem;
+  //             }
 
-              .info__writing{
-                width: 10rem;
-                margin-left: 2rem;
-              }
+  //             .info__writing{
+  //               width: 10rem;
+  //               margin-left: 2rem;
+  //             }
 
-              .info__writing2{
-                width: 17rem;
-              }
-            }
-          }
+  //             .info__writing2{
+  //               width: 17rem;
+  //             }
+  //           }
+  //         }
 
-      }
-    }
+  //     }
+  //   }
 
-      .info__img1{
-        width: 25rem;
-        height: 35rem;
-        border: 0.5px solid gray;
-        background: url('../img/info/info_profile/me_charactor.png');
-        position: absolute;
-        top: 10rem;
-        left: 10%;
-        overflow: hidden;
+  //     .info__img1{
+  //       width: 25rem;
+  //       height: 35rem;
+  //       border: 0.5px solid gray;
+  //       background: url('../img/info/info_profile/me_charactor.png');
+  //       position: absolute;
+  //       top: 10rem;
+  //       left: 10%;
+  //       overflow: hidden;
 
-        @include tablet{
-          width: 17rem;
-          height: 25rem;
-          background: url('../mediaQueryPhone/info/info_profile/me_charactor.png') center no-repeat;
-          background-size: cover;
-        }
+  //       @include tablet{
+  //         width: 17rem;
+  //         height: 25rem;
+  //         background: url('../mediaQueryPhone/info/info_profile/me_charactor.png') center no-repeat;
+  //         background-size: cover;
+  //       }
 
-        @include mobile{
-          width: 17rem;
-          height: 25rem;
-          left: 50%;
-          transform: translateX(-50%);
-          background: url('../mediaQueryPhone/info/info_profile/me_charactor.png') center no-repeat;
-          background-size: cover;
-        }
+  //       @include mobile{
+  //         width: 17rem;
+  //         height: 25rem;
+  //         left: 50%;
+  //         transform: translateX(-50%);
+  //         background: url('../mediaQueryPhone/info/info_profile/me_charactor.png') center no-repeat;
+  //         background-size: cover;
+  //       }
 
-        .info__img2{
-          width: 25rem;
-          height: 35rem;
-          position: absolute;
-          background: url('../img/info/info_profile/me_info.png');
-          top: 35rem;
-          transition: 0.5s ease-in;
+  //       .info__img2{
+  //         width: 25rem;
+  //         height: 35rem;
+  //         position: absolute;
+  //         background: url('../img/info/info_profile/me_info.png');
+  //         top: 35rem;
+  //         transition: 0.5s ease-in;
 
-          @include tablet{
-            width: 17rem;
-            height: 25rem;
-            top: 25rem;
-            background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
-            background-size: cover;
-          }
+  //         @include tablet{
+  //           width: 17rem;
+  //           height: 25rem;
+  //           top: 25rem;
+  //           background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
+  //           background-size: cover;
+  //         }
 
-          @include mobile{
-            width: 17rem;
-            height: 25rem;
-            top: 25rem;
-            background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
-            background-size: cover;
-          }
-        }
-      }
-  }
+  //         @include mobile{
+  //           width: 17rem;
+  //           height: 25rem;
+  //           top: 25rem;
+  //           background: url('../mediaQueryPhone/info/info_profile/me_info.png') center no-repeat;
+  //           background-size: cover;
+  //         }
+  //       }
+  //     }
+  // }
     
     /*section4 skills*/
     #skills{
