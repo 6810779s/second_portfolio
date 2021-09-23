@@ -1143,10 +1143,11 @@ a:visited {
   position: absolute;
   cursor: pointer;
   background: url("../img/arrow/up.png") center no-repeat;
+  transition: 0.3s ease-in;
 }
 
 .container .main__article #project_WEB .projectWeb_container .wrap .up:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.3rem);
   background-color: #fadddd;
 }
 
@@ -1159,10 +1160,11 @@ a:visited {
   position: absolute;
   cursor: pointer;
   background: url("../img/arrow/down.png") center no-repeat;
+  transition: 0.3s ease-in;
 }
 
 .container .main__article #project_WEB .projectWeb_container .wrap .down:hover {
-  transform: translateY(1rem);
+  transform: translateY(0.3rem);
   background-color: #fadddd;
 }
 
