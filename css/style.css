@@ -250,13 +250,17 @@ a:visited {
 .container .main__article #info_a .wrap_a .profile .profile_info ul {
   margin-top: 2rem;
   font-size: 2.5rem;
-  line-height: 4.3rem;
+  line-height: 5rem;
 }
 
-.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-envelope, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-mobile-alt, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-rss, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-github {
+.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-blogger, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-rss, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-github {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
+}
+
+.container .main__article #info_a .wrap_a .profile .profile_info ul li:hover {
+  color: #fadddd;
 }
 
 .container .main__article #info_a .wrap_a .information {
@@ -279,7 +283,7 @@ a:visited {
 }
 
 .container .main__article #skills {
-  height: 80rem;
+  height: 90rem;
   position: relative;
 }
 
@@ -326,7 +330,7 @@ a:visited {
 
 .container .main__article #skills .skills_container {
   width: 110rem;
-  height: 70rem;
+  height: 80rem;
   font-size: 2rem;
   overflow: hidden;
   position: relative;
@@ -349,7 +353,7 @@ a:visited {
 
 .container .main__article #skills .skills_container .skills_wrap {
   width: 110rem;
-  height: 50rem;
+  height: 70rem;
   margin: auto;
 }
 
@@ -393,16 +397,11 @@ a:visited {
 .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
   width: 20rem;
   height: 5rem;
-  background: #fadddd;
   margin: 3rem 0 0 1rem;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 1rem;
   padding-left: 2rem;
-  box-shadow: 0.3rem 0.2rem 0.5rem 0.1rem gray;
-}
-
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs p {
-  padding-top: 1.35rem;
+  border: 1px solid #f19796;
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .languageImgs {
@@ -418,8 +417,8 @@ a:visited {
     width: 15rem;
   }
   .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
-    width: 15rem;
-    height: 2.5rem;
+    width: 16rem;
+    height: 4rem;
     border-radius: 0;
     box-shadow: none;
     background: none;
@@ -456,24 +455,48 @@ a:visited {
   }
 }
 
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .html .htmlImg {
-  background: url("../img/skill/web/html.png") center no-repeat;
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li {
+  padding-top: calc((5rem - 3.5rem)/2);
 }
 
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .css .cssImg {
-  background: url("../img/skill/web/css.png") center no-repeat;
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p {
+  display: table-cell;
 }
 
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .js .jsImg {
-  background: url("../img/skill/web/javascript.png") center no-repeat;
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .icon_logo, .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .jQueryImg {
+  vertical-align: middle;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 3rem;
 }
 
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .scss .scssImg {
-  background: url("../img/skill/web/scss.png") center no-repeat;
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .jquery {
+  vertical-align: middle;
 }
 
-.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .react .reactImg {
-  background: url("../img/skill/web/react.png") center no-repeat;
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-html5 {
+  color: #E34F26;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-css3-alt {
+  color: #1572B6;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-js {
+  color: #F7DF1E;
+  background: black;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-sass {
+  color: #CC6699;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-react {
+  color: #61DAFB;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs li p .fa-node {
+  color: #339933;
 }
 
 .container .main__article #skills .skills_container .skills_wrap .web .left_languageImgs .jQuery .jQueryImg {
@@ -517,7 +540,7 @@ a:visited {
   .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility li {
     width: 48rem;
     height: 2.5rem;
-    margin: 5rem 0 0 0;
+    margin: 6.7rem 0 0 0;
   }
 }
 
@@ -663,9 +686,25 @@ a:visited {
   }
 }
 
+.container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .node .node_skill {
+  width: 42rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .node .node_skill {
+    width: 28.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container .main__article #skills .skills_container .skills_wrap .web .right_languageAbility .node .node_skill {
+    width: 10.8rem;
+  }
+}
+
 .container .main__article #skills .skills_container .skills_wrap .other {
   width: 110rem;
-  height: 50rem;
+  height: 70rem;
   position: absolute;
   transition: 0.5s ease-in;
   left: 110rem;
@@ -681,16 +720,11 @@ a:visited {
 .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li {
   width: 20rem;
   height: 5rem;
-  background: #fadddd;
   margin: 3rem 0 0 1rem;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 1rem;
   padding-left: 2rem;
-  box-shadow: 0.3rem 0.2rem 0.5rem 0.1rem gray;
-}
-
-.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs p {
-  padding-top: 1.35rem;
+  border: 1px solid #f19796;
 }
 
 .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .languageImgs {
@@ -706,8 +740,8 @@ a:visited {
     width: 15rem;
   }
   .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li {
-    width: 15rem;
-    height: 2.5rem;
+    width: 16rem;
+    height: 4rem;
     border-radius: 0;
     box-shadow: none;
     background: none;
@@ -742,6 +776,37 @@ a:visited {
   .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs p {
     padding-top: 0;
   }
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li {
+  padding-top: calc((5rem - 3.5rem)/2);
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p {
+  display: table-cell;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .icon_logo, .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .mysql_Img {
+  vertical-align: middle;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 3rem;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .mysQL {
+  vertical-align: middle;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .fa-cuttlefish {
+  color: #A8B9CC;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .fa-java {
+  color: #007396;
+}
+
+.container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs li p .fa-python {
+  color: #3776AB;
 }
 
 .container .main__article #skills .skills_container .skills_wrap .other .left_languageImgs .c .c_Img {
@@ -797,7 +862,7 @@ a:visited {
   .container .main__article #skills .skills_container .skills_wrap .other .right_languageAbility li {
     width: 48rem;
     height: 2.5rem;
-    margin: 5rem 0 0 0;
+    margin: 6.7rem 0 0 0;
   }
 }
 
@@ -1282,27 +1347,27 @@ a:visited {
   overflow: hidden;
 }
 
-.container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container {
+.container .main__article #project_WEB .projectWeb_container .portfolio .container {
   width: 100rem;
   height: 40rem;
   overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .container {
     width: 70rem;
     height: 30rem;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .container {
     width: 30rem;
     height: 20rem;
   }
 }
 
-.container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
+.container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
   width: 100rem;
   height: 293.8rem;
   position: absolute;
@@ -1312,107 +1377,123 @@ a:visited {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
     width: 70rem;
-    height: 206.1rem;
-    background: url("../mediaQueryTablet/project/web/first_portfolio_tablet.png");
+    height: 200rem;
+    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio .portfolio_container .portfolio_project_img {
+  .container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
     width: 30rem;
-    height: 88.6rem;
+    height: 80rem;
     top: 0;
-    background: url("../mediaQueryPhone/project/web/firstPortfolio_mobile.png") no-repeat;
+    background-size: contain;
   }
 }
 
 .container .main__article #project_WEB .projectWeb_container .cafe {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
+.container .main__article #project_WEB .projectWeb_container .cafe .container {
+  width: 100rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container {
+  .container .main__article #project_WEB .projectWeb_container .cafe .container {
     width: 70rem;
     height: 30rem;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container {
+  .container .main__article #project_WEB .projectWeb_container .cafe .container {
     width: 30rem;
     height: 20rem;
   }
 }
 
-.container .main__article #project_WEB .projectWeb_container .cafe .cafe_container .cafe_project_img {
+.container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
   width: 100rem;
   height: 361.1rem;
   position: absolute;
-  background: url("../img/project/web/cafeSroty.png");
+  background: url("../img/project/web/cafeSroty.png") no-repeat;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container .cafe_project_img {
+  .container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
     width: 70rem;
     height: 251.8rem;
-    background: url("../mediaQueryTablet/project/web/cafe_tablet.png");
+    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .cafe .cafe_container .cafe_project_img {
+  .container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
     width: 30rem;
     height: 102.1rem;
-    background: url("../mediaQueryPhone/project/web/cafe_mobile.png") no-repeat;
+    top: 0;
+    background-size: contain;
   }
 }
 
 .container .main__article #project_WEB .projectWeb_container .portfolio_second {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
+.container .main__article #project_WEB .projectWeb_container .portfolio_second .container {
+  width: 100rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container {
+  .container .main__article #project_WEB .projectWeb_container .portfolio_second .container {
     width: 70rem;
     height: 30rem;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container {
+  .container .main__article #project_WEB .projectWeb_container .portfolio_second .container {
     width: 30rem;
     height: 20rem;
   }
 }
 
-.container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container .portfolioSecond_project_img {
+.container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
   width: 100rem;
   height: 453.5rem;
   position: absolute;
-  background: url("../img/project/web/portfolio_second.png");
+  background: url("../img/project/web/portfolio_second.png") no-repeat;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container .portfolioSecond_project_img {
+  .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
     width: 70rem;
     height: 316.2rem;
-    background: url("../mediaQueryTablet/project/web/second_portfolio_tablet.png");
+    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
-  .container .main__article #project_WEB .projectWeb_container .portfolio_second .portfolioSecond_container .portfolioSecond_project_img {
+  .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
     width: 30rem;
     height: 136.1rem;
-    background: url("../mediaQueryPhone/project/web/portfolio_second_mobile.png") no-repeat;
+    top: 0;
+    background-size: contain;
   }
 }
 
