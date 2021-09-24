@@ -23,40 +23,41 @@ footer: 150
 entire: 5450
 
 */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
-html{
-    font-size: 10px;
+
+html {
+  font-size: 10px;
 }
 
-a:visited{
+a:visited {
   color: black;
 }
 
-.main_name{
+.main_name {
   font-size: 2.2rem;
 }
 
 
-.container{
+.container {
   width: 100%;
   height: 100%;
   font-family: 'Karla', sans-serif;
 
   /*section1 header*/
-  #header{
+  #header {
     width: 100%;
     height: 8rem;
     // background-color: $maincolor;
@@ -64,27 +65,27 @@ a:visited{
     z-index: 9999;
     transition: 0.2s ease-in;
 
-    .header_logo{
+    .header_logo {
       float: left;
       font-size: 4.7rem;
       font-family: 'Dancing Script', cursive;
       margin: 1.2rem 2rem;
-    
-      @include mobile{
+
+      @include mobile {
         width: 8rem;
         font-size: 3rem;
         margin: 1rem 2rem;
-        
+
       }
     }
 
-    @include mobile{
+    @include mobile {
       width: 100%;
       height: 6rem;
     }
 
-    .category{
-      @include mobile{
+    .category {
+      @include mobile {
         display: none;
         float: right;
         width: 10rem;
@@ -92,40 +93,44 @@ a:visited{
         background: $maincolor;
         margin-top: 6rem;
       }
-      .mobile_hidden{
-        @include mobile{
+
+      .mobile_hidden {
+        @include mobile {
           clear: left;
         }
       }
 
-      li{
+      li {
         float: left;
         font-size: 2rem;
         margin: 2.85rem 2rem;
 
-        @include mobile{
+        @include mobile {
           width: 10rem;
           height: 3rem;
           text-align: center;
           margin: 1rem auto 0rem auto;
           font-family: 'Karla', sans-serif;
         }
-  
+
       }
-      li:hover{
+
+      li:hover {
         text-decoration: underline;
       }
 
     }
 
-    .hamburgerBt{
-      @include desktop{
+    .hamburgerBt {
+      @include desktop {
         display: none;
       }
-      @include tablet{
+
+      @include tablet {
         display: none;
       }
-      @include mobile{
+
+      @include mobile {
         display: block;
         position: absolute;
         right: 3.5rem;
@@ -133,73 +138,78 @@ a:visited{
       }
     }
   }
-  
-  .main__article{
+
+  .main__article {
     width: 100%;
-    height: 100%;//540rem;
+    height: 100%; //540rem;
     padding-top: 8rem;
 
-    @include mobile{
+    @include mobile {
       padding-top: 6rem;
     }
 
     /*section2 메인 네이밍*/
-    #main__tit{
+    #main__tit {
       max-width: 100%;
       height: 50rem;
       background: url('../img/study.png') no-repeat left;
       background-size: cover;
 
-      @include tablet{
+      @include tablet {
         height: 35rem;
       }
-      @include mobile{
+
+      @include mobile {
         height: 25rem;
       }
-      
 
-      h1{
+
+      h1 {
         color: white;
         font-size: 9rem;
         font-family: 'Dancing Script', cursive;
         padding: 3rem;
-        @include mobile{
+
+        @include mobile {
           font-size: 4rem;
         }
-        
+
       }
 
     }
 
     /*section3 information*/
-    #info_a{
+    #info_a {
       padding-top: 5rem;
       width: 100%;
       height: 80rem;
 
-      .wrap_a{
+      .wrap_a {
         width: 110rem;
         height: 60rem;
         margin: auto;
 
-        .profile{
+        .profile {
           display: flex;
           padding-top: 3rem;
-          .profile_img{
+
+          .profile_img {
             width: 23rem;
             height: 30rem;
             background: url('../img/info/info_profile/meInfo.png') no-repeat center;
             background-size: cover;
           }
-          .profile_info{
+
+          .profile_info {
             width: 87rem;
             height: 30rem;
             padding-left: 10rem;
-            
-            .name{
+
+            .name {
               font-size: 5rem;
               font-weight: 700;
-              span{
+
+              span {
                 font-size: 3rem;
                 letter-spacing: -0.3rem;
                 padding-left: 1rem;
@@ -207,7 +217,8 @@ a:visited{
                 font-weight: 400;
               }
             }
-            .job{
+
+            .job {
               width: 30rem;
               font-size: 2.5rem;
               text-align: center;
@@ -215,37 +226,44 @@ a:visited{
               margin-top: 0.5rem;
               background: $maincolor;
             }
-            ul{
+
+            ul {
               margin-top: 2rem;
               font-size: 2.5rem;
               line-height: 5rem;
-                .fa-blogger, .fa-rss, .fa-github{
-                  width: 2.5rem;
-                  height: 2.5rem;
-                  margin-right: 1rem;
-                }
-                li:hover{
-                  color: $maincolor;
-                }
-              
+
+              .fa-blogger,
+              .fa-rss,
+              .fa-github {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1rem;
+              }
+
+              li:hover {
+                color: $maincolor;
+              }
+
             }
 
           }
         }
-        .information{
+
+        .information {
           width: 110rem;
           height: 30rem;
           padding-top: 5rem;
           font-size: 2.5rem;
-          
-          h1{
+
+          h1 {
             font-size: 5rem;
             color: white;
             font-style: italic;
             text-shadow: -1px 0 rgb(93, 107, 240), 0 1px rgb(70, 87, 233), 1px 0 rgb(70, 87, 233), 0 -1px rgb(70, 87, 233);
             margin-bottom: 3rem;
           }
-          p{
+
+          p {
             line-height: 5rem;
           }
         }
@@ -253,16 +271,19 @@ a:visited{
     }
 
     /*section4 skills*/
-    #skills{
+    #skills {
       height: 80rem;
       position: relative;
-      @include mobile{
+
+      @include mobile {
         height: 60rem;
       }
-      .main_name_skills{
+
+      .main_name_skills {
         @include main_name_padding;
-       }
-       .button_skills{
+      }
+
+      .button_skills {
         position: absolute;
         font-size: 2rem;
         background: $maincolor;
@@ -274,318 +295,425 @@ a:visited{
         z-index: 100;
         box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem $boxshadow;
 
-        @include tablet{
+        @include tablet {
           font-size: 1.8rem;
         }
-        @include mobile{
+
+        @include mobile {
           font-size: 1.3rem;
-          top:6rem;
+          top: 6rem;
         }
       }
-      .button_skills:hover{
+
+      .button_skills:hover {
         background: $maincolor2;
         cursor: pointer;
 
       }
-      .skills_container_a{
-        width: 110rem;
-        height: 70rem; 
-        font-size: 2rem;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        
-        .skill_wrap{
-          width: 110rem;
-          height: 60rem;
-          margin: auto;
-          
 
-          .web{
+      .skills_container_a {
+        width: 110rem;
+        height: 70rem;
+        font-size: 2rem;
+        margin: auto;
+
+        .skill_wrap {
+          width: 70rem;
+          height: 60rem;
+          position: relative;
+          margin: auto;
+          transform-style: preserve-3d; 
+          transition: all 1s;
+
+          .item{
+            backface-visibility: hidden;
+          }
+
+          &:hover{
+            transform: rotateY(180deg);
+
+          }
+
+
+          .web {
             width: 70rem;
             height: 60rem;
-            background:rgba(218, 214, 214, 0.103);
+            background: rgba(218, 214, 214, 0.103);
             margin: auto;
-            .js{
-              div:first-child{
-                p{
+            position:absolute; 
+            transform: rotateY(0deg);
+
+
+            .js,
+            .jquery {
+              div:first-child {
+                p {
                   padding-left: calc((10rem - 2.625rem) / 2);
                 }
               }
             }
 
-            li{
+            li {
               width: 60rem;
               margin: auto;
               height: calc(60rem / 7);
               display: flex;
               font-size: 3rem;
               border-bottom: 1px solid rgba(168, 167, 167, 0.527);
-              
-              &:hover{
+
+              &:hover {
                 background: $maincolor;
               }
-              div{
+
+              div {
                 display: table;
-                
-                p{
+
+                p {
                   display: table-cell;
                   vertical-align: middle;
                 }
 
-                .fa-html5{
+                //로고 색깔
+                .fa-html5 {
                   color: #E34F26;
                 }
 
-                .fa-css3-alt{
-                  color:#1572B6;
+                .fa-css3-alt {
+                  color: #1572B6;
                 }
 
-                .fa-js{
+                .fa-js {
                   width: 3rem;
                   height: 3rem;
-                  
-                  color:#F7DF1E;
-                  background:black;
+
+                  color: #F7DF1E;
+                  background: black;
                 }
 
-                .fa-sass{
-                  color:#CC6699;
+                .fa-sass {
+                  color: #CC6699;
                 }
 
-                .fa-react{
-                  color:#61DAFB;
+                .fa-react {
+                  color: #61DAFB;
                 }
 
-                .fa-node{
-                  color:#339933;
+                .fa-node {
+                  color: #339933;
                 }
               }
-              div:first-child{
+
+              div:first-child {
                 width: 15rem;
-                
+
               }
-              div:nth-child(2){
+
+              div:nth-child(2) {
                 width: 25rem;
               }
-              div:last-child{
+
+              div:last-child {
                 width: 15rem;
               }
-     
-             
-              .icon_logo{
+
+
+              .icon_logo {
                 width: 10rem;
               }
-          
+
+            }
+          }
+
+          .other {
+            width: 70rem;
+            height: 60rem;
+            background: rgba(218, 214, 214, 0.103);
+            margin: auto;
+            position:absolute; 
+            transform: rotateY(180deg);
+
+            .mysql {
+              div:first-child {
+                p {
+                  padding-left: calc((10rem - 2.625rem) / 2);
+                }
+              }
+            }
+
+            li {
+              width: 60rem;
+              margin: auto;
+              height: calc(60rem / 7);
+              display: flex;
+              font-size: 3rem;
+              border-bottom: 1px solid rgba(168, 167, 167, 0.527);
+
+              &:hover {
+                background: $maincolor;
+              }
+
+              div {
+                display: table;
+
+                p {
+                  display: table-cell;
+                  vertical-align: middle;
+                }
+
+                .fa-java {
+                  color: #007396;
+                }
+
+                .fa-cuttlefish {
+                  color: #A8B9CC
+                }
+
+                .fa-python {
+                  color: #3776AB
+                }
+
+
+              }
+
+              div:first-child {
+                width: 15rem;
+
+              }
+
+              div:nth-child(2) {
+                width: 25rem;
+              }
+
+              div:last-child {
+                width: 15rem;
+              }
+
+              .icon_logo {
+                width: 10rem;
+              }
+
             }
           }
         }
       }
-      
+
     }
-    
+
     /*section5 achieve*/
-    #achieve{
+    #achieve {
       height: 60rem;
-      .wrap{
+
+      .wrap {
         width: 110rem;
         height: 60rem;
         margin: auto;
 
-        @include tablet{
+        @include tablet {
           width: 70rem;
         }
-        @include mobile{
+
+        @include mobile {
           width: 30rem;
         }
       }
-      .main_name_Achieve{
+
+      .main_name_Achieve {
         @include main_name_padding;
       }
-       
-        .swiper-container{
-          width: 50rem;
-          height: 30rem;
-          margin: auto;
-         
-          @include mobile{
-            width: 25rem;
-          }
+
+      .swiper-container {
+        width: 50rem;
+        height: 30rem;
+        margin: auto;
+
+        @include mobile {
+          width: 25rem;
         }
-        .swiper-slide {
-          text-align: center;
-          font-size: 1.8rem;
-          background: $maincolor; /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-          box-shadow:-0.3rem 0rem 1rem 0.1rem $boxshadow;
-          &:hover{
-            .achieve_link{
-              opacity: 1;
-            }
-          }
-          }
-          .swiper-pagination-bullet{
-            width: 1.5rem;
-            height: 1.5rem;
-          }
-          .swiper-pagination-bullet-active{
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 0.3rem solid $maincolor2;
-            background: pink;
-          }
-
-          .swiper-button-prev:hover{
-            color:$maincolor2;
-            transform: translateX(-0.5rem);
-          }
-
-          .swiper-button-next:hover{
-            color:$maincolor2;
-            transform: translateX(0.5rem);
-          }
-
-          .achieveSite{
-            width: 25rem;
-            height: 30rem;
-
-          }
-          .tistory{
-            position: relative;
-            line-height: 2.5rem;
-            .up{
-              width: 10rem;
-              height: 10rem;
-              border-radius: 50%;
-              background: url('../img/achieve/tistory.png');
-              margin: 2rem 7.5rem;
-              
-            }
-            
-          }
-
-          .achieve_link{
-            position: absolute;
-            width: 50rem;
-            height: 30rem;
-            padding-top: 12.8rem;
-            text-decoration: underline;
-            background: $caption;
-            opacity: 0;
-            transition: 0.5s ease-in;
-
-            a:hover{
-              color: blue;
-            }
-
-            @include mobile{
-              width: 25rem;
-              font-size: 1.5rem;
-              a{
-                color: white;
-              }
-            }
-          }
-
-          .github{
-            line-height: 2.5rem;
-            .up{
-              width: 10rem;
-              height: 10rem;
-              border-radius: 50%;
-              background: url('../img/achieve/github.png');
-              margin: 2rem 7.5rem;
-            }
-          }
-        
       }
 
-    
+      .swiper-slide {
+        text-align: center;
+        font-size: 1.8rem;
+        background: $maincolor;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        box-shadow: -0.3rem 0rem 1rem 0.1rem $boxshadow;
+
+        &:hover {
+          .achieve_link {
+            opacity: 1;
+          }
+        }
+      }
+
+      .swiper-pagination-bullet {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.3rem solid $maincolor2;
+        background: pink;
+      }
+
+      .swiper-button-prev:hover {
+        color: $maincolor2;
+        transform: translateX(-0.5rem);
+      }
+
+      .swiper-button-next:hover {
+        color: $maincolor2;
+        transform: translateX(0.5rem);
+      }
+
+      .achieveSite {
+        width: 25rem;
+        height: 30rem;
+
+      }
+
+      .tistory {
+        position: relative;
+        line-height: 2.5rem;
+
+        .up {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          background: url('../img/achieve/tistory.png');
+          margin: 2rem 7.5rem;
+
+        }
+
+      }
+
+      .achieve_link {
+        position: absolute;
+        width: 50rem;
+        height: 30rem;
+        padding-top: 12.8rem;
+        text-decoration: underline;
+        background: $caption;
+        opacity: 0;
+        transition: 0.5s ease-in;
+
+        a:hover {
+          color: blue;
+        }
+
+        @include mobile {
+          width: 25rem;
+          font-size: 1.5rem;
+
+          a {
+            color: white;
+          }
+        }
+      }
+
+      .github {
+        line-height: 2.5rem;
+
+        .up {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          background: url('../img/achieve/github.png');
+          margin: 2rem 7.5rem;
+        }
+      }
+
+    }
+
+
     /*section6 project_web*/
-    #project_WEB{
+    #project_WEB {
       width: 100%;
       height: 210rem;
 
-      @include tablet{
+      @include tablet {
         height: 200rem;
       }
 
-      @include mobile{
+      @include mobile {
         height: 145rem;
       }
-      
-      .projectWeb_tit_wrap{
+
+      .projectWeb_tit_wrap {
         width: 110rem;
         margin: auto;
 
-        @include tablet{
+        @include tablet {
           width: 70rem;
         }
 
-        @include mobile{
+        @include mobile {
           width: 30rem
         }
       }
 
-      .main_name_ProjectWeb{
+      .main_name_ProjectWeb {
         @include main_name_padding;
       }
 
-      .projectWeb_container{
+      .projectWeb_container {
         width: 100%;
         height: 125rem;
         margin: auto;
-        
 
-        li{
+
+        li {
           width: 100%;
           height: 40rem;
           margin: 5rem auto 5rem auto;
 
-          @include tablet{
+          @include tablet {
             height: 30rem;
           }
 
-          @include mobile{
+          @include mobile {
             height: 20rem;
           }
         }
 
-        .container{
+        .container {
           width: 100rem;
           height: 40rem;
           overflow: hidden;
           margin: auto;
-          &:hover{
-            .caption_web{
+
+          &:hover {
+            .caption_web {
               opacity: 1;
 
             }
           }
 
-          @include tablet{
+          @include tablet {
             width: 70rem;
             height: 30rem;
           }
 
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 20rem;
           }
         }
 
-        .Project_WEB_mainTit{
+        .Project_WEB_mainTit {
           clear: left;
           width: 15rem;
           font-size: 3rem;
@@ -594,41 +722,42 @@ a:visited{
           border-bottom: 0.2rem solid black;
           text-align: center;
 
-          @include mobile{
+          @include mobile {
             width: 13rem;
             font-size: 2rem;
 
           }
-          
+
         }
 
-        .wrap{
+        .wrap {
           width: 110rem;
           background: rgba(218, 214, 214, 0.103);
           margin: auto;
           position: relative;
 
-          .up{
+          .up {
             @include up_arrow;
-            
-          }
-          .down{
-            @include down_arrow;
-           
+
           }
 
-          @include tablet{
+          .down {
+            @include down_arrow;
+
+          }
+
+          @include tablet {
             width: 100%;
             height: 30rem;
           }
 
-          @include mobile{
+          @include mobile {
             width: 36rem;
             height: 20rem;
           }
         }
 
-        .caption_web{
+        .caption_web {
           width: 100rem;
           height: 40rem;
           background: $caption;
@@ -636,15 +765,15 @@ a:visited{
           opacity: 0;
           transition: 0.3s ease-in;
 
-          
-          .web_tit{
+
+          .web_tit {
             font-size: 3rem;
             color: white;
             text-align: center;
             padding-top: 10rem;
           }
 
-          .web_info{
+          .web_info {
             font-size: 2rem;
             text-align: center;
             padding-top: 4rem;
@@ -652,40 +781,41 @@ a:visited{
             color: white;
           }
 
-          @include tablet{
+          @include tablet {
             width: 70rem;
             height: 30rem;
             opacity: 0.7;
 
-            
+
           }
 
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 20rem;
             opacity: 0.7;
-            
-            .web_tit{
+
+            .web_tit {
               font-size: 2.5rem;
               padding-top: 3rem;
             }
 
-            .web_info{
-              padding-top:2.7rem;
+            .web_info {
+              padding-top: 2.7rem;
             }
-            
+
           }
 
-         
-          
+
+
         }
 
-        .project_web_link{
+        .project_web_link {
           width: 100%;
           height: 4rem;
           position: relative;
           margin-bottom: 5rem;
-          .link{
+
+          .link {
             position: absolute;
             width: 15rem;
             height: 4rem;
@@ -696,19 +826,19 @@ a:visited{
             text-align: center;
             left: 50%;
             margin-left: 3.5rem;
-    
-            &:hover{
-              background: $maincolor;
-              }
 
-              @include mobile{
-                margin-left: 1.5rem;
-              }
+            &:hover {
+              background: $maincolor;
             }
 
-            
-          
-          .github{
+            @include mobile {
+              margin-left: 1.5rem;
+            }
+          }
+
+
+
+          .github {
             position: absolute;
             width: 15rem;
             height: 4rem;
@@ -719,57 +849,62 @@ a:visited{
             text-align: center;
             left: 50%;
             margin-left: -14.5rem;
-            &:hover{
+
+            &:hover {
               background: $maincolor;
-  
+
             }
           }
         }
-        .portfolio{
-          @include project(293.8rem,200rem,80rem, '../img/project/web/EHPortfolio.png');
+
+        .portfolio {
+          @include project(293.8rem, 200rem, 80rem, '../img/project/web/EHPortfolio.png');
         }
-        .cafe{
-          @include project(361.1rem, 251.8rem,102.1rem,'../img/project/web/cafeSroty.png');
+
+        .cafe {
+          @include project(361.1rem, 251.8rem, 102.1rem, '../img/project/web/cafeSroty.png');
         }
-        .portfolio_second{
-          @include project(453.5rem,316.2rem,136.1rem,'../img/project/web/portfolio_second.png');
+
+        .portfolio_second {
+          @include project(453.5rem, 316.2rem, 136.1rem, '../img/project/web/portfolio_second.png');
         }
 
       }
     }
 
     /*section7 project_others*/
-   .project_others{
+    .project_others {
       width: 100%;
       height: 110rem;
 
-      @include tablet{
+      @include tablet {
         height: 150rem;
       }
 
-      @include mobile{
+      @include mobile {
         height: 150rem;
       }
-      
-      .wrap{
+
+      .wrap {
         width: 110rem;
         height: 110rem;
         margin: auto;
 
-        @include tablet{
+        @include tablet {
           width: 70rem;
         }
 
-        @include mobile{
+        @include mobile {
           width: 30rem;
           height: 130rem;
         }
       }
 
-      .main_name_ProjectOthers{
+      .main_name_ProjectOthers {
         @include main_name_padding;
       }
-      .project_mainTit{
+
+      .project_mainTit {
         width: 13rem;
         height: 3rem;
         border-bottom: 0.1rem solid black;
@@ -778,13 +913,13 @@ a:visited{
         margin: auto;
       }
 
-      .caption_title{
+      .caption_title {
         font-size: 2rem;
         font-family: 'Noto Sans KR', sans-serif;
         margin: 5rem 0;
       }
 
-      li{
+      li {
         position: relative;
         float: left;
         width: 40rem;
@@ -793,18 +928,19 @@ a:visited{
         line-height: 2.8rem;
         font-size: 1.5rem;
         font-family: 'Noto Sans KR', sans-serif;
-        &:hover{
-          .caption_project_others{
+
+        &:hover {
+          .caption_project_others {
             opacity: 1;
           }
         }
 
-        @include tablet{
+        @include tablet {
           float: none;
           margin: auto;
         }
 
-        @include mobile{
+        @include mobile {
           float: none;
           width: 30rem;
           height: 23rem;
@@ -812,42 +948,43 @@ a:visited{
         }
       }
 
-      .bluemarble{
+      .bluemarble {
         float: right;
 
-        @include tablet{
+        @include tablet {
           float: none;
           margin: auto;
           margin-top: 5rem;
         }
-        @include mobile{
+
+        @include mobile {
           clear: left;
           margin-top: 5rem;
         }
       }
 
-      .project_others_Container{
+      .project_others_Container {
         width: 110rem;
         height: 35rem;
         margin: 5rem auto;
         padding: 1.5rem 5rem;
         background: rgba(218, 214, 214, 0.103);
 
-        @include tablet{
+        @include tablet {
           width: 70rem;
           height: 80rem;
           background: white;
           padding: 0;
         }
 
-        @include mobile{
+        @include mobile {
           width: 30rem;
           height: 80rem;
           padding: 0;
           background: white;
         }
 
-        .caption_project_others{
+        .caption_project_others {
           width: 40rem;
           height: 25rem;
           background: $caption;
@@ -857,108 +994,111 @@ a:visited{
           opacity: 0;
           transition: 0.3s ease-in;
 
-          @include tablet{
+          @include tablet {
             width: 40rem;
             height: 25rem;
             opacity: 0.6;
           }
 
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 23rem;
             opacity: 0.6;
           }
         }
 
-        .up{
+        .up {
           width: 40rem;
           height: 25rem;
 
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 23rem;
           }
         }
-        
-        .explain_link{
+
+        .explain_link {
           width: 40rem;
           height: 8rem;
           margin: auto;
           padding-top: 2.95rem;
-          
-         @include mobile{
-           width: 30rem;
-           font-size: 1rem;
-           margin: 0;
-         }
 
-          a{
-            margin: 0 1rem;
-            
+          @include mobile {
+            width: 30rem;
+            font-size: 1rem;
+            margin: 0;
           }
 
-          .github_link{
+          a {
+            margin: 0 1rem;
+
+          }
+
+          .github_link {
             width: 10rem;
             height: 5rem;
             padding: 1rem 3.9rem;
             border: 0.1rem solid $maincolor2;
             border-radius: 3rem;
-            
-            &:hover{
+
+            &:hover {
               background-color: $maincolor;
             }
 
-            @include mobile{
+            @include mobile {
               width: 3rem;
               height: 4rem;
               padding: 0.5rem 3rem;
             }
           }
 
-          .pdf_link{
+          .pdf_link {
             width: 16rem;
             height: 5rem;
             padding: 1rem;
             border: 0.5px solid $maincolor2;
             border-radius: 3rem;
 
-            &:hover{
+            &:hover {
               background-color: $maincolor;
             }
 
-            @include mobile{
+            @include mobile {
               width: 10rem;
               height: 4rem;
               padding: 0.5rem 1.6rem;
             }
           }
         }
-        .chatting{
 
-          @include mobile{
+        .chatting {
+
+          @include mobile {
             width: 30rem;
             height: 40rem;
           }
-            .chatting_project_img{
-              width: 40rem;
-              height: 25rem;
-              background: url('../img/project/others/chatting.png') center no-repeat;
-              
-              @include mobile{
-                width: 30rem;
-                height: 23rem;
-                background: url('../mediaQueryPhone/project/others/chatting_mobile.png') center no-repeat;
-              }
+
+          .chatting_project_img {
+            width: 40rem;
+            height: 25rem;
+            background: url('../img/project/others/chatting.png') center no-repeat;
+
+            @include mobile {
+              width: 30rem;
+              height: 23rem;
+              background: url('../mediaQueryPhone/project/others/chatting_mobile.png') center no-repeat;
             }
+          }
 
         }
-        .bluemarble{
-          .bluemarble_project_img{
+
+        .bluemarble {
+          .bluemarble_project_img {
             width: 40rem;
             height: 25rem;
             background: url('../img/project/others/bluemarble.png') center no-repeat;
-          
-            @include mobile{
+
+            @include mobile {
               width: 30rem;
               height: 23rem;
               background: url('../mediaQueryPhone/project/others/bluemarble_mobile.png') center no-repeat;
@@ -966,13 +1106,13 @@ a:visited{
           }
         }
 
-        .tel{
-          .tel_project_img{
+        .tel {
+          .tel_project_img {
             width: 40rem;
             height: 25rem;
             background: url('../img/project/others/tel.png') center no-repeat;
-          
-            @include mobile{
+
+            @include mobile {
               width: 30rem;
               height: 23rem;
               background: url('../mediaQueryPhone/project/others/tel_mobile.png') center no-repeat;
@@ -982,57 +1122,60 @@ a:visited{
 
       }
 
-      @include tablet{
-        .c_Container{
+      @include tablet {
+        .c_Container {
           width: 70rem;
           height: 35rem;
         }
       }
 
-      @include mobile{
-        .c_Container{
+      @include mobile {
+        .c_Container {
           width: 30rem;
           height: 35rem;
         }
       }
-      
+
     }
 
     /*section8 contact*/
-    #contactMe{
+    #contactMe {
       width: 100%;
       height: 45rem;
       padding-top: 3rem;
       border-top: 1px solid rgba(219, 218, 218, 0.322);
-      @include tablet{
+
+      @include tablet {
         height: 50rem;
       }
-      @include mobile{
+
+      @include mobile {
         height: 50rem;
       }
-      .wrap{
+
+      .wrap {
         width: 110rem;
         height: 40rem;
         margin: auto;
 
-        @include tablet{
+        @include tablet {
           width: 70rem;
           height: 50rem;
         }
 
-        @include mobile{
+        @include mobile {
           width: 36rem;
           height: 50rem;
         }
 
-        .contact_container{
+        .contact_container {
           width: 50rem;
           height: 30rem;
           margin: 3rem auto;
           border: 5px solid $maincolor2;
           border-radius: 1.5rem;
 
-          .myName{
+          .myName {
             width: 25rem;
             font-size: 3rem;
             margin: 2rem auto 0 auto;
@@ -1040,61 +1183,67 @@ a:visited{
             margin-bottom: 3rem;
           }
 
-          @include tablet{
+          @include tablet {
             margin: 5rem auto;
           }
 
-          @include mobile{
+          @include mobile {
             width: 30rem;
             height: 33rem;
           }
         }
 
       }
-      li{
+
+      li {
         margin: 3rem auto 0 3rem;
         font-size: 2rem;
 
-        @include mobile{
+        @include mobile {
           font-size: 1.5rem;
         }
       }
-      .contact_name{
+
+      .contact_name {
         width: 15rem;
         float: left;
 
-        @include mobile{
+        @include mobile {
           width: 9rem;
         }
       }
-      .contact_content{
+
+      .contact_content {
         width: 25rem;
         float: left;
-        @include mobile{
+
+        @include mobile {
           width: 20rem;
         }
-        
+
       }
 
-      a{
-        &:hover{
+      a {
+        &:hover {
           color: $maincolor2;
         }
       }
     }
   }
-  
+
   /*section9 footer*/
-  #footer{
+  #footer {
     height: 15rem;
     background: $maincolor;
-    .footer_logo{
+
+    .footer_logo {
       padding: 3rem;
     }
 
-    .footer_info{
+    .footer_info {
       padding-top: 5rem;
-      li{
+
+      li {
         text-align: center;
         font-size: 1.6rem;
         color: rgb(107, 101, 101);
@@ -1102,7 +1251,6 @@ a:visited{
       }
     }
   }
-  
-  
-}
 
+
+}

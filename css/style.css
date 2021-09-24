@@ -253,7 +253,9 @@ a:visited {
   line-height: 5rem;
 }
 
-.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-blogger, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-rss, .container .main__article #info_a .wrap_a .profile .profile_info ul .fa-github {
+.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-blogger,
+.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-rss,
+.container .main__article #info_a .wrap_a .profile .profile_info ul .fa-github {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
@@ -332,15 +334,24 @@ a:visited {
   width: 110rem;
   height: 70rem;
   font-size: 2rem;
-  overflow: hidden;
-  position: relative;
   margin: auto;
 }
 
 .container .main__article #skills .skills_container_a .skill_wrap {
-  width: 110rem;
+  width: 70rem;
   height: 60rem;
+  position: relative;
   margin: auto;
+  transform-style: preserve-3d;
+  transition: all 1s;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .item {
+  backface-visibility: hidden;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap:hover {
+  transform: rotateY(180deg);
 }
 
 .container .main__article #skills .skills_container_a .skill_wrap .web {
@@ -348,9 +359,12 @@ a:visited {
   height: 60rem;
   background: rgba(218, 214, 214, 0.103);
   margin: auto;
+  position: absolute;
+  transform: rotateY(0deg);
 }
 
-.container .main__article #skills .skills_container_a .skill_wrap .web .js div:first-child p {
+.container .main__article #skills .skills_container_a .skill_wrap .web .js div:first-child p,
+.container .main__article #skills .skills_container_a .skill_wrap .web .jquery div:first-child p {
   padding-left: calc((10rem - 2.625rem) / 2);
 }
 
@@ -416,6 +430,69 @@ a:visited {
 }
 
 .container .main__article #skills .skills_container_a .skill_wrap .web li .icon_logo {
+  width: 10rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other {
+  width: 70rem;
+  height: 60rem;
+  background: rgba(218, 214, 214, 0.103);
+  margin: auto;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other .mysql div:first-child p {
+  padding-left: calc((10rem - 2.625rem) / 2);
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li {
+  width: 60rem;
+  margin: auto;
+  height: calc(60rem / 7);
+  display: flex;
+  font-size: 3rem;
+  border-bottom: 1px solid rgba(168, 167, 167, 0.527);
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li:hover {
+  background: #fadddd;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div {
+  display: table;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div .fa-java {
+  color: #007396;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div .fa-cuttlefish {
+  color: #A8B9CC;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div .fa-python {
+  color: #3776AB;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div:first-child {
+  width: 15rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div:nth-child(2) {
+  width: 25rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li div:last-child {
+  width: 15rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .other li .icon_logo {
   width: 10rem;
 }
 
