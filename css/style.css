@@ -283,7 +283,7 @@ a:visited {
 }
 
 .container .main__article #skills {
-  height: 90rem;
+  height: 80rem;
   position: relative;
 }
 
@@ -328,6 +328,86 @@ a:visited {
   cursor: pointer;
 }
 
+.container .main__article #skills .skills_container_a {
+  width: 110rem;
+  height: 70rem;
+  font-size: 2rem;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap {
+  width: 110rem;
+  height: 60rem;
+  margin: auto;
+  background: #fadddd;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web {
+  float: left;
+  width: 110rem;
+  height: 60rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web .js div:nth-child(2) p {
+  padding-left: calc((10rem - 2.625rem) / 2);
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li {
+  height: calc(60rem / 7);
+  display: flex;
+  font-size: 3rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div {
+  display: table;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-html5 {
+  color: #E34F26;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-css3-alt {
+  color: #1572B6;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-js {
+  width: 3rem;
+  height: 3rem;
+  color: #F7DF1E;
+  background: black;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-sass {
+  color: #CC6699;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-react {
+  color: #61DAFB;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div .fa-node {
+  color: #339933;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div:first-child {
+  width: 20rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li div:nth-child(2) {
+  width: 10rem;
+}
+
+.container .main__article #skills .skills_container_a .skill_wrap .web li .icon_logo {
+  width: 10rem;
+}
+
 .container .main__article #skills .skills_container {
   width: 110rem;
   height: 80rem;
@@ -340,6 +420,9 @@ a:visited {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #skills .skills_container {
     width: 70rem;
+    float: left;
+    width: 110rem;
+    height: 100%;
   }
 }
 

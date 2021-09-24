@@ -254,7 +254,7 @@ a:visited{
 
     /*section4 skills*/
     #skills{
-      height: 90rem;
+      height: 80rem;
       position: relative;
       @include mobile{
         height: 60rem;
@@ -287,6 +287,87 @@ a:visited{
         cursor: pointer;
 
       }
+      .skills_container_a{
+        width: 110rem;
+        height: 70rem; 
+        font-size: 2rem;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        
+        .skill_wrap{
+          width: 110rem;
+          height: 60rem;
+          margin: auto;
+          background: $maincolor;
+
+          .web{
+            float: left;
+            width: 110rem;
+            height: 60rem;
+            .js{
+              div:nth-child(2){
+                p{
+                  padding-left: calc((10rem - 2.625rem) / 2);
+                }
+              }
+            }
+
+            li{
+              height: calc(60rem / 7);
+              display: flex;
+              font-size: 3rem;
+              
+              div{
+                display: table;
+                p{
+                  display: table-cell;
+                  vertical-align: middle;
+                }
+
+                .fa-html5{
+                  color: #E34F26;
+                }
+
+                .fa-css3-alt{
+                  color:#1572B6;
+                }
+
+                .fa-js{
+                  width: 3rem;
+                  height: 3rem;
+                  
+                  color:#F7DF1E;
+                  background:black;
+                }
+
+                .fa-sass{
+                  color:#CC6699;
+                }
+
+                .fa-react{
+                  color:#61DAFB;
+                }
+
+                .fa-node{
+                  color:#339933;
+                }
+              }
+              div:first-child{
+                width: 20rem;
+
+              }
+              div:nth-child(2){
+                width: 10rem;
+              }
+              .icon_logo{
+                width: 10rem;
+              }
+          
+            }
+          }
+        }
+      }
       .skills_container{
         width: 110rem;
         height: 80rem; 
@@ -297,7 +378,9 @@ a:visited{
 
         @include tablet{
           width: 70rem;
-          
+          float: left;
+          width: 110rem;
+          height: 100%;
         }
 
         @include mobile{
