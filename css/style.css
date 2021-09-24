@@ -630,18 +630,6 @@ a:visited {
   width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container .main__article #project_WEB {
-    height: 200rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .container .main__article #project_WEB {
-    height: 145rem;
-  }
-}
-
 .container .main__article #project_WEB .projectWeb_tit_wrap {
   width: 110rem;
   margin: auto;
@@ -1029,6 +1017,58 @@ a:visited {
   .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
     width: 30rem;
     height: 136.1rem;
+    top: 0;
+    background-size: contain;
+  }
+}
+
+.container .main__article #project_WEB .projectWeb_container .movieApp {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .main__article #project_WEB .projectWeb_container .movieApp .container {
+  width: 100rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #project_WEB .projectWeb_container .movieApp .container {
+    width: 70rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container .movieApp .container {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+
+.container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
+  width: 100rem;
+  height: 130rem;
+  position: absolute;
+  background: url("../img/project/web/movieApp.png") no-repeat;
+  top: 0;
+  transition: 5s ease-in;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
+    width: 70rem;
+    height: 91.1rem;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
+    width: 30rem;
+    height: 39.1rem;
     top: 0;
     background-size: contain;
   }
