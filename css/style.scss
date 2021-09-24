@@ -299,14 +299,15 @@ a:visited{
           width: 110rem;
           height: 60rem;
           margin: auto;
-          background: $maincolor;
+          
 
           .web{
-            float: left;
-            width: 110rem;
+            width: 70rem;
             height: 60rem;
+            background:rgba(218, 214, 214, 0.103);
+            margin: auto;
             .js{
-              div:nth-child(2){
+              div:first-child{
                 p{
                   padding-left: calc((10rem - 2.625rem) / 2);
                 }
@@ -314,12 +315,19 @@ a:visited{
             }
 
             li{
+              width: 60rem;
+              margin: auto;
               height: calc(60rem / 7);
               display: flex;
               font-size: 3rem;
+              border-bottom: 1px solid rgba(168, 167, 167, 0.527);
               
+              &:hover{
+                background: $maincolor;
+              }
               div{
                 display: table;
+                
                 p{
                   display: table-cell;
                   vertical-align: middle;
@@ -354,12 +362,17 @@ a:visited{
                 }
               }
               div:first-child{
-                width: 20rem;
-
+                width: 15rem;
+                
               }
               div:nth-child(2){
-                width: 10rem;
+                width: 25rem;
               }
+              div:last-child{
+                width: 15rem;
+              }
+     
+             
               .icon_logo{
                 width: 10rem;
               }
@@ -368,298 +381,7 @@ a:visited{
           }
         }
       }
-      .skills_container{
-        width: 110rem;
-        height: 80rem; 
-        font-size: 2rem;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-
-        @include tablet{
-          width: 70rem;
-          float: left;
-          width: 110rem;
-          height: 100%;
-        }
-
-        @include mobile{
-          width: 30rem;
-          height: 60rem;
-          font-size: 1.5rem;
-        }
-
-        .skills_wrap{
-          width: 110rem;
-          height: 70rem;
-          margin: auto;
-
-          @include tablet{
-            width: 70rem;
-          }
-          @include mobile{
-            width: 30rem;
-
-          }
-          .web{
-            float: left;
-            width: 110rem;
-            height: 100%;
-            background: white;
-
-            @include tablet{
-              width: 70rem;
-            }
-            
-            @include mobile{
-              width: 30rem;
-            }
-  
-            .left_languageImgs{
-              @include left_languageImgs;
-
-              @include tablet{
-                @include left_languageImgs_tablet;
-              }
-
-              @include mobile{
-                @include left_languageImgs_mobile;
-              }
-
-              li{
-                padding-top: calc((5rem - 3.5rem)/2);
-                p{
-                  display: table-cell; 
-                  .icon_logo, .jQueryImg{
-                    vertical-align: middle;
-                    width: 3.5rem;
-                    height: 3.5rem;
-                    margin-right: 3rem;
-                  }
-                  .jquery{
-                    vertical-align: middle;
-                  }
-                  .fa-html5{
-                    color: #E34F26;
-                  }
-
-                  .fa-css3-alt{
-                    color:#1572B6;
-                  }
-
-                  .fa-js{
-                    color:#F7DF1E;
-                    background:black;
-                  }
-
-                  .fa-sass{
-                    color:#CC6699;
-                  }
-
-                  .fa-react{
-                    color:#61DAFB;
-                  }
-
-                  .fa-node{
-                    color:#339933;
-                  }
-
-
-                }
-               
-              }
-  
-              .jQuery{
-                .jQueryImg{
-                  background: url('../img/skill/web/jQuery.png') center no-repeat;
-                }
-              }
-              
-            }
-  
-            .right_languageAbility{
-              @include right_languageAbility;
-
-              @include tablet{
-                @include right_languageAbility_tablet;
-              }
-
-              @include mobile{
-                @include right_languageAbility_mobile;
-              }
-
-              .html{
-                margin-top: 4rem;
-                @include tablet{
-                  margin-top: 5rem;
-                }
-                @include mobile{
-                  margin-top: 3rem;
-                }
-                .html_skill{
-                  @include skill_bar(0.9);
-                }
-              }
-  
-              .css{
-                .css_skill{
-                  @include skill_bar(0.9);
-                }
-              }
-  
-              .js{
-                .js_skill{
-                  @include skill_bar(0.8);
-                }
-              }
-              .scss{
-                .scss_skill{
-                  @include skill_bar(0.85);
-                }
-              }
-              .react{
-                .react_skill{
-                  @include skill_bar(0.7);
-                }
-                .studying{
-                  position: absolute;
-                  padding-top: 0.35rem;
-                  right: 5rem;
-
-                  @include tablet{
-                    font-size: 1.3rem;
-                  }
-
-                  @include mobile{
-                    font-size: 1rem;
-                    right: 0;
-                  }
-                }
-  
-              }
-              .jQuery{
-                .jQuery_skill{
-                  @include skill_bar(0.6);
-                }
-              }
-
-              .node{
-                .node_skill{
-                  @include skill_bar(0.6);
-                }
-              }
-            }
-            
-          }
-          .other{
-            width: 110rem;
-            height: 70rem; 
-            position: absolute;
-            transition: 0.5s ease-in;
-            left: 110rem;
-            background: white;
-
-            .left_languageImgs{
-              @include left_languageImgs;
-
-              @include tablet{
-                @include left_languageImgs_tablet;
-              }
-              @include mobile{
-                @include left_languageImgs_mobile;
-              }
-
-              li{
-                padding-top: calc((5rem - 3.5rem)/2);
-                p{
-                  display: table-cell; 
-                  .icon_logo, .mysql_Img{
-                    vertical-align: middle;
-                    width: 3.5rem;
-                    height: 3.5rem;
-                    margin-right: 3rem;
-                  }
-                  .mysQL{
-                    vertical-align: middle;
-                  }
-                  .fa-cuttlefish{
-                    color:#A8B9CC;
-                  }
-                  .fa-java{
-                    color:#007396;
-                  }
-                  .fa-python{
-                    color:#3776AB
-                  }
-                  
-                }
-              }
-
-              
-
-              .c{
-                .c_Img{
-                  background: url('../img/skill/others/c.png') center no-repeat;
-                }
-              }
-              .python{
-                .python_Img{
-                  background: url('../img/skill/others/python.png') center no-repeat;
-                }
-              }
-              .java{
-                .java_Img{
-                  background: url('../img/skill/others/java.png') center no-repeat;
-                }
-              }
-              .mysql{
-                .mysql_Img{
-                  background: url('../img/skill/others/mysql.png') center no-repeat;
-                }
-              }
-            }
-
-            .right_languageAbility{
-              @include right_languageAbility;
-              @include tablet{
-                @include right_languageAbility_tablet;
-              }
-              @include mobile{
-                @include right_languageAbility_mobile;
-              }
-              .c{
-                margin-top: 4rem;
-                @include tablet{
-                  margin-top: 5rem;
-                }
-                @include mobile{
-                  margin-top:3rem;
-                }
-                .c_skill{
-                  @include skill_bar(0.75);
-                }
-              }
-              .java{
-                .java_skill{
-                  @include skill_bar(0.9);
-                }
-              }
-              .python{
-                .python_skill{
-                  @include skill_bar(0.85);
-                }
-              }
-              .mysql{
-                .mysql_skill{
-                  @include skill_bar(0.5);
-                }
-              }
-            }
-
-          }
-        }
-      }
-
+      
     }
     
     /*section5 achieve*/
