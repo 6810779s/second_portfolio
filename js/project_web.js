@@ -22,11 +22,17 @@ const movieApp_img = document.querySelector(".movieApp .movieApp_img");
 const movieApp_up = document.querySelector(".movieApp .up");
 const movieApp_down = document.querySelector(".movieApp .down");
 
+/* to do List */
+const todoList_img = document.querySelector(".todoList .todoList_img");
+const todoList_up = document.querySelector(".todoList .up");
+const todoList_down = document.querySelector(".todoList .down");
+
 /* project's height */
 const portfolio_height = portfolio_project_img.clientHeight / 10;
 const cafe_height = cafe_project_img.clientHeight / 10;
 const portfolioSecond_height = portfolioSecond_project_img.clientHeight / 10;
 const movieApp_height = movieApp_img.clientHeight / 10;
+const todoList_height = todoList_img.clientHeight / 10;
 
 const container_height =
   document.querySelector(".portfolio .portfolio_container").clientHeight / 10;
@@ -67,4 +73,13 @@ movieApp_up.addEventListener("click", function () {
 
 movieApp_down.addEventListener("click", function () {
   movieApp_img.style.top = -movieApp_height + container_height + "rem";
+});
+
+/* to do List */
+todoList_up.addEventListener("click", function () {
+  todoList_img.style.top = 0;
+});
+
+todoList_down.addEventListener("click", function () {
+  todoList_img.style.top = -todoList_height + container_height + "rem";
 });

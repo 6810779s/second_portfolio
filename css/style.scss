@@ -38,7 +38,7 @@ a {
   color: black;
 }
 
-html {
+html,body {
   font-size: 10px;
 }
 
@@ -179,35 +179,75 @@ a:visited {
     }
 
     /*section3 information*/
-    #info_a {
+    #info {
       padding-top: 5rem;
       width: 100%;
       height: 80rem;
 
-      .wrap_a {
+      @include tablet{
+        height: 90rem;
+      }
+
+      @include mobile{
+        height: 90rem;
+      }
+      
+
+      .wrap {
         width: 110rem;
-        height: 60rem;
         margin: auto;
+
+        @include tablet{
+          width: 70rem;
+        }
+        @include mobile{
+          width: 30rem;
+        }
 
         .profile {
           display: flex;
           padding-top: 3rem;
+          
+          @include mobile{
+            display: block;
+          }
 
           .profile_img {
             width: 23rem;
             height: 30rem;
             background: url('../img/info/info_profile/meInfo.png') no-repeat center;
-            background-size: cover;
+            background-size: contain;
+            @include mobile{
+              margin: auto;
+            }
           }
+
+          
 
           .profile_info {
             width: 87rem;
             height: 30rem;
             padding-left: 10rem;
 
+            @include tablet{
+              width: 47rem;
+            }
+
+            @include mobile{
+              width: 30rem;
+              height: 100%;
+              padding: 0;
+              margin: 3rem auto 0 auto;
+              
+            }
+
             .name {
               font-size: 5rem;
               font-weight: 700;
+
+              @include tablet{
+                font-size: 3rem;
+              }
 
               span {
                 font-size: 3rem;
@@ -215,6 +255,10 @@ a:visited {
                 padding-left: 1rem;
                 color: gray;
                 font-weight: 400;
+                @include tablet{
+                  font-size: 2rem;
+                }
+                
               }
             }
 
@@ -225,12 +269,19 @@ a:visited {
               padding: 0.5rem;
               margin-top: 0.5rem;
               background: $maincolor;
+              @include tablet{
+                width: 25rem;
+                font-size: 2rem;
+              }
             }
 
             ul {
               margin-top: 2rem;
               font-size: 2.5rem;
               line-height: 5rem;
+              @include mobile{
+                line-height: 6.5rem;
+              }
 
               .fa-blogger,
               .fa-rss,
@@ -251,15 +302,20 @@ a:visited {
 
         .information {
           width: 110rem;
-          height: 30rem;
           padding-top: 5rem;
           font-size: 2.5rem;
+          @include tablet{
+            width: 70rem;
+          }
+          @include mobile{
+           display: none
+          }
 
           h1 {
             font-size: 5rem;
             color: white;
             font-style: italic;
-            text-shadow: -1px 0 rgb(93, 107, 240), 0 1px rgb(70, 87, 233), 1px 0 rgb(70, 87, 233), 0 -1px rgb(70, 87, 233);
+            text-shadow: -0.1rem 0 rgb(93, 107, 240), 0 0.1rem rgb(70, 87, 233), 0.1rem 0 rgb(70, 87, 233), 0 -0.1rem rgb(70, 87, 233);
             margin-bottom: 3rem;
           }
 
@@ -275,41 +331,10 @@ a:visited {
       height: 80rem;
       position: relative;
 
-      @include mobile {
-        height: 60rem;
-      }
-
       .main_name_skills {
         @include main_name_padding;
       }
 
-      .button_skills {
-        position: absolute;
-        font-size: 2rem;
-        background: $maincolor;
-        border: none;
-        padding: 0.5rem 1.5rem;
-        border-radius: 2rem;
-        right: 0.5rem;
-        top: 5rem;
-        z-index: 100;
-        box-shadow: 0.2rem 0.02rem 0.8rem 0.03rem $boxshadow;
-
-        @include tablet {
-          font-size: 1.8rem;
-        }
-
-        @include mobile {
-          font-size: 1.3rem;
-          top: 6rem;
-        }
-      }
-
-      .button_skills:hover {
-        background: $maincolor2;
-        cursor: pointer;
-
-      }
 
       .skills_container_a {
         width: 110rem;
@@ -317,38 +342,68 @@ a:visited {
         font-size: 2rem;
         margin: auto;
 
+        @include tablet{
+          width: 70rem;
+        }
+        @include mobile{
+          width: 30rem;
+          
+        }
+
         .skill_wrap {
           width: 70rem;
           height: 60rem;
           position: relative;
-          margin: auto;
-          transform-style: preserve-3d; 
-          transition: all 1s;
+          margin: auto ;
+          cursor: pointer;
+          perspective: 100rem;
+
+          @include mobile{
+            width: 30rem;
+            
+          }
 
           .item{
+            
             backface-visibility: hidden;
+            transition: 1s;
           }
 
-          &:hover{
+          &:hover .item.web{
             transform: rotateY(180deg);
-
           }
-
+          &:hover .item.other{
+            transform: rotateY(0deg);
+          }
 
           .web {
             width: 70rem;
+            position: absolute;
             height: 60rem;
             background: rgba(218, 214, 214, 0.103);
             margin: auto;
-            position:absolute; 
             transform: rotateY(0deg);
 
+            
 
+            @include mobile{
+              width: 30rem;
+              
+            }
             .js,
             .jquery {
               div:first-child {
                 p {
                   padding-left: calc((10rem - 2.625rem) / 2);
+                  @include mobile{
+                    padding: calc((3rem - 1.7rem)/2);
+                  }
+                }
+              }
+              img{
+                @include mobile{
+                  width: 1.7rem;
+                  height: 1.7rem;
                 }
               }
             }
@@ -359,16 +414,19 @@ a:visited {
               height: calc(60rem / 7);
               display: flex;
               font-size: 3rem;
-              border-bottom: 1px solid rgba(168, 167, 167, 0.527);
+              border-bottom: 0.1rem solid rgba(168, 167, 167, 0.527);
 
-              &:hover {
-                background: $maincolor;
+              @include mobile{
+                width: 30rem;
+                font-size: 2rem;
+                border-bottom: none;
               }
+              
 
               div {
                 display: table;
 
-                p {
+                p { 
                   display: table-cell;
                   vertical-align: middle;
                 }
@@ -388,6 +446,11 @@ a:visited {
 
                   color: #F7DF1E;
                   background: black;
+
+                  @include mobile{
+                    width: 1.7rem;
+                    height: 1.7rem;
+                  }
                 }
 
                 .fa-sass {
@@ -405,20 +468,29 @@ a:visited {
 
               div:first-child {
                 width: 15rem;
-
+                @include mobile{
+                  width: 5rem;
+                }
               }
 
               div:nth-child(2) {
                 width: 25rem;
+                @include mobile{
+                  width: 11rem;
+                }
               }
-
               div:last-child {
                 width: 15rem;
               }
 
 
+
+
               .icon_logo {
                 width: 10rem;
+                @include mobile{
+                  width: 3rem;
+                }
               }
 
             }
@@ -429,13 +501,26 @@ a:visited {
             height: 60rem;
             background: rgba(218, 214, 214, 0.103);
             margin: auto;
-            position:absolute; 
-            transform: rotateY(180deg);
+            transform: rotateY(-180deg);
+
+            @include mobile{
+              width: 30rem;
+              
+            }
 
             .mysql {
               div:first-child {
                 p {
                   padding-left: calc((10rem - 2.625rem) / 2);
+                  @include mobile{
+                    padding: calc((3rem - 1.7rem)/2);
+                  }
+                }
+              }
+              img{
+                @include mobile{
+                  width: 1.7rem;
+                  height: 1.7rem;
                 }
               }
             }
@@ -446,10 +531,12 @@ a:visited {
               height: calc(60rem / 7);
               display: flex;
               font-size: 3rem;
-              border-bottom: 1px solid rgba(168, 167, 167, 0.527);
+              border-bottom: 0.1rem solid rgba(168, 167, 167, 0.527);
 
-              &:hover {
-                background: $maincolor;
+              @include mobile{
+                width: 30rem;
+                font-size: 2rem;
+                border-bottom: none;
               }
 
               div {
@@ -477,11 +564,18 @@ a:visited {
 
               div:first-child {
                 width: 15rem;
+                width: 15rem;
+                @include mobile{
+                  width: 5rem;
+                }
 
               }
 
               div:nth-child(2) {
                 width: 25rem;
+                @include mobile{
+                  width: 11rem;
+                }
               }
 
               div:last-child {
@@ -490,6 +584,9 @@ a:visited {
 
               .icon_logo {
                 width: 10rem;
+                @include mobile{
+                  width: 3rem;
+                }
               }
 
             }
@@ -663,6 +760,7 @@ a:visited {
         @include mobile {
           width: 30rem
         }
+
       }
 
       .main_name_ProjectWeb {
@@ -821,7 +919,7 @@ a:visited {
             height: 4rem;
             font-size: 1.5rem;
             border-radius: 3rem;
-            border: 0.5px solid $maincolor2;
+            border: 0.05rem solid $maincolor2;
             padding-top: 1.1rem;
             text-align: center;
             left: 50%;
@@ -844,7 +942,7 @@ a:visited {
             height: 4rem;
             font-size: 1.5rem;
             border-radius: 3rem;
-            border: 0.5px solid $maincolor2;
+            border: 0.05rem solid $maincolor2;
             padding-top: 1.1rem;
             text-align: center;
             left: 50%;
@@ -871,6 +969,10 @@ a:visited {
 
         .movieApp{
           @include project(130rem, 91.1rem, 39.1rem, '../img/project/web/movieApp.png');
+        }
+
+        .todoList{
+          @include project(94.8rem, 66.4rem, 28.4rem, '../img/project/web/todoList.png');
         }
 
       }
@@ -1060,7 +1162,7 @@ a:visited {
             width: 16rem;
             height: 5rem;
             padding: 1rem;
-            border: 0.5px solid $maincolor2;
+            border: 0.05rem solid $maincolor2;
             border-radius: 3rem;
 
             &:hover {
@@ -1147,7 +1249,7 @@ a:visited {
       width: 100%;
       height: 45rem;
       padding-top: 3rem;
-      border-top: 1px solid rgba(219, 218, 218, 0.322);
+      border-top: 0.1rem solid rgba(219, 218, 218, 0.322);
 
       @include tablet {
         height: 50rem;
@@ -1176,7 +1278,7 @@ a:visited {
           width: 50rem;
           height: 30rem;
           margin: 3rem auto;
-          border: 5px solid $maincolor2;
+          border: 0.5rem solid $maincolor2;
           border-radius: 1.5rem;
 
           .myName {
