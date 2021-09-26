@@ -365,7 +365,12 @@ a:visited {
 
           .item{
             -webkit-backface-visibility:hidden;
+            -webkit-transform: translate3d(0,0,0);
+            -webkit-perspective: 0;
+            -webkit-transition: 1s;
             backface-visibility: hidden;
+            visibility:visible;
+            
             transition: 1s;
           }
 
