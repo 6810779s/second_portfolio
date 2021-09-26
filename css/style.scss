@@ -364,7 +364,7 @@ a:visited {
           }
 
           .item{
-            
+            -webkit-backface-visibility:hidden;
             backface-visibility: hidden;
             transition: 1s;
           }
