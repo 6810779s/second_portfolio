@@ -39,7 +39,6 @@ const container_height =
 
 /* portfolio */
 portfolio_up.addEventListener("click", function () {
-  // portfolio_project_img.style.top = (-293.8 + 40) + 'rem';
   portfolio_project_img.style.top = 0;
 });
 portfolio_down.addEventListener("click", function () {

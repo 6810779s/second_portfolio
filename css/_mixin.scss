@@ -39,6 +39,7 @@
   font-size: 2rem;
   line-height: 5rem;
 }
+
 @mixin border{
   border: 2px solid $maincolor2;
 }
@@ -179,7 +180,8 @@
         height: 20rem;
       }
       .project_img{
-        width: 100rem;
+        width: inherit;
+        max-width: 100%;
         height: $height_desktop;
         position: absolute;
         background: url($url) no-repeat;
@@ -187,13 +189,13 @@
         transition: 5s ease-in;
 
         @include tablet{
-          width: 70rem;
+          // width: 70rem;
           height: $height_tablet;
           background-size: contain;
         }
 
         @include mobile{
-          width: 30rem;
+          // width: 30rem;
           height: $height_mobile;
           top: 0;
           background-size: contain;

@@ -370,7 +370,6 @@ a:visited {
             -webkit-transition: 1s;
             backface-visibility: hidden;
             visibility:visible;
-            
             transition: 1s;
           }
 
@@ -828,9 +827,7 @@ a:visited {
           @include mobile {
             width: 13rem;
             font-size: 2rem;
-
           }
-
         }
 
         .wrap {
@@ -841,12 +838,10 @@ a:visited {
 
           .up {
             @include up_arrow;
-
           }
 
           .down {
             @include down_arrow;
-
           }
 
           @include tablet {
@@ -867,7 +862,6 @@ a:visited {
           position: absolute;
           opacity: 0;
           transition: 0.3s ease-in;
-
 
           .web_tit {
             font-size: 3rem;
