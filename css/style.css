@@ -1061,28 +1061,25 @@ a:visited {
 }
 
 .container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
-  width: 100rem;
+  width: inherit;
+  max-width: 100%;
   height: 293.8rem;
   position: absolute;
-  background: url("../img/project/web/EHPortfolio.png") no-repeat;
+  background: url("../img/project/web/EHPortfolio.png") no-repeat center/contain;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
-    width: 70rem;
     height: 200rem;
-    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio .container .project_img {
-    width: 30rem;
     height: 80rem;
     top: 0;
-    background-size: contain;
   }
 }
 
@@ -1113,28 +1110,25 @@ a:visited {
 }
 
 .container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
-  width: 100rem;
+  width: inherit;
+  max-width: 100%;
   height: 361.1rem;
   position: absolute;
-  background: url("../img/project/web/cafeSroty.png") no-repeat;
+  background: url("../img/project/web/cafeSroty.png") no-repeat center/contain;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
-    width: 70rem;
     height: 251.8rem;
-    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #project_WEB .projectWeb_container .cafe .container .project_img {
-    width: 30rem;
     height: 102.1rem;
     top: 0;
-    background-size: contain;
   }
 }
 
@@ -1165,28 +1159,25 @@ a:visited {
 }
 
 .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
-  width: 100rem;
+  width: inherit;
+  max-width: 100%;
   height: 453.5rem;
   position: absolute;
-  background: url("../img/project/web/portfolio_second.png") no-repeat;
+  background: url("../img/project/web/portfolio_second.png") no-repeat center/contain;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
-    width: 70rem;
     height: 316.2rem;
-    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #project_WEB .projectWeb_container .portfolio_second .container .project_img {
-    width: 30rem;
     height: 136.1rem;
     top: 0;
-    background-size: contain;
   }
 }
 
@@ -1217,28 +1208,25 @@ a:visited {
 }
 
 .container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
-  width: 100rem;
+  width: inherit;
+  max-width: 100%;
   height: 130rem;
   position: absolute;
-  background: url("../img/project/web/movieApp.png") no-repeat;
+  background: url("../img/project/web/movieApp.png") no-repeat center/contain;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
-    width: 70rem;
     height: 91.1rem;
-    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #project_WEB .projectWeb_container .movieApp .container .project_img {
-    width: 30rem;
     height: 39.1rem;
     top: 0;
-    background-size: contain;
   }
 }
 
@@ -1269,28 +1257,25 @@ a:visited {
 }
 
 .container .main__article #project_WEB .projectWeb_container .todoList .container .project_img {
-  width: 100rem;
+  width: inherit;
+  max-width: 100%;
   height: 94.8rem;
   position: absolute;
-  background: url("../img/project/web/todoList.png") no-repeat;
+  background: url("../img/project/web/todoList.png") no-repeat center/contain;
   top: 0;
   transition: 5s ease-in;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .main__article #project_WEB .projectWeb_container .todoList .container .project_img {
-    width: 70rem;
     height: 66.4rem;
-    background-size: contain;
   }
 }
 
 @media (max-width: 767px) {
   .container .main__article #project_WEB .projectWeb_container .todoList .container .project_img {
-    width: 30rem;
     height: 28.4rem;
     top: 0;
-    background-size: contain;
   }
 }
 

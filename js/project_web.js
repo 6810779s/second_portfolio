@@ -82,3 +82,17 @@ todoList_up.addEventListener("click", function () {
 todoList_down.addEventListener("click", function () {
   todoList_img.style.top = -todoList_height + container_height + "rem";
 });
+
+if (matchMedia("screen and (width: 767px)").matches) {
+  window.onresize = function () {
+    document.location.reload();
+  };
+
+  console.log("mobile");
+} else if (matchMedia("screen and (width: 1023px)").matches) {
+  //화면 크기가 1023px이하일때
+  console.log("tablet");
+} else if (matchMedia("screen and (width: 1024px)").matches) {
+  //화면 크기가 1024px 이상일때
+  console.log("desktop");
+}

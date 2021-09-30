@@ -184,21 +184,19 @@
         max-width: 100%;
         height: $height_desktop;
         position: absolute;
-        background: url($url) no-repeat;
+        background: url($url) no-repeat center/contain;
         top: 0; //이미지 높이 : 2938px
         transition: 5s ease-in;
 
         @include tablet{
-          // width: 70rem;
           height: $height_tablet;
-          background-size: contain;
+          
         }
 
         @include mobile{
-          // width: 30rem;
           height: $height_mobile;
           top: 0;
-          background-size: contain;
+          
         }
               
       } 
